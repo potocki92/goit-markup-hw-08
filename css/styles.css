@@ -362,7 +362,6 @@ body {
 .social__item:hover .icon .second__svg,
 .social__item:focus .icon .second__svg{
   fill: var(--first-color);
-  
   transition: fill var(--transition);
 }
 /* 
@@ -427,6 +426,7 @@ body {
   background: var(--second-color);
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow var(--transition);
   border-radius: var(--radius);
   /* text into bottom */
   color: var(--first-color);
@@ -469,8 +469,17 @@ body {
   positioning feature container and feature box
 */
 .feature__container {
-  flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 94px;
+}
+/*
+  flexing feature box with icon, text and description
+*/
+.feature__box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 /*
   space beetwen heading and description text
@@ -484,6 +493,7 @@ body {
 */
 .feature__icon {
   background: #f5f4fa;
+  text-align: center;
   padding: 25px 100px;
   margin-bottom: 30px;
 }
@@ -603,6 +613,7 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
+  transition: color var(--transition), border var(--transition);
 }
 /*
   change bored color when user hovering or focusing customer__box
@@ -611,7 +622,7 @@ body {
 .customer__box:focus {
   border: 1px solid var(--second-color);
   color: var(--second-color);
-  transition: color var(--transition);
+  transition: color var(--transition), border var(--transition);
 }
 
 /* 
@@ -629,6 +640,7 @@ body {
 .filters__button {
   /* button color and border */
   background: var(--fourth-color);
+  transition: background-color var(--transition), box-shadow var(--transition), color var(--transition);
   border-radius: var(--radius);
   border-style: none;
   /* font style */
@@ -649,8 +661,8 @@ body {
   color: var(--first-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  background: var(--second-color);
-  transition: var(--transition);
+  background-color: var(--second-color);
+  transition: background-color var(--transition), box-shadow var(--transition), color var(--transition);
 }
 /*
   button list
@@ -719,8 +731,3 @@ body {
   border-left: var(--border);
   border-right: var(--border);
 }
-
-/*=================================================
-praca 5 */
-
-/* TODO: transition nie działa z ikonami */
