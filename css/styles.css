@@ -24,7 +24,7 @@
 
   --border: 1px solid #eeeeee;
 
-  --transition: .250s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /**********
@@ -119,12 +119,6 @@ body {
 .header__container {
   background: var(--first-color);
   border-bottom: 1px solid #ececec;
-}
-/*
-  overwritting gap from the list class
-*/
-.nav__item {
-  gap: 23px;
 }
 /* navigation link and contact link text */
 .nav__link,
@@ -342,25 +336,25 @@ body {
   gap: 10px;
 }
 
-.social__item .icon .first__svg{
+.social__item .icon .first__svg {
   fill: var(--first-color);
   transition: fill var(--transition);
 }
 
 .social__item .icon .second__svg {
-  fill: #AFB1B8;
-  
+  fill: #afb1b8;
+
   transition: fill var(--transition);
 }
 
 .social__item:hover .icon .first__svg,
-.social__item:focus .icon .first__svg{
+.social__item:focus .icon .first__svg {
   fill: var(--second-color);
   transition: fill var(--transition);
 }
 
 .social__item:hover .icon .second__svg,
-.social__item:focus .icon .second__svg{
+.social__item:focus .icon .second__svg {
   fill: var(--first-color);
   transition: fill var(--transition);
 }
@@ -640,7 +634,8 @@ body {
 .filters__button {
   /* button color and border */
   background: var(--fourth-color);
-  transition: background-color var(--transition), box-shadow var(--transition), color var(--transition);
+  transition: background-color var(--transition), box-shadow var(--transition),
+    color var(--transition);
   border-radius: var(--radius);
   border-style: none;
   /* font style */
@@ -662,7 +657,8 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--second-color);
-  transition: background-color var(--transition), box-shadow var(--transition), color var(--transition);
+  transition: background-color var(--transition), box-shadow var(--transition),
+    color var(--transition);
 }
 /*
   button list
@@ -730,4 +726,51 @@ body {
   border-bottom: var(--border);
   border-left: var(--border);
   border-right: var(--border);
+}
+
+/*==========================================================================*/
+/*
+  relative postion contanier with about us
+  for about__text and positioning this to bottom into about__box
+*/
+.about__box {
+  position: relative;
+}
+
+/*
+  text into about__box 
+  under the about__image 
+*/
+.about__text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: var(--second-letter-spacing);
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 27px 0;
+}
+
+.active__link {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+  TODO: ablkfksdjkdhfdsb
+*/
+.active__link::after {
+  display: flex;
+  position: absolute;
+  bottom: -175%;
+  content: " ";
+  background: #2196f3;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
 }
