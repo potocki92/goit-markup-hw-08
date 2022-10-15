@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- start header -->
+    <header class="header__container">
+      <!--
+        height: 100%;
+        width: 1170px;
+        margin: auto;
+        padding: 94px 0;
+       -->
+      <div class="container wrapper">
+        <!-- start logo -->
+        <div class="links__container">
+          <div class="logo__container">
+            <a href="./index.html" class="logo__link link"
+              ><span class="logo__web">Web</span>Studio</a
+            >
+          </div>
+          <!-- end logo -->
+          <!-- start navigation -->
+          <nav class="nav__container">
+            <ul class="nav__list list">
+              <li class="nav__item item">
+                <a class="nav__link link" href="./index.html" id="agency"
+                  >Agencja</a
+                >
+              </li>
+              <li class="nav__item item">
+                <a
+                  class="nav__link link active__link"
+                  href="./portfolio.html"
+                  id="portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav__item item">
+                <a class="nav__link link" href="#" id="contact">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end navigation -->
+        <!-- start contact container: telephone and email  -->
+        <div class="contact__container">
+          <ul class="contact__list list">
+            <li class="contact__item item">
+              <a class="contact__link link" href="mailto:info@devstudio.com"
+                ><svg class="icon" width="16px" height="12px">
+                  <use
+                    href="./images/svg/contact/envelope.svg#envelope"
+                  ></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__item item">
+              <a class="contact__link link" href="tel:+48111111111"
+                ><svg class="icon" width="10px" height="16px">
+                  <use href="./images/svg/contact/phone.svg#phone"></use></svg
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start main -->
+    <main>
+      <!-- start portfolio container -->
+      <div class="container section">
+        <!-- start filters container: container with buttons -->
+        <div class="filters__container">
+          <ul class="filters__list list">
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Wszystkie</button>
+            </li>
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Strony</button>
+            </li>
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Aplikacje</button>
+            </li>
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Dizajn</button>
+            </li>
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Marketing</button>
+            </li>
+          </ul>
+        </div>
+        <!-- end filters container -->
+        <!-- start projects container: image, header and paragraph -->
+
+        <ul class="projects__list list">
+          <!-- Technocrack -->
+          <li class="projects__item item">
+            <img
+              class="projects__image"
+              src="./images/portfolio/technocrack.jpg"
+              alt="Image of Technocrack from WebPage Category"
+              width="370"
+              height="294"
+            />
+            <div class="projects__text">
+              <h6 class="projects__name">Technocrack</h6>
+              <p class="projects__category">Strona internetowa</p>
+            </div>
+          </li>
+          <!-- New Orlean vs Golden Star -->
+          <li class="projects__item item">
+            <img
+              class="projects__image"
+              src="./images/portfolio/new_orlean_vs_golden_star.jpg"
+              alt="Image of New Orlean vs Golden Star from Design Category"
+              width="370"
+              height="294"
+            />
+            <div class="projects__text">
+              <h6 class="projects__name">Grafika New Orlean vs Golden Star</h6>
+              <p class="projects__category">Dizajn</p>
+            </div>
+          </li>
+          <!-- Seafood Restaurant -->
+          <li class="projects__item item">
+            <img
+              class="projects__image"
+              src="./images/portfolio/seafood-restaurant.jpg"
+              alt="Image of Seafood Restaurant from Application Category"
+              width="370"
+              height="294"
+            />
+            <div class="projects__text">
+              <h6 class="projects__name">Restauracja Seafood</h6>
+              <p class="projects__category">Aplikacja</p>
+            </div>
+          </li>
+          <!-- Projekt Prime -->
+          <li class="projects__item item">
+            <img
+              class="projects__image"
+              src="./images/portfolio/project-prime.jpg"
+              alt="Image of Project Prime from Marketing Category"
+              width="370"
+              height="294"
+            />
+            <div class="projects__text">
+              <h6 class="projects__name">Projekt Prime</h6>
+              <p class="projects__category">Marketing</p>
+            </div>
+          </li>
+          <!-- Project Boxes -->
+          <li class="projects__item item">
+            <img
+              class="projects__image"
+              src="./images/portfolio/project-boxes.jpg"
+              alt="Image of Project Boxes from Application Category"
+              width="370"
+              height="294"
+            />
+            <div class="projects__text">
+              <h6 class="projects__name">Projekt Boxes</h6>
+              <p class="projects__category">Aplikacja</p>
+            </div>
+          </li>
+          <!-- Inspiration has no Borders -->
+          <li class="projects__item item">
+            <img
+              class="projects__image"
+              src="./images/portfolio/borders.jpg"
+              alt="Image of Inspiration has no Borders from WebPage Category"
+              width="370"
+              height="294"
+            />
+            <div class="projects__text">
+              <h6 class="projects__name">Inspiration has no Borders</h6>
+              <p class="projects__category">Strona internetowa</p>
+            </div>
+          </li>
+          <!-- limited edition magazine -->
+          <li class="projects__item item">
+            <img
+              class="projects__image"
+              src="./images/portfolio/magazine.jpg"
+              alt="Images of Limited Edition Magazine from Design Category"
+              width="370"
+              height="294"
+            />
+            <div class="projects__text">
+              <h6 class="projects__name">Magazyn Limited Edition</h6>
+              <p class="projects__category">Dizajn</p>
+            </div>
+          </li>
+          <!-- Projekt LAB -->
+          <li class="projects__item item">
+            <img
+              class="projects__image"
+              src="./images/portfolio/lab.jpg"
+              alt="Image of Project LAB from Marketing Category"
+              width="370"
+              height="294"
+            />
+            <div class="projects__text">
+              <h6 class="projects__name">Projekt LAB</h6>
+              <p class="projects__category">Marketing</p>
+            </div>
+          </li>
+          <!-- Growing Business -->
+          <li class="projects__item item">
+            <img
+              class="projects__image"
+              src="./images/portfolio/growing-business.jpg"
+              alt="Image of Growing Business from Application Category"
+              width="370"
+              height="294"
+            />
+            <div class="projects__text">
+              <h6 class="projects__name">Growing Business</h6>
+              <p class="projects__category">Aplikacja</p>
+            </div>
+          </li>
+        </ul>
+        <!-- end projects container -->
+      </div>
+      <!-- end portfolio container -->
+    </main>
+    <!-- end main -->
+    <!-- start footer -->
+    <footer class="footer__container">
+      <div class="footer__box container">
+        <!-- container with logo + contact -->
+        <div class="footer__info">
+          <!-- logo -->
+          <div class="logo__container">
+            <a href="./index.html" class="logo__link link"
+              ><span class="logo__web">Web</span>Studio</a
+            >
+          </div>
+          <!-- address to coresponde -->
+          <address class="contact__footer">
+            <ul class="contact__list list">
+              <li class="contact__item item">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
+              <li class="contact__item item">
+                <a class="contact__link link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="contact__item item">
+                <a class="contact__link link" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+          <!-- end address to coresponde -->
+        </div>
+        <!-- end container with logo + contact -->
+        <!-- start social container -->
+        <div class="footer__social">
+          <span class="social__text">Dołącz do nas</span>
+          <div class="contact__icon">
+            <ul class="social__list list">
+              <li class="social__item item">
+                <svg class="icon" height="44px" width="44px">
+                  <use class="first__svg" href="./images/svg/team/instagram.svg#first__svg"></use>
+                  <use class="second__svg" href="./images/svg/team/instagram.svg#second__svg"></use>
+                </svg>
+              </li>
+              <li class="social__item item">
+                <svg class="icon" height="44px" width="44px">
+                  <use class="first__svg" href="./images/svg/team/tweeter.svg#first__svg"></use>
+                  <use class="second__svg" href="./images/svg/team/tweeter.svg#second__svg"></use>
+                </svg>
+              </li>
+              <li class="social__item item">
+                <svg class="icon" height="44px" width="44px">
+                  <use class="first__svg" href="./images/svg/team/facebook.svg#first__svg"></use>
+                  <use class="second__svg" href="./images/svg/team/facebook.svg#second__svg"></use>
+                </svg>
+              </li>
+              <li class="social__item item">
+                <svg class="icon" height="44px" width="44px">
+                  <use class="first__svg" href="./images/svg/team/linkedin.svg#first__svg"></use>
+                  <use class="second__svg" href="./images/svg/team/linkedin.svg#second__svg"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end social container -->
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>

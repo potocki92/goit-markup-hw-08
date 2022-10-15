@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WebStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- start header -->
+    <header class="header__container">
+      <!-- start logo -->
+      <div class="container wrapper">
+        <div class="links__container">
+          <div class="logo__container list">
+            <a href="./index.html" class="logo__link link"
+              ><span class="logo__web">Web</span>Studio</a
+            >
+          </div>
+          <!-- end logo -->
+          <!-- start navigation -->
+          <nav class="nav__container">
+            <ul class="nav__list list">
+              <li class="nav__item item">
+                <a
+                  class="nav__link link active__link"
+                  href="./index.html"
+                  id="agency"
+                  >Agencja</a
+                >
+              </li>
+              <li class="nav__item item">
+                <a class="nav__link link" href="./portfolio.html" id="portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav__item item">
+                <a class="nav__link link" href="#" id="contact">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end navigation -->
+        <!-- start contact container: telephone and email  -->
+        <div class="contact__container">
+          <ul class="contact__list list">
+            <li class="contact__item item">
+              <a class="contact__link link" href="mailto:info@devstudio.com"
+                ><svg class="icon" width="16px" height="12px">
+                  <use
+                    href="./images/svg/contact/envelope.svg#envelope"
+                  ></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__item item">
+              <a class="contact__link link" href="tel:+48111111111"
+                ><svg class="icon" width="10px" height="16px">
+                  <use href="./images/svg/contact/phone.svg#phone"></use></svg
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end contact container -->
+    </header>
+    <!-- end header -->
+    <!-- start main -->
+    <main>
+      <!-- button -->
+      <div class="title__container">
+        <h1 class="title__page">
+          Efektywne rozwiązania <br />dla waszego biznesu
+        </h1>
+        <button class="title__button" type="button">Zamów usługe</button>
+      </div>
+      <!-- container with main center content -->
+
+      <!-- start feature container: simple description about the webstudio -->
+      <div class="container section">
+        <ul class="feature__container list">
+          <li class="feature__box item">
+            <div class="feature__icon">
+              <svg class="icon" width="70px" height="70px">
+                <use href="./images/svg/feature/antenna.svg#antenna"></use>
+              </svg>
+            </div>
+            <h6 class="feature__text">lorem ipsum</h6>
+            <p class="feature__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="feature__box item">
+            <div class="feature__icon">
+              <svg class="icon" width="70px" height="70px">
+                <use href="./images/svg/feature/clock.svg#clock"></use>
+              </svg>
+            </div>
+            <h6 class="feature__text">lorem ipsum</h6>
+            <p class="feature__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="feature__box item">
+            <div class="feature__icon">
+              <svg class="icon" width="70px" height="70px">
+                <use href="./images/svg/feature/diagram.svg#diagram"></use>
+              </svg>
+            </div>
+            <h6 class="feature__text">lorem ipsum</h6>
+            <p class="feature__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="feature__box item">
+            <div class="feature__icon">
+              <svg class="icon" width="70px" height="70px">
+                <use href="./images/svg/feature/astronaut.svg#astronaut"></use>
+              </svg>
+            </div>
+            <h6 class="feature__text">lorem ipsum</h6>
+            <p class="feature__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+        </ul>
+
+        <!-- end feature container -->
+        <!-- start about container: what the webstudio do -->
+
+        <div class="about__container">
+          <h2 class="about__title">Czym się zajmujemy</h2>
+          <ul class="about__list list">
+            <li class="about__box item">
+              <img
+                class="about__image"
+                src="./images/main_page/features/image_tablet.jpg"
+                alt="tablet"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="about__box item">
+              <img
+                class="about__image"
+                src="./images/main_page/features/image_phone.jpg"
+                alt="phone"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="about__box item">
+              <img
+                class="about__image"
+                src="./images/main_page/features/image_computer.jpg"
+                alt="computer"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- end about container -->
+      </div>
+      <!-- start team container: include images and names -->
+      <div class="team__container">
+        <div class="container section">
+          <h2 class="team__title">Nasz zespół</h2>
+          <ul class="team__box list">
+            <li class="team__card item">
+              <img
+                class="team__image"
+                src="./images/main_page/team/image_product_designer.jpg"
+                alt="image of Product Designer"
+                width="270"
+                height="260"
+              />
+              <div class="team__info">
+                <div class="team__text">
+                  <h6 class="team__name">John Doe</h6>
+                  <h6 class="team__profession">Product Designer</h6>
+                </div>
+                <div class="contact__icon">
+                  <ul class="social__list list">
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/instagram.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/instagram.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/tweeter.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/tweeter.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/facebook.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/facebook.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/linkedin.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/linkedin.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="team__card item">
+              <img
+                class="team__image"
+                src="./images/main_page/team/image_frontend_developer.jpg"
+                alt="image of Frontend Developer"
+                width="270"
+                height="260"
+              />
+              <div class="team__info">
+                <div class="team__text">
+                  <h6 class="team__name">John Doe</h6>
+                  <h6 class="team__profession">Frontend Developer</h6>
+                </div>
+                <div class="contact__icon">
+                  <ul class="social__list list">
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/instagram.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/instagram.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/tweeter.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/tweeter.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/facebook.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/facebook.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/linkedin.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/linkedin.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="team__card item">
+              <img
+                class="team__image"
+                src="./images/main_page/team/image_marketing.jpg"
+                alt="image of Marketing"
+                width="270"
+                height="260"
+              />
+              <div class="team__info">
+                <div class="team__text">
+                  <h6 class="team__name">John Doe</h6>
+                  <h6 class="team__profession">Marketing</h6>
+                </div>
+                <div class="contact__icon">
+                  <ul class="social__list list">
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/instagram.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/instagram.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/tweeter.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/tweeter.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/facebook.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/facebook.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/linkedin.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/linkedin.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="team__card item">
+              <img
+                class="team__image"
+                src="./images/main_page/team/image_ui_designer.jpg"
+                alt="image of UI Designer"
+                width="270"
+                height="260"
+              />
+              <div class="team__info">
+                <div class="team__text">
+                  <h6 class="team__name">John Doe</h6>
+                  <h6 class="team__profession">UI Designer</h6>
+                </div>
+                <div class="contact__icon">
+                  <ul class="social__list list">
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/instagram.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/instagram.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/tweeter.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/tweeter.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/facebook.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/facebook.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                    <li class="social__item item">
+                      <svg class="icon" height="44px" width="44px">
+                        <use class="first__svg" href="./images/svg/team/linkedin.svg#first__svg"></use>
+                        <use class="second__svg" href="./images/svg/team/linkedin.svg#second__svg"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end team container -->
+      <!-- start customer container -->
+      <div class="customer__container section">
+        <h2 class="team__title">Nasi klienci</h2>
+        <ul class="customer__team list">
+          <li class="customer__box item">
+            <svg class="icon" width="106px" height="60px">
+              <use
+                href="./images/svg/customer/company__one.svg#company__one"
+              ></use>
+            </svg>
+          </li>
+          <li class="customer__box">
+            <svg class="icon" width="106px" height="60px">
+              <use
+                href="./images/svg/customer/company__two.svg#company__two"
+              ></use>
+            </svg>
+          </li>
+          <li class="customer__box">
+            <svg class="icon" width="106px" height="60px">
+              <use
+                href="./images/svg/customer/company__three.svg#company__three"
+              ></use>
+            </svg>
+          </li>
+          <li class="customer__box">
+            <svg class="icon" width="106px" height="60px">
+              <use
+                href="./images/svg/customer/company__four.svg#company__four"
+              ></use>
+            </svg>
+          </li>
+          <li class="customer__box">
+            <svg class="icon" width="106px" height="60px">
+              <use
+                href="./images/svg/customer/company__five.svg#company__five"
+              ></use>
+            </svg>
+          </li>
+          <li class="customer__box">
+            <svg class="icon" width="106px" height="60px">
+              <use
+                href="./images/svg/customer/company__six.svg#company__six"
+              ></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <!-- end customer container -->
+    </main>
+    <!-- end main -->
+    <!-- start footer -->
+    <footer class="footer__container">
+      <div class="footer__box container">
+        <!-- container with logo + contact -->
+        <div class="footer__info">
+          <!-- logo -->
+          <div class="logo__container">
+            <a href="./index.html" class="logo__link link"
+              ><span class="logo__web">Web</span>Studio</a
+            >
+          </div>
+          <!-- address to coresponde -->
+          <address class="contact__footer">
+            <ul class="contact__list list">
+              <li class="contact__item item">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
+              <li class="contact__item item">
+                <a class="contact__link link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="contact__item item">
+                <a class="contact__link link" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+          <!-- end address to coresponde -->
+        </div>
+        <!-- end container with logo + contact -->
+        <!-- start social container -->
+        <div class="footer__social">
+          <span class="social__text">Dołącz do nas</span>
+          <div class="contact__icon">
+            <ul class="social__list list">
+              <li class="social__item item">
+                <svg class="icon" height="44px" width="44px">
+                  <use class="first__svg" href="./images/svg/team/instagram.svg#first__svg"></use>
+                  <use class="second__svg" href="./images/svg/team/instagram.svg#second__svg"></use>
+                </svg>
+              </li>
+              <li class="social__item item">
+                <svg class="icon" height="44px" width="44px">
+                  <use class="first__svg" href="./images/svg/team/tweeter.svg#first__svg"></use>
+                  <use class="second__svg" href="./images/svg/team/tweeter.svg#second__svg"></use>
+                </svg>
+              </li>
+              <li class="social__item item">
+                <svg class="icon" height="44px" width="44px">
+                  <use class="first__svg" href="./images/svg/team/facebook.svg#first__svg"></use>
+                  <use class="second__svg" href="./images/svg/team/facebook.svg#second__svg"></use>
+                </svg>
+              </li>
+              <li class="social__item item">
+                <svg class="icon" height="44px" width="44px">
+                  <use class="first__svg" href="./images/svg/team/linkedin.svg#first__svg"></use>
+                  <use class="second__svg" href="./images/svg/team/linkedin.svg#second__svg"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end social container -->
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>
