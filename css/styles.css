@@ -774,3 +774,24 @@ body {
   height: 4px;
   width: 100%;
 }
+
+.image__box {
+  position: relative;
+}
+
+.image__text {
+}
+.image__box:hover .image__text {
+  position: absolute;
+  background: rgba(33, 150, 243, 0.9);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  /* or 156% */
+
+  letter-spacing: var(--second-letter-spacing);
+  color: #ffffff;
+  height: 100%;
+  padding: 49px 24px;
+}
