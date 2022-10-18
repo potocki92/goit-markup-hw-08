@@ -755,6 +755,9 @@ body {
   padding: 27px 0;
 }
 
+/*
+  positioning underline
+*/
 .active__link {
   position: relative;
   display: flex;
@@ -762,7 +765,7 @@ body {
 }
 
 /*
-  TODO: ablkfksdjkdhfdsb
+  this is a underline when user is in the page 
 */
 .active__link::after {
   display: flex;
@@ -775,23 +778,38 @@ body {
   width: 100%;
 }
 
+/*
+  image__box with relative position 
+  container has image with project and text which is animated
+  relative halps with positioning image__text
+*/
 .image__box {
-  position: relative;
+position: relative;
+overflow: hidden;
 }
-
+/*
+  positioning image__text to image__box
+*/
 .image__text {
-}
-.image__box:hover .image__text {
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-  /* or 156% */
-
   letter-spacing: var(--second-letter-spacing);
   color: #ffffff;
   height: 100%;
   padding: 49px 24px;
+  
+  top: 100%;
+  transition: top var(--transition);
+}
+
+/*
+  animation and styling image__text when user hover image__box
+*/
+.image__box:hover .image__text {
+  top: 0;
+  transition: top var(--transition);
 }
