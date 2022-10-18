@@ -60,9 +60,7 @@
             <li class="contact__item item">
               <a class="contact__link link" href="mailto:info@devstudio.com"
                 ><svg class="icon" width="16px" height="12px">
-                  <use
-                    href="./images/svg/icons.svg#icon-envelope"
-                  ></use></svg
+                  <use href="./images/svg/icons.svg#icon-envelope"></use></svg
                 >info@devstudio.com</a
               >
             </li>
@@ -86,7 +84,7 @@
         <h1 class="title__page">
           Efektywne rozwiązania <br />dla waszego biznesu
         </h1>
-        <button class="title__button" type="button">Zamów usługe</button>
+        <button class="title__button" type="button" data-modal-open>Zamów usługe</button>
       </div>
       <!-- container with main center content -->
 
@@ -466,44 +464,32 @@
         <ul class="customer__team list">
           <li class="customer__box item">
             <svg class="icon" width="106px" height="60px">
-              <use
-                href="./images/svg/icons.svg#icon-company__one"
-              ></use>
+              <use href="./images/svg/icons.svg#icon-company__one"></use>
             </svg>
           </li>
           <li class="customer__box">
             <svg class="icon" width="106px" height="60px">
-              <use
-                href="./images/svg/icons.svg#icon-company__two"
-              ></use>
+              <use href="./images/svg/icons.svg#icon-company__two"></use>
             </svg>
           </li>
           <li class="customer__box">
             <svg class="icon" width="106px" height="60px">
-              <use
-                href="./images/svg/icons.svg#icon-company__three"
-              ></use>
+              <use href="./images/svg/icons.svg#icon-company__three"></use>
             </svg>
           </li>
           <li class="customer__box">
             <svg class="icon" width="106px" height="60px">
-              <use
-                href="./images/svg/icons.svg#icon-company__four"
-              ></use>
+              <use href="./images/svg/icons.svg#icon-company__four"></use>
             </svg>
           </li>
           <li class="customer__box">
             <svg class="icon" width="106px" height="60px">
-              <use
-                href="./images/svg/icons.svg#icon-company__five"
-              ></use>
+              <use href="./images/svg/icons.svg#icon-company__five"></use>
             </svg>
           </li>
           <li class="customer__box">
             <svg class="icon" width="106px" height="60px">
-              <use
-                href="./images/svg/icons.svg#icon-company__six"
-              ></use>
+              <use href="./images/svg/icons.svg#icon-company__six"></use>
             </svg>
           </li>
         </ul>
@@ -603,5 +589,21 @@
       </div>
     </footer>
     <!-- end footer -->
+
+    <!-- start modal container -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal__container">
+        <button type="button" class="modal__button" data-modal-close>
+          <svg class="button__icon" width="11" height="11">
+            <use class="icon__svg" href="./images/svg/modal-icon.svg#modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- scripts -->
+
+    <!-- modal scripts -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
