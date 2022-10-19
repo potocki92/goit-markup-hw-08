@@ -84,7 +84,9 @@
         <h1 class="title__page">
           Efektywne rozwiązania <br />dla waszego biznesu
         </h1>
-        <button class="title__button" type="button" data-modal-open>Zamów usługe</button>
+        <button class="title__button" type="button" data-modal-open>
+          Zamów usługe
+        </button>
       </div>
       <!-- container with main center content -->
 
@@ -598,6 +600,53 @@
             <use class="icon__svg" href="./images/svg/icons.svg#modal"></use>
           </svg>
         </button>
+        <div class="form__container">
+          <h6 class="modal__text">Zostaw swoje dane w formularzu poniżej</h6>
+          <form class="form" name="information__form" method="post" role="form">
+            <label class="form__label">
+              <h6 class="label__text">Imie</h6>
+              <input class="form__input" type="text" name="name" />
+            </label>
+
+            <label class="form__label">
+              <h6 class="label__text">Telefon</h6>
+              <input class="form__input" type="tel" name="telephone" />
+            </label>
+
+            <label class="form__label">
+              <h6 class="label__text">Email</h6>
+              <input class="form__input" type="email" name="email" />
+            </label>
+
+            <label class="form__label">
+              <h6 class="label__text">Komentarz</h6>
+              <textarea
+                class="form__input input"
+                name="feedback"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+            <div class="checkbox__input">
+              <input
+                id="checkbox"
+                class="form__checkbox"
+                type="checkbox"
+                name="accept__regulamin"
+              />
+              <label class="checkbox__label" for="checkbox">
+                <svg class="checkbox__icon" width="16" height="15">
+                  <use href="./images/svg/a.svg#a"></use>
+                </svg>
+              </label>
+              <h6 class="checkbox__text">
+                Oświadczam iż akceptuję
+                <span class="text__span">Regulamin</span> i
+                <span class="text__span">Politykę Prywatności.</span>
+              </h6>
+            </div>
+          </form>
+          <button type="button" class="title__button">Wyślij</button>
+        </div>
       </div>
     </div>
 

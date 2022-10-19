@@ -378,6 +378,30 @@ body {
   fill: var(--first-color);
   transition: fill var(--transition);
 }
+/*
+  footer social color icons
+*/
+.footer__social .social__item .icon .first__svg {
+  fill: rgba(255, 255, 255, 0.1);
+  transition: fill var(--transition);
+}
+
+.footer__social .social__item .icon .second__svg {
+  fill: var(--first-color);
+  transition: fill var(--transition);
+}
+
+.social__item:hover .icon .first__svg,
+.social__item:focus .icon .first__svg {
+  fill: var(--second-color);
+  transition: fill var(--transition);
+}
+
+.social__item:hover .icon .second__svg,
+.social__item:focus .icon .second__svg {
+  fill: var(--first-color);
+  transition: fill var(--transition);
+}
 /* 
 =====================================
 =====================================
@@ -449,7 +473,8 @@ body {
   line-height: var(--second-line-height);
   letter-spacing: var(--first-letter-spacing);
   /* other */
-  padding: 10px 42px 10px 41px;
+  width: 200px;
+  height: 50px;
 }
 
 /* 
@@ -684,8 +709,6 @@ body {
   modal container with button
 */
 .modal__container {
-  display: flex;
-  flex-wrap: wrap;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -865,4 +888,117 @@ body {
 */
 .image__box:hover .image__text {
   transform: translateY(0);
+}
+
+/*===============================================================*/
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.modal__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  align-items: center;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.label__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.form__input {
+  width: 448px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.input {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  padding: 12px 16px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox__input {
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+}
+.form__checkbox {
+  margin: 0 8px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.checkbox__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.text__span {
+  text-decoration: underline;
+  color: #2196f3;
+}
+.checkbox__label {
+  cursor: pointer;
+  display: flex;
+}
+.checkbox__icon {
+  margin-right: 8px;
 }
