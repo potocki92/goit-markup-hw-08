@@ -913,7 +913,7 @@ body {
   color: #212121;
 }
 
-.form {
+.form__container .form {
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -1001,4 +1001,39 @@ body {
 }
 .checkbox__icon {
   margin-right: 8px;
+}
+
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact__icon {
+  display: flex;
+  gap: 12px;
+}
+
+.newsletter .form__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+}
+
+.newsletter .form__input::placeholder {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
+padding: 15px;
 }
