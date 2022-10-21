@@ -591,7 +591,7 @@
         <!-- start newsletter -->
         <div class="footer__newsletter">
           <span class="social__text">Zapisz się do newslettera</span>
-          <div class="newsletter contact__icon">
+          <div class="contact__icon">
             <form
               class="form"
               name="information__form"
@@ -622,6 +622,7 @@
             <use class="icon__svg" href="./images/svg/icons.svg#modal"></use>
           </svg>
         </button>
+        <!-- start form container -->
         <div class="form__container">
           <h6 class="modal__text">Zostaw swoje dane w formularzu poniżej</h6>
           <form class="form" name="information__form" method="post" role="form">
@@ -643,23 +644,22 @@
             <label class="form__label">
               <h6 class="label__text">Komentarz</h6>
               <textarea
-                class="form__input input"
+                class="form__input textarea__input"
                 name="feedback"
                 placeholder="Wprowadź tekst"
               ></textarea>
             </label>
-            <div class="checkbox__input">
+            <div class="checkbox__container">
               <input
                 id="checkbox"
-                class="form__checkbox"
+                class="input__checkbox"
                 type="checkbox"
-                name="accept__regulamin"
+                name="accept__regulations"
               />
-              <label class="checkbox__label" for="checkbox">
-                <svg class="checkbox__icon" width="16" height="15">
-                  <use href="./images/svg/icons.svg#checkbox"></use>
-                </svg>
-              </label>
+
+              <svg class="checkbox__icon" width="16" height="15">
+                <use href="./images/svg/icons.svg#checkbox"></use>
+              </svg>
               <h6 class="checkbox__text">
                 Oświadczam iż akceptuję
                 <span class="text__span">Regulamin</span> i
@@ -669,6 +669,7 @@
           </form>
           <button type="submit" class="title__button">Wyślij</button>
         </div>
+        <!-- end form container -->
       </div>
     </div>
 

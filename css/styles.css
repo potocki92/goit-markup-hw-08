@@ -199,7 +199,7 @@ body {
   display: flex;
   position: absolute;
   bottom: -175%;
-  content: " ";
+  content: "";
   background: #2196f3;
   border-radius: 2px;
   height: 4px;
@@ -363,7 +363,6 @@ body {
 
 .social__item .icon .second__svg {
   fill: #afb1b8;
-
   transition: fill var(--transition);
 }
 
@@ -402,6 +401,58 @@ body {
   fill: var(--first-color);
   transition: fill var(--transition);
 }
+/* 
+
+*************************************
+
+      CONTAINER WITH NEWSLETTER
+           (FROM FOOTER)
+
+*************************************
+
+*/
+/*
+  newsletter container
+*/
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+/*
+  use new gap to contact__icon (from footer__newsletter)
+*/
+.footer__newsletter .contact__icon {
+  gap: 12px;
+}
+/*
+  form__input from newsletter
+*/
+.newsletter .form__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  padding: 15px;
+  color: var(--first-color);
+}
+/*
+  placeholder from form__input from newsletter
+*/
+.newsletter .form__input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+
 /* 
 =====================================
 =====================================
@@ -747,6 +798,195 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+/*
+
+*************************************
+
+        CONTAINER WITH FORM
+          (FROM BACKDROP)
+
+*************************************
+
+*/
+/*
+  main container with form
+*/
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+/*
+  text from form__container
+*/
+.modal__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/*
+  sizeing form and positioning all elements 
+*/
+.form__container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  align-items: center;
+}
+/*
+  labels from form__container
+  its into form class
+*/
+.form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+/*
+  text into form__label
+*/
+.label__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+/*
+  size inputs from form
+*/
+.form__input {
+  width: 448px;
+  height: 40px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+/*
+  padding start to write text from user into input
+*/
+.form__input[type] {
+  padding-left: 42px;
+}
+/*
+  svg icon into text input
+*/
+.form__input[type="text"] {
+  background: url("../images/svg/text.svg") left 15px center no-repeat;
+}
+/*
+  svg icon into telephone input
+*/
+.form__input[type="tel"] {
+  background: url("../images/svg/text.svg") left 15px center no-repeat;
+}
+/*
+  svg icon into email input
+*/
+.form__input[type="email"] {
+  background: url("../images/svg/email.svg") left 15px center no-repeat;
+}
+/*
+  color svg icon from form__input (into css) when user hovered or focused input
+*/
+.form__input[type="text"]:hover,
+.form__input[type="text"]:focus,
+.form__input[type="tel"]:hover,
+.form__input[type="tel"]:focus,
+.form__input[type="email"]:hover,
+.form__input[type="email"]:focus {
+  filter: invert(42%) sepia(96%) saturate(584%) hue-rotate(169deg)
+    brightness(100%) contrast(97%);
+}
+/*
+  change color when user hovered or focused input
+*/
+.form__input:focus,
+.form__input:hover {
+  border: 1px solid var(--second-color);
+}
+/*
+  textarea__input size and border
+*/
+.textarea__input {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px;
+}
+/*
+  textarea__input placeholder 
+*/
+.textarea__input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+/*
+  checkbox container with regulations 
+*/
+.checkbox__container {
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+}
+/*
+  checkbox input
+  overflow is hidden becouse we use svg icon from icons.svg 
+*/
+.input__checkbox {
+  margin: 0 8px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*
+  use margin and cursor to icon to svg checkbox
+*/
+.checkbox__icon {
+  cursor: pointer;
+  margin-right: 8px;
+}
+/*
+  heading from checkbox__container
+*/
+.checkbox__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*
+  to emphasize "regulations" and "Privacy Policy"
+*/
+.text__span {
+  text-decoration: underline;
+  color: #2196f3;
+}
+
 /* 
 =====================================
 =====================================
@@ -882,158 +1122,9 @@ body {
   transform: translateY(100%);
   transition: transform var(--transition);
 }
-
 /*
   animation and styling image__text when user hover image__box
 */
 .image__box:hover .image__text {
   transform: translateY(0);
-}
-
-/*===============================================================*/
-
-.form__container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 40px;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.modal__text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.form__container .form {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  width: 100%;
-  align-items: center;
-}
-
-.form__label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.label__text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  /* identical to box height */
-
-  letter-spacing: 0.01em;
-
-  color: #757575;
-}
-
-.form__input {
-  width: 448px;
-  height: 40px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.input {
-  width: 448px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.input::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-
-  padding: 12px 16px;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.checkbox__input {
-  display: flex;
-  cursor: pointer;
-  text-align: center;
-  align-items: center;
-}
-.form__checkbox {
-  margin: 0 8px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.checkbox__text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-
-.text__span {
-  text-decoration: underline;
-  color: #2196f3;
-}
-.checkbox__label {
-  cursor: pointer;
-  display: flex;
-}
-.checkbox__icon {
-  margin-right: 8px;
-}
-
-.footer__newsletter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-
-.contact__icon {
-  display: flex;
-  gap: 12px;
-}
-
-.newsletter .form__input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  width: 358px;
-  height: 50px;
-  background: #2f303a;
-  padding: 15px;
-  color: var(--first-color);
-}
-
-.newsletter .form__input::placeholder {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
 }
