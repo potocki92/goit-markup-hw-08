@@ -891,7 +891,7 @@ body {
   svg icon into telephone input
 */
 .form__input[type="tel"] {
-  background: url("../images/svg/text.svg") left 15px center no-repeat;
+  background: url("../images/svg/phone.svg") left 15px center no-repeat;
 }
 /*
   svg icon into email input
