@@ -351,45 +351,54 @@ body {
   justify-content: center;
   padding: 0 0 30px 0;
 }
-
+/*
+  ul with social icons
+*/
 .social__list {
   gap: 10px;
 }
-
+/*
+  first color from icons when user dosen't hovered or focused
+*/
 .social__item .icon .first__svg {
   fill: var(--first-color);
   transition: fill var(--transition);
 }
-
+/*
+  second color from icons when user dosen't hovered or focused
+*/
 .social__item .icon .second__svg {
   fill: #afb1b8;
   transition: fill var(--transition);
 }
-
-.social__item:hover .icon .first__svg,
-.social__item:focus .icon .first__svg {
-  fill: var(--second-color);
-  transition: fill var(--transition);
-}
-
-.social__item:hover .icon .second__svg,
-.social__item:focus .icon .second__svg {
-  fill: var(--first-color);
-  transition: fill var(--transition);
-}
 /*
+****************************
   footer social color icons
+****************************
+*/
+/*
+  first color from icons when user dosen't hovered or focused
 */
 .footer__social .social__item .icon .first__svg {
   fill: rgba(255, 255, 255, 0.1);
   transition: fill var(--transition);
 }
-
+/*
+  second color from icons when user dosen't hovered or focused
+*/
 .footer__social .social__item .icon .second__svg {
   fill: var(--first-color);
   transition: fill var(--transition);
 }
-
+/*
+****************************
+  hover social color icons
+   footer and team icons
+****************************
+*/
+/*
+  change first color when user hovered or focused 
+*/
 .social__item:hover .icon .first__svg,
 .social__item:focus .icon .first__svg {
   fill: var(--second-color);
@@ -880,7 +889,6 @@ body {
 */
 .form__input[type] {
   padding-left: 42px;
-  
 }
 /*
   container with icon and input
@@ -899,12 +907,13 @@ body {
 .icon__svg {
   position: absolute;
   left: 0;
-  margin: 15px;
+  margin-left: 15px;
 }
 /*
-  fill icon form input
+  fill icon form from input
 */
-.input__container:hover .icon__input {
+.form__input:focus + .icon__svg .icon__input,
+.form__input:hover + .icon__svg .icon__input {
   fill: var(--second-color);
 }
 /*
