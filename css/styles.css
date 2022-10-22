@@ -8,20 +8,25 @@
   --fourth-color: #f5f4fa;
   --fifth-color: #212121;
   --footer-color: #2f303a;
+
   --text-size: 16px;
   --second-text-size: 14px;
   --modal-text-size: 12px;
+
+
   --first-line-height: 1.7;
   --second-line-height: 1.9;
   --third-line-height: 1.16;
+
   --first-weight: 500;
   --second-weight: 700;
   --third-weight: 400;
+
   --radius: 4px;
+
   --first-letter-spacing: 0.06em;
   --second-letter-spacing: 0.03em;
-  --modal-letter-spacing: 0.01em
-  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-letter-spacing: 0.01em;
 }
 
 /**********
@@ -126,7 +131,7 @@ body {
   font-weight: var(--first-weight);
   letter-spacing: 0.02em;
   line-height: 1.14;
-  transition: color var(--transition);
+  transition: color var(--a-transition);
 }
 /* change the color of the link text when the user is on the page that corresponds to the link from the navigation */
 .active__link {
@@ -139,7 +144,7 @@ body {
 .contact__link:hover,
 .contact__link:focus {
   color: var(--second-color);
-  transition: color var(--transition);
+  transition: color .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* contact link color text  */
@@ -361,14 +366,14 @@ body {
 */
 .social__item .icon .first__svg {
   fill: var(--first-color);
-  transition: fill var(--transition);
+  transition: fill  .250s cubic-bezier(0.4, 0, 0.2, 1);;
 }
 /*
   second color from icons when user dosen't hovered or focused
 */
 .social__item .icon .second__svg {
   fill: #afb1b8;
-  transition: fill var(--transition);
+  transition: fill  .250s cubic-bezier(0.4, 0, 0.2, 1);;
 }
 /*
 ****************************
@@ -380,14 +385,14 @@ body {
 */
 .footer__social .social__item .icon .first__svg {
   fill: rgba(255, 255, 255, 0.1);
-  transition: fill var(--transition);
+  transition: fill  .250s cubic-bezier(0.4, 0, 0.2, 1);;
 }
 /*
   second color from icons when user dosen't hovered or focused
 */
 .footer__social .social__item .icon .second__svg {
   fill: var(--first-color);
-  transition: fill var(--transition);
+  transition: fill  .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*
 ****************************
@@ -401,13 +406,13 @@ body {
 .social__item:hover .icon .first__svg,
 .social__item:focus .icon .first__svg {
   fill: var(--second-color);
-  transition: fill var(--transition);
+  transition: fill  .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__item:hover .icon .second__svg,
 .social__item:focus .icon .second__svg {
   fill: var(--first-color);
-  transition: fill var(--transition);
+  transition: fill  .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 
 
@@ -530,7 +535,7 @@ body {
   background: var(--second-color);
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: box-shadow var(--transition);
+  transition: box-shadow  .250s cubic-bezier(0.4, 0, 0.2, 1);;
   border-radius: var(--radius);
   /* text into bottom */
   color: var(--first-color);
@@ -742,7 +747,7 @@ body {
   border: 1px solid #afb1b8;
   border-radius: var(--radius);
   color: #afb1b8;
-  transition: color var(--transition), border var(--transition);
+  transition: color  .250s cubic-bezier(0.4, 0, 0.2, 1), border  .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*
   change bored color when user hovering or focusing customer__box
@@ -751,7 +756,7 @@ body {
 .customer__box:focus {
   border: 1px solid var(--second-color);
   color: var(--second-color);
-  transition: color var(--transition), border var(--transition);
+  transition: color .250s cubic-bezier(0.4, 0, 0.2, 1), border .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 
 
@@ -884,7 +889,7 @@ body {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: var(--radius);
-  transition: border var(--transition);
+  transition: border .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*
   change color when user hovered or focused input
@@ -892,7 +897,7 @@ body {
 .form__input:focus,
 .form__input:hover {
   border: 1px solid var(--second-color);
-  transition: border var(--transition);
+  transition: border .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*
   padding start to write text from user into input
@@ -923,7 +928,7 @@ body {
   animation color 
 */
 .icon__svg .icon__input {
-  transition: fill var(--transition);
+  transition: fill .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*
   fill icon form from input
@@ -931,7 +936,7 @@ body {
 .form__input:focus + .icon__svg .icon__input,
 .form__input:hover + .icon__svg .icon__input {
   fill: var(--second-color);
-  transition: fill var(--transition);
+  transition: fill .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*
   textarea__input size and border
@@ -1043,8 +1048,8 @@ use margin and cursor to icon to svg checkbox
 .filters__button {
   /* button color and border */
   background: var(--fourth-color);
-  transition: background-color var(--transition), box-shadow var(--transition),
-    color var(--transition);
+  transition: background-color .250s cubic-bezier(0.4, 0, 0.2, 1), box-shadow .250s cubic-bezier(0.4, 0, 0.2, 1),
+    color .250s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: var(--radius);
   border-style: none;
   /* font style */
@@ -1096,13 +1101,13 @@ use margin and cursor to icon to svg checkbox
   */
 }
 .projects__item {
-  transition: box-shadow var(--transition);
+  transition: box-shadow .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__item:hover,
 .projects__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow var(--transition);
+  transition: box-shadow .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 
   projects heading 
@@ -1132,9 +1137,9 @@ use margin and cursor to icon to svg checkbox
   flex-direction: column;
   gap: 4px;
   padding: 20px 0 20px 24px;
-  border-bottom: 1px solid #EEEEEE;;
-  border-left: 1px solid #EEEEEE;;
-  border-right: 1px solid #EEEEEE;;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
 /*
   image__box with relative position 
@@ -1161,7 +1166,7 @@ use margin and cursor to icon to svg checkbox
   padding: 49px 24px;
 
   transform: translateY(100%);
-  transition: transform var(--transition);
+  transition: transform .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*
   animation and styling image__text when user hover image__box
