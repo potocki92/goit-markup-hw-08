@@ -883,7 +883,7 @@ body {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border var(--transition)
+  transition: border var(--transition);
 }
 /*
   change color when user hovered or focused input
@@ -917,7 +917,6 @@ body {
   position: absolute;
   left: 0;
   margin-left: 15px;
-  
 }
 /*
   animation color 
@@ -970,18 +969,46 @@ body {
   overflow is hidden becouse we use svg icon from icons.svg 
 */
 .input__checkbox {
-  margin: 0 8px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+  display: block;
+  visibility: hidden;
 }
 /*
-  use margin and cursor to icon to svg checkbox
+use margin and cursor to icon to svg checkbox
 */
-.checkbox__icon {
-  cursor: pointer;
+.checkbox__svg {
   margin-right: 8px;
+  cursor: pointer;
+}
+/*******************************
+    VISIBILITY CHECKBOX ICONS
+*******************************/
+/*
+  visible checkbox icon from class checkbox__before 
+  when user dosen't checked checkbox
+*/
+.checkbox__before {
+  visibility: visible;
+}
+/*
+  hidden checkbox icon from class checkbox__before 
+  when user checked checkbox
+*/
+.input__checkbox:checked + .before__checked .checkbox__svg .checkbox__before{
+  visibility: hidden;
+}
+/*
+  hidden checkbox icon from class checkbox__after 
+  when user dosen't checked checkbox
+*/
+.checkbox__after {
+  visibility: hidden;
+}
+/*
+  visible checkbox icon from class checkbox__after 
+  when user checked checkbox
+*/
+.input__checkbox:checked + .before__checked  .checkbox__svg .checkbox__after {
+  visibility: visible;
 }
 /*
   heading from checkbox__container
@@ -1002,7 +1029,6 @@ body {
   text-decoration: underline;
   color: #2196f3;
 }
-
 /* 
 =====================================
 =====================================
