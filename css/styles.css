@@ -42,7 +42,8 @@ h6,
 ul,
 li,
 a,
-p {
+p,
+span {
   padding: 0;
   margin: 0;
   user-select: none;
