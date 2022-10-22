@@ -426,8 +426,8 @@ body {
 .footer__newsletter {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
 }
 /*
   use new gap to contact__icon (from footer__newsletter)
@@ -438,7 +438,7 @@ body {
 /*
   form__input from newsletter
 */
-.newsletter .form__input {
+.form__newsletter .form__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -451,7 +451,7 @@ body {
 /*
   placeholder from form__input from newsletter
 */
-.newsletter .form__input::placeholder {
+.form__newsletter .form__input::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
