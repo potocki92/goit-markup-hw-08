@@ -883,6 +883,15 @@ body {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border var(--transition)
+}
+/*
+  change color when user hovered or focused input
+*/
+.form__input:focus,
+.form__input:hover {
+  border: 1px solid var(--second-color);
+  transition: border var(--transition);
 }
 /*
   padding start to write text from user into input
@@ -908,6 +917,13 @@ body {
   position: absolute;
   left: 0;
   margin-left: 15px;
+  
+}
+/*
+  animation color 
+*/
+.icon__svg .icon__input {
+  transition: fill var(--transition);
 }
 /*
   fill icon form from input
@@ -915,13 +931,7 @@ body {
 .form__input:focus + .icon__svg .icon__input,
 .form__input:hover + .icon__svg .icon__input {
   fill: var(--second-color);
-}
-/*
-  change color when user hovered or focused input
-*/
-.form__input:focus,
-.form__input:hover {
-  border: 1px solid var(--second-color);
+  transition: fill var(--transition);
 }
 /*
   textarea__input size and border
