@@ -871,7 +871,7 @@ body {
 .form__label {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  justify-content: center;
 }
 /*
   text into form__label
@@ -916,8 +916,8 @@ body {
 .input__container {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
 }
 /*
   icon__svg with icon__input

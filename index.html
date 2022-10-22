@@ -621,7 +621,7 @@
     <!-- end footer -->
 
     <!-- start modal container -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal__container">
         <button type="button" class="modal__button" data-modal-close>
           <svg class="button__icon" width="11" height="11">
@@ -634,9 +634,9 @@
           <!-- start form -->
           <form class="form" name="information__form" method="post" role="form">
             <!-- start label -->
-            <label class="form__label">
+            <div class="input__container">
               <h6 class="label__text">Imie</h6>
-              <div class="input__container">
+              <label class="form__label">
                 <input class="form__input name__icon" type="text" name="name" />
                 <svg class="icon__svg" width="18" height="18">
                   <use
@@ -644,13 +644,13 @@
                     href="./images/svg/icons.svg#text__icon"
                   ></use>
                 </svg>
-              </div>
-            </label>
+              </label>
+            </div>
             <!-- end label -->
             <!-- start label -->
-            <label class="form__label">
+            <div class="input__container">
               <h6 class="label__text">Telefon</h6>
-              <div class="input__container">
+              <label class="form__label">
                 <input
                   class="form__input telephone__icon"
                   type="tel"
@@ -662,13 +662,13 @@
                     href="./images/svg/icons.svg#phone__icon"
                   ></use>
                 </svg>
-              </div>
-            </label>
+              </label>
+            </div>
             <!-- end label -->
             <!-- start label -->
-            <label class="form__label">
+            <div class="input__container">
               <h6 class="label__text">Email</h6>
-              <div class="input__container">
+              <label class="form__label">
                 <input
                   class="form__input email__icon"
                   type="email"
@@ -680,8 +680,8 @@
                     href="./images/svg/icons.svg#email__icon"
                   ></use>
                 </svg>
-              </div>
-            </label>
+              </label>
+            </div>
             <!-- end label -->
             <!-- start label -->
             <label class="form__label">
