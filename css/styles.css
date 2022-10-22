@@ -8,26 +8,19 @@
   --fourth-color: #f5f4fa;
   --fifth-color: #212121;
   --footer-color: #2f303a;
-
   --text-size: 16px;
   --second-text-size: 14px;
   --modal-text-size: 12px;
-
-
   --first-line-height: 1.7;
   --second-line-height: 1.9;
   --third-line-height: 1.16;
-
   --first-weight: 500;
   --second-weight: 700;
   --third-weight: 400;
-
   --radius: 4px;
-
   --first-letter-spacing: 0.06em;
   --second-letter-spacing: 0.03em;
   --modal-letter-spacing: 0.01em
-
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
