@@ -28,7 +28,6 @@
   --second-letter-spacing: 0.03em;
   --modal-letter-spacing: 0.01em
 
-  --second-border: 1px solid #EEEEEE;
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1140,9 +1139,9 @@ use margin and cursor to icon to svg checkbox
   flex-direction: column;
   gap: 4px;
   padding: 20px 0 20px 24px;
-  border-bottom: var(--second-border);
-  border-left: var(--second-border);
-  border-right: var(--second-border);
+  border-bottom: 1px solid #EEEEEE;;
+  border-left: 1px solid #EEEEEE;;
+  border-right: 1px solid #EEEEEE;;
 }
 /*
   image__box with relative position 
