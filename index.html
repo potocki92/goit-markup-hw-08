@@ -625,22 +625,56 @@
         <!-- start form container -->
         <div class="form__container">
           <h6 class="modal__text">Zostaw swoje dane w formularzu poniżej</h6>
+          <!-- start form -->
           <form class="form" name="information__form" method="post" role="form">
+            <!-- start label -->
             <label class="form__label">
               <h6 class="label__text">Imie</h6>
-              <input class="form__input" type="text" name="name" />
+              <div class="input__container">
+                <input class="form__input name__icon" type="text" name="name" />
+                <svg class="icon__svg" width="18" height="18">
+                  <use class="icon__input" href="./images/svg/text.svg#text__icon"></use>
+                </svg>
+              </div>
             </label>
-
+            <!-- end label -->
+            <!-- start label -->
             <label class="form__label">
               <h6 class="label__text">Telefon</h6>
-              <input class="form__input" type="tel" name="telephone" />
+              <div class="input__container">
+                <input
+                  class="form__input telephone__icon"
+                  type="tel"
+                  name="telephone"
+                />
+                <svg class="icon__svg" width="18" height="18">
+                  <use
+                    class="icon__input"
+                    href="./images/svg/phone.svg#phone__icon"
+                  ></use>
+                </svg>
+              </div>
             </label>
-
+            <!-- end label -->
+            <!-- start label -->
             <label class="form__label">
               <h6 class="label__text">Email</h6>
-              <input class="form__input" type="email" name="email" />
+              <div class="input__container">
+                <input
+                  class="form__input email__icon"
+                  type="email"
+                  name="email"
+                />
+                <svg class="icon__svg" width="18" height="18">
+                  <use
+                    class="icon__input"
+                    href="./images/svg/email.svg#email__icon"
+                  ></use>
+                </svg>
+              </div>
             </label>
-
+            <!-- end label -->
+            <!-- start label -->
             <label class="form__label">
               <h6 class="label__text">Komentarz</h6>
               <textarea
@@ -649,6 +683,8 @@
                 placeholder="Wprowadź tekst"
               ></textarea>
             </label>
+            <!-- end label -->
+            <!-- start checkbox -->
             <div class="checkbox__container">
               <input
                 id="checkbox"
@@ -656,7 +692,6 @@
                 type="checkbox"
                 name="accept__regulations"
               />
-
               <svg class="checkbox__icon" width="16" height="15">
                 <use href="./images/svg/icons.svg#checkbox"></use>
               </svg>
@@ -666,7 +701,9 @@
                 <span class="text__span">Politykę Prywatności.</span>
               </h6>
             </div>
+            <!-- end checkbox -->
           </form>
+          <!-- end form -->
           <button type="submit" class="title__button">Wyślij</button>
         </div>
         <!-- end form container -->
@@ -674,7 +711,6 @@
     </div>
 
     <!-- scripts -->
-
     <!-- modal scripts -->
     <script src="./js/modal.js"></script>
   </body>
