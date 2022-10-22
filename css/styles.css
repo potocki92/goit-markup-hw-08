@@ -28,7 +28,6 @@
   --second-letter-spacing: 0.03em;
   --modal-letter-spacing: 0.01em
 
-  --first-border: 1px solid rgba(33, 33, 33, 0.2);
   --second-border: 1px solid #EEEEEE;
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -891,7 +890,7 @@ body {
   width: 448px;
   height: 40px;
   outline: none;
-  border: var(--second-border);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: var(--radius);
   transition: border var(--transition);
 }
@@ -948,7 +947,7 @@ body {
 .textarea__input {
   width: 448px;
   height: 120px;
-  border: var(--second-border);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: var(--radius);
   padding: 12px;
   resize: none;
