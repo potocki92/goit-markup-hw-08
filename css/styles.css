@@ -131,7 +131,7 @@ body {
   font-weight: var(--first-weight);
   letter-spacing: 0.02em;
   line-height: 1.14;
-  transition: color var(--a-transition);
+  transition: color .250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* change the color of the link text when the user is on the page that corresponds to the link from the navigation */
 .active__link {
