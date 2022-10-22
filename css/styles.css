@@ -39,6 +39,7 @@ a,
 p {
   padding: 0;
   margin: 0;
+  user-select: none;
 }
 body {
   color: var(--fifth-color);
@@ -433,6 +434,7 @@ body {
   use new gap to contact__icon (from footer__newsletter)
 */
 .footer__newsletter .contact__icon {
+  flex-wrap: wrap;
   gap: 12px;
 }
 /*
@@ -461,7 +463,15 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
 }
-
+/*
+  icon from title__button
+*/
+.contact__icon .title__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
 /* 
 =====================================
 =====================================
@@ -535,6 +545,7 @@ body {
   /* other */
   width: 200px;
   height: 50px;
+  user-select: none;
 }
 
 /* 
@@ -960,7 +971,6 @@ body {
 */
 .checkbox__container {
   display: flex;
-  cursor: pointer;
   text-align: center;
   align-items: center;
 }
@@ -1021,6 +1031,7 @@ use margin and cursor to icon to svg checkbox
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  user-select: none;
 }
 /*
   to emphasize "regulations" and "Privacy Policy"
@@ -1028,6 +1039,7 @@ use margin and cursor to icon to svg checkbox
 .text__span {
   text-decoration: underline;
   color: #2196f3;
+  cursor: pointer;
 }
 /* 
 =====================================
@@ -1170,9 +1182,3 @@ use margin and cursor to icon to svg checkbox
 .image__box:hover .image__text {
   transform: translateY(0);
 }
-
-/*****
-
-TODO: POPRAWIC NEWSLETTER ORAZ PORTFOLIO NEWSLETTER
-
-***************************************************/
