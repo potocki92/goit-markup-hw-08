@@ -21,59 +21,63 @@
 
   <body>
     <!-- start header -->
-    <header class="header__container">
+    <header class="header">
       <div class="container wrapper">
-        <!-- start logo -->
-        <div class="links__container">
-          <div class="logo__container">
+        <div class="header__links">
+          <!-- start logo -->
+          <div class="logo list">
             <a href="./index.html" class="logo__link link"
               ><span class="logo__web">Web</span>Studio</a
             >
           </div>
           <!-- end logo -->
           <!-- start navigation -->
-          <nav class="nav__container">
-            <ul class="nav__list list">
-              <li class="nav__item item">
-                <a class="nav__link link" href="./index.html" id="agency"
+          <nav class="navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__item item">
+                <a class="navigation__link link" href="./index.html" id="agency"
                   >Agencja</a
                 >
               </li>
-              <li class="nav__item item">
+              <li class="navigation__item item">
                 <a
-                  class="nav__link link active__link"
+                  class="navigation__link link active__link"
                   href="./portfolio.html"
                   id="portfolio"
                   >Portfolio</a
                 >
               </li>
-              <li class="nav__item item">
-                <a class="nav__link link" href="#" id="contact">Kontakt</a>
+              <li class="navigation__item item">
+                <a class="navigation__link link" href="#" id="contact"
+                  >Kontakt</a
+                >
               </li>
             </ul>
           </nav>
         </div>
         <!-- end navigation -->
         <!-- start contact container: telephone and email  -->
-        <div class="contact__container">
+        <div class="contact">
           <ul class="contact__list list">
             <li class="contact__item item">
               <a class="contact__link link" href="mailto:info@devstudio.com"
-                ><svg class="icon" width="16px" height="12px">
+                ><svg class="contact__svg" width="16px" height="12px">
                   <use href="./images/svg/icons.svg#icon-envelope"></use></svg
                 >info@devstudio.com</a
               >
             </li>
             <li class="contact__item item">
               <a class="contact__link link" href="tel:+48111111111"
-                ><svg class="icon" width="10px" height="16px">
+                ><svg class="contact__svg" width="10px" height="16px">
                   <use href="./images/svg/icons.svg#icon-phone"></use></svg
                 >+48 111 111 111</a
               >
             </li>
           </ul>
         </div>
+        <!-- end contact container -->
       </div>
+      <!-- end container with position -->
     </header>
     <!-- end header -->
     <!-- start main -->
@@ -81,28 +85,25 @@
       <!-- start portfolio container -->
       <div class="container section">
         <!-- start filters container: container with buttons -->
-        <div class="filters__container">
-          <ul class="filters__list list">
-            <li class="filters__item item">
-              <button class="filters__button" type="button">Wszystkie</button>
-            </li>
-            <li class="filters__item item">
-              <button class="filters__button" type="button">Strony</button>
-            </li>
-            <li class="filters__item item">
-              <button class="filters__button" type="button">Aplikacje</button>
-            </li>
-            <li class="filters__item item">
-              <button class="filters__button" type="button">Dizajn</button>
-            </li>
-            <li class="filters__item item">
-              <button class="filters__button" type="button">Marketing</button>
-            </li>
-          </ul>
-        </div>
+        <ul class="filters__list list">
+          <li class="filters__item item">
+            <button class="filters__button" type="button">Wszystkie</button>
+          </li>
+          <li class="filters__item item">
+            <button class="filters__button" type="button">Strony</button>
+          </li>
+          <li class="filters__item item">
+            <button class="filters__button" type="button">Aplikacje</button>
+          </li>
+          <li class="filters__item item">
+            <button class="filters__button" type="button">Dizajn</button>
+          </li>
+          <li class="filters__item item">
+            <button class="filters__button" type="button">Marketing</button>
+          </li>
+        </ul>
         <!-- end filters container -->
         <!-- start projects container: image, header and paragraph -->
-
         <ul class="projects__list list">
           <!-- Technocrack -->
           <li class="projects__item item">
@@ -309,12 +310,12 @@
     </main>
     <!-- end main -->
     <!-- start footer -->
-    <footer class="footer__container">
+    <footer class="footer">
       <div class="footer__box container">
         <!-- container with logo + contact -->
         <div class="footer__info">
           <!-- logo -->
-          <div class="logo__container">
+          <div class="logo">
             <a href="./index.html" class="logo__link link"
               ><span class="logo__web">Web</span>Studio</a
             >
@@ -342,11 +343,11 @@
         <!-- end container with logo + contact -->
         <!-- start social container -->
         <div class="footer__social">
-          <span class="social__text">Dołącz do nas</span>
-          <div class="contact__icon">
+          <span class="footer__text">Dołącz do nas</span>
+          <div class="social__icon">
             <ul class="social__list list">
               <li class="social__item item">
-                <svg class="icon" height="44px" width="44px">
+                <svg class="social__svg" height="44px" width="44px">
                   <use
                     class="first__svg"
                     href="./images/svg/icons.svg#instagram-first"
@@ -358,7 +359,7 @@
                 </svg>
               </li>
               <li class="social__item item">
-                <svg class="icon" height="44px" width="44px">
+                <svg class="social__svg" height="44px" width="44px">
                   <use
                     class="first__svg"
                     href="./images/svg/icons.svg#tweeter-first"
@@ -370,7 +371,7 @@
                 </svg>
               </li>
               <li class="social__item item">
-                <svg class="icon" height="44px" width="44px">
+                <svg class="social__svg" height="44px" width="44px">
                   <use
                     class="first__svg"
                     href="./images/svg/icons.svg#facebook-first"
@@ -382,7 +383,7 @@
                 </svg>
               </li>
               <li class="social__item item">
-                <svg class="icon" height="44px" width="44px">
+                <svg class="social__svg" height="44px" width="44px">
                   <use
                     class="first__svg"
                     href="./images/svg/icons.svg#linkedin-first"
@@ -398,11 +399,11 @@
         </div>
         <!-- end social container -->
         <!-- start newsletter -->
-        <div class="footer__newsletter">
-          <span class="social__text">Zapisz się do newslettera</span>
-          <div class="contact__icon">
+        <div class="newsletter">
+          <span class="footer__text">Zapisz się do newslettera</span>
+          <div class="newsletter__icon icons__container">
             <form
-              class="form__newsletter"
+              class="newsletter__form"
               name="information__form"
               method="post"
               role="form"
@@ -416,9 +417,13 @@
                 />
               </label>
             </form>
-            <button type="submit" class="title__button">
-              Zapisz się<svg class="send__svg" width="24" height="24">
-                <use class="send" href="./images/svg/icons.svg#send"></use>
+            <button type="submit" class="newsletter__button button">
+              Zapisz się
+              <svg class="newsletter__svg" width="24" height="24">
+                <use
+                  class="newsletter__icon"
+                  href="./images/svg/icons.svg#send"
+                ></use>
               </svg>
             </button>
           </div>
