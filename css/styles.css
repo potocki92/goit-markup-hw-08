@@ -71,8 +71,8 @@ body {
   remove font-size from ul
 */
 .projects__item,
-.about__box,
-.team__card,
+.about__item,
+.team__item,
 .filters__list {
   font-size: 0;
 }
@@ -105,7 +105,7 @@ body {
 /*
   container with logo and navigation links
 */
-.links__container {
+.header__links {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -124,12 +124,12 @@ body {
   color: var(--second-color);
 }
 /* Header container */
-.header__container {
+.header {
   background: var(--first-color);
   border-bottom: 1px solid #ececec;
 }
 /* navigation link and contact link text */
-.nav__link,
+.navigation__link,
 .contact__link {
   color: var(--fifth-color);
   font-weight: var(--first-weight);
@@ -143,8 +143,8 @@ body {
 }
 /* navigation link nad contact link color 
   when user hover or focused then color has will change */
-.nav__link:hover,
-.nav__link:focus,
+.navigation__link:hover,
+.navigation__link:focus,
 .contact__link:hover,
 .contact__link:focus {
   color: var(--second-color);
@@ -165,7 +165,7 @@ body {
   header padding
   space bettween top and bottom 
 */
-.header__container .container {
+.header .container {
   padding: 20px 0;
 }
 
@@ -181,13 +181,13 @@ body {
 /*
   overwritting gap from the list class
 */
-.header__container .container .contact__container .contact__list {
+.header .container .contact .contact__list {
   gap: 25px;
 }
 /* 
   container with logo, navigation and contacts
 */
-.header__container .container {
+.header .container {
   display: flex;
   /* center all links */
   align-items: center;
@@ -261,13 +261,13 @@ body {
 /* 
   footer container 
 */
-.footer__container {
+.footer {
   background: var(--footer-color);
 }
 /*
   padding between logo and footer contact links
 */
-.footer__container .logo__container {
+.footer .logo {
   padding-bottom: 20px;
 }
 /* 
@@ -275,14 +275,14 @@ body {
   white color of the logo 
   is only in footer of the container
 */
-.footer__container .logo__link {
+.footer .logo__link {
   color: var(--first-color);
 }
 /*
   position contact list in footer container
   and overwritting gap from the list class
 */
-.footer__container .contact__list {
+.footer .contact__list {
   flex-flow: column;
   gap: 9px;
 }
@@ -290,7 +290,7 @@ body {
   footer contact text 
   white color with alpha is for contact__links in footer container
 */
-.footer__container .contact__link {
+.footer .contact__link {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: var(--second-letter-spacing);
   font-weight: var(--third-weight);
@@ -301,7 +301,7 @@ body {
   white color of the contact name 
   is only for first contact__item in footer container
 */
-.footer__container .contact__item {
+.footer .contact__item {
   color: var(--first-color);
   letter-spacing: var(--second-letter-spacing);
   font-weight: var(--third-weight);
@@ -320,7 +320,7 @@ body {
 /*
   text into footer__social
 */
-.social__text {
+.footer__text {
   font-weight: var(--second-weight);
   line-height: 1.142;
   letter-spacing: var(--second-letter-spacing);
@@ -330,7 +330,7 @@ body {
 /*
   social icons into footer container 
 */
-.footer__social .contact__icon {
+.footer__social .social__icon {
   display: flex;
   padding: 0;
 }
@@ -353,7 +353,7 @@ body {
   container with icons into team and footer 
   (instagram, tweeter, facebook and linkedin)
 */
-.contact__icon {
+.icons__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,14 +368,14 @@ body {
 /*
   first color from icons when user dosen't hovered or focused
 */
-.social__item .icon .first__svg {
+.social__item .social__svg .first__svg {
   fill: var(--first-color);
   transition: fill var(--time) var(--anim-cubic);
 }
 /*
   second color from icons when user dosen't hovered or focused
 */
-.social__item .icon .second__svg {
+.social__item .social__svg .second__svg {
   fill: #afb1b8;
   transition: fill var(--time) var(--anim-cubic);
 }
@@ -387,14 +387,14 @@ body {
 /*
   first color from icons when user dosen't hovered or focused
 */
-.footer__social .social__item .icon .first__svg {
+.footer__social .social__item .social__svg .first__svg {
   fill: rgba(255, 255, 255, 0.1);
   transition: fill var(--time) var(--anim-cubic);
 }
 /*
   second color from icons when user dosen't hovered or focused
 */
-.footer__social .social__item .icon .second__svg {
+.footer__social .social__item .social__svg .second__svg {
   fill: var(--first-color);
   transition: fill var(--time) var(--anim-cubic);
 }
@@ -407,14 +407,14 @@ body {
 /*
   change first color when user hovered or focused 
 */
-.social__item:hover .icon .first__svg,
-.social__item:focus .icon .first__svg {
+.social__item:hover .social__svg .first__svg,
+.social__item:focus .social__svg .first__svg {
   fill: var(--second-color);
   transition: fill var(--time) var(--anim-cubic);
 }
 
-.social__item:hover .icon .second__svg,
-.social__item:focus .icon .second__svg {
+.social__item:hover .social__svg .second__svg,
+.social__item:focus .social__svg .second__svg {
   fill: var(--first-color);
   transition: fill var(--time) var(--anim-cubic);
 }
@@ -431,23 +431,23 @@ body {
 /*
   newsletter container
 */
-.footer__newsletter {
+.newsletter {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
 }
 /*
-  use new gap to contact__icon (from footer__newsletter)
+  use new gap to contact__icon (from newsletter)
 */
-.footer__newsletter .contact__icon {
+.newsletter .newsletter__icon {
   flex-wrap: wrap;
   gap: 12px;
 }
 /*
   form__input from newsletter
 */
-.form__newsletter .form__input {
+.newsletter__form .form__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: var(--radius);
@@ -460,7 +460,7 @@ body {
 /*
   placeholder from form__input from newsletter
 */
-.form__newsletter .form__input::placeholder {
+.newsletter__form .form__input::placeholder {
   font-weight: var(--third-weight);
   font-size: var(--text-size);
   line-height: 1.25;
@@ -469,9 +469,9 @@ body {
   user-select: none;
 }
 /*
-  icon from title__button
+  icon from button
 */
-.contact__icon .title__button {
+.social__icon .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -501,7 +501,7 @@ body {
   container containing 
   main title and button
  */
-.title__container {
+.heading__container {
   /* background of title container */
   background: var(--footer-color); /* if images doesn't work */
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -522,7 +522,7 @@ body {
 /*
   main title 
 */
-.title__page {
+.heading__title {
   color: var(--first-color);
   letter-spacing: var(--first-letter-spacing);
   text-transform: uppercase;
@@ -534,7 +534,7 @@ body {
 /* 
   button 
 */
-.title__button {
+.button {
   /* color and border of button */
   background: var(--second-color);
   border-style: none;
@@ -583,7 +583,7 @@ body {
 /*
   positioning feature container and feature box
 */
-.feature__container {
+.feature {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 94px;
@@ -591,7 +591,7 @@ body {
 /*
   flexing feature box with icon, text and description
 */
-.feature__box {
+.feature__item {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -599,7 +599,7 @@ body {
 /*
   space beetwen heading and description text
 */
-.feature__container .feature__box .feature__text {
+.feature .feature__item .feature__text {
   padding-bottom: 10px;
 }
 /*
@@ -626,8 +626,7 @@ body {
   about and team heading text
   have the same font styles  
 */
-.about__title,
-.team__title {
+.title {
   /* font style */
   font-size: 36px;
   font-weight: var(--second-weight);
@@ -642,7 +641,7 @@ body {
   relative postion contanier with about us
   for about__text and positioning this to bottom into about__box
 */
-.about__box {
+.about__item {
   position: relative;
 }
 /*
@@ -675,14 +674,14 @@ body {
   main team container
   it has all the tags with the team and heading
 */
-.team__container {
+.team {
   background: var(--fourth-color);
 }
 /*
   team card with image, 
   team name and team profession 
 */
-.team__card {
+.team__item {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -738,14 +737,14 @@ body {
 /*
   tags with customers boxes
 */
-.customer__team {
+.customer__list {
   display: flex;
   justify-content: center;
 }
 /*
   item with customer icons
 */
-.customer__box {
+.customer__item {
   display: flex;
   padding: 17.71px 32px 14.25px 32px;
   border: 1px solid #afb1b8;
@@ -755,10 +754,10 @@ body {
     border var(--time) var(--anim-cubic);
 }
 /*
-  change bored color when user hovering or focusing customer__box
+  change bored color when user hovering or focusing customer__item
 */
-.customer__box:hover,
-.customer__box:focus {
+.customer__item:hover,
+.customer__item:focus {
   border: 1px solid var(--second-color);
   color: var(--second-color);
   transition: color var(--time) var(--anim-cubic),
@@ -786,7 +785,7 @@ body {
 /*
   modal container with button
 */
-.modal__container {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -838,7 +837,7 @@ body {
 /*
   main container with form
 */
-.form__container {
+.backdrop__content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -848,9 +847,9 @@ body {
   gap: 30px;
 }
 /*
-  text from form__container
+  text from form
 */
-.modal__text {
+.backdrop__title {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: var(--second-letter-spacing);
@@ -859,7 +858,7 @@ body {
 /*
   sizeing form and positioning all elements 
 */
-.form__container .form {
+.backdrop__content .backdrop__form {
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -867,7 +866,7 @@ body {
   align-items: center;
 }
 /*
-  labels from form__container
+  labels from 
   its into form class
 */
 .form__label {
@@ -878,7 +877,7 @@ body {
 /*
   text into form__label
 */
-.label__text {
+.form__title {
   font-weight: var(--third-weight);
   font-size: var(--modal-text-size);
   line-height: var(--third-line-height);
@@ -915,17 +914,17 @@ body {
   container with icon and input
   positioning relative is for a icon__svg
 */
-.input__container {
+.form__box {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 /*
-  icon__svg with icon__input
+  form__svg with form__svg
   relocated icon to left and use margin to position 
 */
-.icon__svg {
+.form__svg {
   position: absolute;
   left: 0;
   margin-left: 15px;
@@ -933,14 +932,14 @@ body {
 /*
   animation color 
 */
-.icon__svg .icon__input {
+.form__svg .form__icon {
   transition: fill var(--time) var(--anim-cubic);
 }
 /*
   fill icon form from input
 */
-.form__input:focus + .icon__svg .icon__input,
-.form__input:hover + .icon__svg .icon__input {
+.form__input:focus + .form__svg .form__icon,
+.form__input:hover + .form__svg .form__icon {
   fill: var(--second-color);
   transition: fill var(--time) var(--anim-cubic);
 }
@@ -969,7 +968,7 @@ body {
 /*
   checkbox container with regulations 
 */
-.checkbox__container {
+.checkbox {
   display: flex;
   text-align: center;
   align-items: center;
@@ -978,7 +977,7 @@ body {
   checkbox input
   overflow is hidden becouse we use svg icon from icons.svg 
 */
-.input__checkbox {
+.checkbox__input {
   display: block;
   visibility: hidden;
 }
@@ -1003,7 +1002,7 @@ use margin and cursor to icon to svg checkbox
   hidden checkbox icon from class checkbox__before 
   when user checked checkbox
 */
-.input__checkbox:checked + .before__checked .checkbox__svg .checkbox__before {
+.checkbox__input:checked + .label__checked .checkbox__svg .checkbox__before {
   visibility: hidden;
 }
 /*
@@ -1017,13 +1016,13 @@ use margin and cursor to icon to svg checkbox
   visible checkbox icon from class checkbox__after 
   when user checked checkbox
 */
-.input__checkbox:checked + .before__checked .checkbox__svg .checkbox__after {
+.checkbox__input:checked + .label__checked .checkbox__svg .checkbox__after {
   visibility: visible;
 }
 /*
-  heading from checkbox__container
+  regulations from checkbox
 */
-.checkbox__text {
+.checkbox__regulations {
   font-weight: var(--third-weight);
   font-size: inherit;
   line-height: var(--first-line-height);
@@ -1034,7 +1033,7 @@ use margin and cursor to icon to svg checkbox
 /*
   to emphasize "regulations" and "Privacy Policy"
 */
-.text__span {
+.regulations__span {
   text-decoration: underline;
   color: var(--second-color);
   cursor: pointer;
@@ -1098,9 +1097,9 @@ use margin and cursor to icon to svg checkbox
 /*
   now icons from contact__icon and team__cards have clickable 
 */
-.contact__icon .icon,
+.social__icon .social__svg,
 .projects__item,
-.title__button,
+.button,
 .filters__button {
   cursor: pointer;
   /*

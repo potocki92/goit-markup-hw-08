@@ -21,41 +21,47 @@
 
   <body>
     <!-- start header -->
-    <header class="header__container">
-      <!-- start logo -->
+    <header class="header">
+      <!-- start container with position -->
       <div class="container wrapper">
-        <div class="links__container">
-          <div class="logo__container list">
+        <div class="header__links">
+          <!-- start logo -->
+          <div class="logo list">
             <a href="./index.html" class="logo__link link"
               ><span class="logo__web">Web</span>Studio</a
             >
           </div>
           <!-- end logo -->
           <!-- start navigation -->
-          <nav class="nav__container">
-            <ul class="nav__list list">
-              <li class="nav__item item">
+          <nav class="navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__item item">
                 <a
-                  class="nav__link link active__link"
+                  class="navigation__link link active__link"
                   href="./index.html"
                   id="agency"
                   >Agencja</a
                 >
               </li>
-              <li class="nav__item item">
-                <a class="nav__link link" href="./portfolio.html" id="portfolio"
+              <li class="navigation__item item">
+                <a
+                  class="navigation__link link"
+                  href="./portfolio.html"
+                  id="portfolio"
                   >Portfolio</a
                 >
               </li>
-              <li class="nav__item item">
-                <a class="nav__link link" href="#" id="contact">Kontakt</a>
+              <li class="navigation__item item">
+                <a class="navigation__link link" href="#" id="contact"
+                  >Kontakt</a
+                >
               </li>
             </ul>
           </nav>
         </div>
         <!-- end navigation -->
         <!-- start contact container: telephone and email  -->
-        <div class="contact__container">
+        <div class="contact">
           <ul class="contact__list list">
             <li class="contact__item item">
               <a class="contact__link link" href="mailto:info@devstudio.com"
@@ -73,18 +79,19 @@
             </li>
           </ul>
         </div>
+        <!-- end contact container -->
       </div>
-      <!-- end contact container -->
+      <!-- end container with position -->
     </header>
     <!-- end header -->
     <!-- start main -->
     <main>
       <!-- button -->
-      <div class="title__container">
-        <h1 class="title__page">
+      <div class="heading__container">
+        <h1 class="heading__title">
           Efektywne rozwiązania <br />dla waszego biznesu
         </h1>
-        <button class="title__button" type="button" data-modal-open>
+        <button class="heading__button button" type="button" data-modal-open>
           Zamów usługe
         </button>
       </div>
@@ -92,10 +99,10 @@
 
       <!-- start feature container: simple description about the webstudio -->
       <div class="container section">
-        <ul class="feature__container list">
-          <li class="feature__box item">
+        <ul class="feature list">
+          <li class="feature__item item">
             <div class="feature__icon">
-              <svg class="icon" width="70px" height="70px">
+              <svg class="feature__svg" width="70px" height="70px">
                 <use href="./images/svg/icons.svg#icon-antenna"></use>
               </svg>
             </div>
@@ -105,9 +112,9 @@
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="feature__box item">
+          <li class="feature__item item">
             <div class="feature__icon">
-              <svg class="icon" width="70px" height="70px">
+              <svg class="feature__svg" width="70px" height="70px">
                 <use href="./images/svg/icons.svg#icon-clock"></use>
               </svg>
             </div>
@@ -117,9 +124,9 @@
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="feature__box item">
+          <li class="feature__item item">
             <div class="feature__icon">
-              <svg class="icon" width="70px" height="70px">
+              <svg class="feature__svg" width="70px" height="70px">
                 <use href="./images/svg/icons.svg#icon-diagram"></use>
               </svg>
             </div>
@@ -129,9 +136,9 @@
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="feature__box item">
+          <li class="feature__item item">
             <div class="feature__icon">
-              <svg class="icon" width="70px" height="70px">
+              <svg class="feature__svg" width="70px" height="70px">
                 <use href="./images/svg/icons.svg#icon-astronaut"></use>
               </svg>
             </div>
@@ -146,10 +153,10 @@
         <!-- end feature container -->
         <!-- start about container: what the webstudio do -->
 
-        <div class="about__container">
-          <h2 class="about__title">Czym się zajmujemy</h2>
+        <div class="about">
+          <h2 class="about__title title">Czym się zajmujemy</h2>
           <ul class="about__list list">
-            <li class="about__box item">
+            <li class="about__item item">
               <h6 class="about__text">Aplikacje komputerowe</h6>
               <img
                 class="about__image"
@@ -159,7 +166,7 @@
                 height="294"
               />
             </li>
-            <li class="about__box item">
+            <li class="about__item item">
               <h6 class="about__text">Aplikacje mobilne</h6>
               <img
                 class="about__image"
@@ -169,7 +176,7 @@
                 height="294"
               />
             </li>
-            <li class="about__box item">
+            <li class="about__item item">
               <h6 class="about__text">Rozwiązania graficzne</h6>
               <img
                 class="about__image"
@@ -184,11 +191,11 @@
         <!-- end about container -->
       </div>
       <!-- start team container: include images and names -->
-      <div class="team__container">
+      <div class="team">
         <div class="container section">
-          <h2 class="team__title">Nasz zespół</h2>
-          <ul class="team__box list">
-            <li class="team__card item">
+          <h2 class="team__title title">Nasz zespół</h2>
+          <ul class="team__list list">
+            <li class="team__item item">
               <img
                 class="team__image"
                 src="./images/main_page/team/image_product_designer.jpg"
@@ -201,10 +208,10 @@
                   <h6 class="team__name">John Doe</h6>
                   <h6 class="team__profession">Product Designer</h6>
                 </div>
-                <div class="contact__icon">
+                <div class="social__icon icons__container">
                   <ul class="social__list list">
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#instagram-first"
@@ -216,7 +223,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#tweeter-first"
@@ -228,7 +235,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#facebook-first"
@@ -240,7 +247,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#linkedin-first"
@@ -255,7 +262,7 @@
                 </div>
               </div>
             </li>
-            <li class="team__card item">
+            <li class="team__item item">
               <img
                 class="team__image"
                 src="./images/main_page/team/image_frontend_developer.jpg"
@@ -268,10 +275,10 @@
                   <h6 class="team__name">John Doe</h6>
                   <h6 class="team__profession">Frontend Developer</h6>
                 </div>
-                <div class="contact__icon">
+                <div class="social__icon icons__container">
                   <ul class="social__list list">
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#instagram-first"
@@ -283,7 +290,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#tweeter-first"
@@ -295,7 +302,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#facebook-first"
@@ -307,7 +314,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#linkedin-first"
@@ -322,7 +329,7 @@
                 </div>
               </div>
             </li>
-            <li class="team__card item">
+            <li class="team__item item">
               <img
                 class="team__image"
                 src="./images/main_page/team/image_marketing.jpg"
@@ -335,10 +342,10 @@
                   <h6 class="team__name">John Doe</h6>
                   <h6 class="team__profession">Marketing</h6>
                 </div>
-                <div class="contact__icon">
+                <div class="social__icon icons__container">
                   <ul class="social__list list">
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#instagram-first"
@@ -350,7 +357,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#tweeter-first"
@@ -362,7 +369,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#facebook-first"
@@ -374,7 +381,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#linkedin-first"
@@ -389,7 +396,7 @@
                 </div>
               </div>
             </li>
-            <li class="team__card item">
+            <li class="team__item item">
               <img
                 class="team__image"
                 src="./images/main_page/team/image_ui_designer.jpg"
@@ -402,10 +409,10 @@
                   <h6 class="team__name">John Doe</h6>
                   <h6 class="team__profession">UI Designer</h6>
                 </div>
-                <div class="contact__icon">
+                <div class="social__icon icons__container">
                   <ul class="social__list list">
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#instagram-first"
@@ -417,7 +424,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#tweeter-first"
@@ -429,7 +436,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#facebook-first"
@@ -441,7 +448,7 @@
                       </svg>
                     </li>
                     <li class="social__item item">
-                      <svg class="icon" height="44px" width="44px">
+                      <svg class="social__svg" height="44px" width="44px">
                         <use
                           class="first__svg"
                           href="./images/svg/icons.svg#linkedin-first"
@@ -461,36 +468,36 @@
       </div>
       <!-- end team container -->
       <!-- start customer container -->
-      <div class="customer__container section">
-        <h2 class="team__title">Nasi klienci</h2>
-        <ul class="customer__team list">
-          <li class="customer__box item">
-            <svg class="icon" width="106px" height="60px">
+      <div class="customer section">
+        <h2 class="customer__title title">Nasi klienci</h2>
+        <ul class="customer__list list">
+          <li class="customer__item item">
+            <svg class="customer__svg" width="106px" height="60px">
               <use href="./images/svg/icons.svg#icon-company__one"></use>
             </svg>
           </li>
-          <li class="customer__box">
-            <svg class="icon" width="106px" height="60px">
+          <li class="customer__item">
+            <svg class="customer__svg" width="106px" height="60px">
               <use href="./images/svg/icons.svg#icon-company__two"></use>
             </svg>
           </li>
-          <li class="customer__box">
-            <svg class="icon" width="106px" height="60px">
+          <li class="customer__item">
+            <svg class="customer__svg" width="106px" height="60px">
               <use href="./images/svg/icons.svg#icon-company__three"></use>
             </svg>
           </li>
-          <li class="customer__box">
-            <svg class="icon" width="106px" height="60px">
+          <li class="customer__item">
+            <svg class="customer__svg" width="106px" height="60px">
               <use href="./images/svg/icons.svg#icon-company__four"></use>
             </svg>
           </li>
-          <li class="customer__box">
-            <svg class="icon" width="106px" height="60px">
+          <li class="customer__item">
+            <svg class="customer__svg" width="106px" height="60px">
               <use href="./images/svg/icons.svg#icon-company__five"></use>
             </svg>
           </li>
-          <li class="customer__box">
-            <svg class="icon" width="106px" height="60px">
+          <li class="customer__item">
+            <svg class="customer__svg" width="106px" height="60px">
               <use href="./images/svg/icons.svg#icon-company__six"></use>
             </svg>
           </li>
@@ -500,12 +507,12 @@
     </main>
     <!-- end main -->
     <!-- start footer -->
-    <footer class="footer__container">
+    <footer class="footer">
       <div class="footer__box container">
         <!-- container with logo + contact -->
         <div class="footer__info">
           <!-- logo -->
-          <div class="logo__container">
+          <div class="logo">
             <a href="./index.html" class="logo__link link"
               ><span class="logo__web">Web</span>Studio</a
             >
@@ -533,11 +540,11 @@
         <!-- end container with logo + contact -->
         <!-- start social container -->
         <div class="footer__social">
-          <span class="social__text">Dołącz do nas</span>
-          <div class="contact__icon">
+          <span class="footer__text">Dołącz do nas</span>
+          <div class="social__icon">
             <ul class="social__list list">
               <li class="social__item item">
-                <svg class="icon" height="44px" width="44px">
+                <svg class="social__svg" height="44px" width="44px">
                   <use
                     class="first__svg"
                     href="./images/svg/icons.svg#instagram-first"
@@ -549,7 +556,7 @@
                 </svg>
               </li>
               <li class="social__item item">
-                <svg class="icon" height="44px" width="44px">
+                <svg class="social__svg" height="44px" width="44px">
                   <use
                     class="first__svg"
                     href="./images/svg/icons.svg#tweeter-first"
@@ -561,7 +568,7 @@
                 </svg>
               </li>
               <li class="social__item item">
-                <svg class="icon" height="44px" width="44px">
+                <svg class="social__svg" height="44px" width="44px">
                   <use
                     class="first__svg"
                     href="./images/svg/icons.svg#facebook-first"
@@ -573,7 +580,7 @@
                 </svg>
               </li>
               <li class="social__item item">
-                <svg class="icon" height="44px" width="44px">
+                <svg class="social__svg" height="44px" width="44px">
                   <use
                     class="first__svg"
                     href="./images/svg/icons.svg#linkedin-first"
@@ -589,11 +596,11 @@
         </div>
         <!-- end social container -->
         <!-- start newsletter -->
-        <div class="footer__newsletter">
-          <span class="social__text">Zapisz się do newslettera</span>
-          <div class="contact__icon">
+        <div class="newsletter">
+          <span class="footer__text">Zapisz się do newslettera</span>
+          <div class="newsletter__icon icons__container">
             <form
-              class="form__newsletter"
+              class="newsletter__form"
               name="information__form"
               method="post"
               role="form"
@@ -607,10 +614,13 @@
                 />
               </label>
             </form>
-            <button type="submit" class="title__button">
+            <button type="submit" class="newsletter__button button">
               Zapisz się
-              <svg class="send__svg" width="24" height="24">
-                <use class="send" href="./images/svg/icons.svg#send"></use>
+              <svg class="newsletter__svg" width="24" height="24">
+                <use
+                  class="newsletter__icon"
+                  href="./images/svg/icons.svg#send"
+                ></use>
               </svg>
             </button>
           </div>
@@ -622,25 +632,27 @@
 
     <!-- start modal container -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal__container">
-        <button type="button" class="modal__button" data-modal-close>
-          <svg class="button__icon" width="11" height="11">
-            <use class="icon__svg" href="./images/svg/icons.svg#modal"></use>
+      <div class="modal">
+        <button class="modal__button" type="button" data-modal-close>
+          <svg class="modal__svg" width="11" height="11">
+            <use class="modal__icon" href="./images/svg/icons.svg#modal"></use>
           </svg>
         </button>
         <!-- start form container -->
-        <div class="form__container">
-          <h6 class="modal__text">Zostaw swoje dane w formularzu poniżej</h6>
+        <div class="backdrop__content">
+          <h6 class="backdrop__title">
+            Zostaw swoje dane w formularzu poniżej
+          </h6>
           <!-- start form -->
-          <form class="form" name="information__form" method="post">
+          <form class="backdrop__form" name="form__info" method="post">
             <!-- start label -->
-            <div class="input__container">
-              <h6 class="label__text">Imie</h6>
+            <div class="form__box">
+              <h6 class="form__title">Imie</h6>
               <label class="form__label">
-                <input class="form__input name__icon" type="text" name="name" />
-                <svg class="icon__svg" width="18" height="18">
+                <input class="form__input" type="text" name="name" />
+                <svg class="form__svg" width="18" height="18">
                   <use
-                    class="icon__input"
+                    class="form__icon"
                     href="./images/svg/icons.svg#text__icon"
                   ></use>
                 </svg>
@@ -648,17 +660,13 @@
             </div>
             <!-- end label -->
             <!-- start label -->
-            <div class="input__container">
-              <h6 class="label__text">Telefon</h6>
+            <div class="form__box">
+              <h6 class="form__title">Telefon</h6>
               <label class="form__label">
-                <input
-                  class="form__input telephone__icon"
-                  type="tel"
-                  name="telephone"
-                />
-                <svg class="icon__svg" width="18" height="18">
+                <input class="form__input" type="tel" name="telephone" />
+                <svg class="form__svg" width="18" height="18">
                   <use
-                    class="icon__input"
+                    class="form__icon"
                     href="./images/svg/icons.svg#phone__icon"
                   ></use>
                 </svg>
@@ -666,17 +674,13 @@
             </div>
             <!-- end label -->
             <!-- start label -->
-            <div class="input__container">
-              <h6 class="label__text">Email</h6>
+            <div class="form__box">
+              <h6 class="form__title">Email</h6>
               <label class="form__label">
-                <input
-                  class="form__input email__icon"
-                  type="email"
-                  name="email"
-                />
-                <svg class="icon__svg" width="18" height="18">
+                <input class="form__input" type="email" name="email" />
+                <svg class="form__svg" width="18" height="18">
                   <use
-                    class="icon__input"
+                    class="form__icon"
                     href="./images/svg/icons.svg#email__icon"
                   ></use>
                 </svg>
@@ -684,27 +688,26 @@
             </div>
             <!-- end label -->
             <!-- start label -->
-            <div class="input__container">
-
-              <h6 class="label__text">Komentarz</h6>
+            <div class="form__box">
+              <h6 class="form__title">Komentarz</h6>
               <label class="form__label">
                 <textarea
-                class="form__input textarea__input"
-                name="feedback"
-                placeholder="Wprowadź tekst"
+                  class="form__input textarea__input"
+                  name="feedback"
+                  placeholder="Wprowadź tekst"
                 ></textarea>
               </label>
             </div>
             <!-- end label -->
             <!-- start checkbox -->
-            <div class="checkbox__container">
+            <div class="checkbox">
               <input
+                class="checkbox__input"
                 id="checkbox"
-                class="input__checkbox"
                 type="checkbox"
                 name="accept__regulations"
               />
-              <label class="checkbox__label before__checked" for="checkbox">
+              <label class="checkbox__label label__checked" for="checkbox">
                 <svg class="checkbox__svg" width="16" height="15">
                   <use
                     class="checkbox__before"
@@ -716,16 +719,16 @@
                   ></use>
                 </svg>
               </label>
-              <h6 class="checkbox__text">
+              <h6 class="checkbox__regulations">
                 Oświadczam iż akceptuję
-                <span class="text__span">Regulamin</span> i
-                <span class="text__span">Politykę Prywatności.</span>
+                <span class="regulations__span">Regulamin</span> i
+                <span class="regulations__span">Politykę Prywatności.</span>
               </h6>
             </div>
             <!-- end checkbox -->
           </form>
           <!-- end form -->
-          <button type="submit" class="title__button">Wyślij</button>
+          <button class="backdrop__button button" type="submit">Wyślij</button>
         </div>
         <!-- end form container -->
       </div>
