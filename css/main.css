@@ -119,35 +119,6 @@ body {
 }
 
 /* 
-      button 
-    */
-.button {
-  /* color and border of button */
-  background: #2196f3;
-  border-style: none;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 4px;
-  /* text into bottom */
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  /* other */
-  width: 200px;
-  height: 50px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-/* 
   about and team heading text
   have the same font styles  
 */
@@ -714,19 +685,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 12px;
-  /* button */
-}
-.newsletter__icon .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 24px;
 }
 .newsletter .form__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -878,30 +836,6 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  /* close button from modal container */
-}
-.modal__button {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  top: 8px;
-  right: 8px;
-  height: 30px;
-  width: 30px;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
 }
 
 /*
@@ -1139,16 +1073,19 @@ body {
   gap: 10px;
 }
 
+/*
+BUTTONS FROM PORTFOLIO.HTML
+=============================================*/
 .filters {
   /* 
-    buttons with category
+      buttons with category
+      */
+  /*
+    button list
     */
   /*
-  button list
-  */
-  /*
-    buttons display 
-    */
+      buttons display 
+      */
 }
 .filters__button {
   /* button color and border */
@@ -1168,9 +1105,9 @@ body {
   /* other */
   padding: 6px 22px;
   /* 
-  change color and add shadow to buttons
-  when user hover or focus them
-  */
+    change color and add shadow to buttons
+    when user hover or focus them
+    */
 }
 .filters__button:hover, .filters__button:focus {
   color: #ffffff;
@@ -1190,6 +1127,80 @@ body {
 }
 .filters__item {
   margin: 0 4px 50px;
+}
+
+/*
+GENERAL BUTTONS FROM HEADING, FOOTER AND FORM
+=============================================*/
+.button {
+  /* color and border of button */
+  background: #2196f3;
+  border-style: none;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  /* text into bottom */
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  /* other */
+  width: 200px;
+  height: 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*
+BUTTON FROM NEWSLETTER
+=============================================*/
+/* use flex to button for the arrangement of elements (text and svg) */
+.newsletter__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+}
+
+/*
+BUTTON FROM MODAL CONTAINER
+=============================================*/
+/* close button from modal container */
+.modal__button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .projects {

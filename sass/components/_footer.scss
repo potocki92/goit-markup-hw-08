@@ -95,14 +95,8 @@
   &__icon {
     flex-wrap: wrap;
     gap: 12px;
-    /* button */
-    .button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-    }
   }
+  
   /* input form */
   .form__input {
     border: 1px solid rgba(255, 255, 255, 0.3);

@@ -78,27 +78,7 @@ body {
   justify-content: space-around;
 }
 
-/* 
-      button 
-    */
-.button {
-  /* color and border of button */
-  background: $second-color;
-  border-style: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: box-shadow $time $anim-cubic;
-  border-radius: $radius;
-  /* text into bottom */
-  color: $first-color;
-  font-weight: $second-weight;
-  font-size: 16px;
-  line-height: $second-line-height;
-  letter-spacing: $first-letter-spacing;
-  /* other */
-  width: 200px;
-  height: 50px;
-  user-select: none;
-}
+
 /* 
   about and team heading text
   have the same font styles  
