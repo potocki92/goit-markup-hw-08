@@ -1,0 +1,72 @@
+.projects {
+  /*
+  when user hovering or focusing box with project 
+  shadow will be showing around the boxes   
+  */
+  &__item {
+    transition: box-shadow $time $anim-cubic;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      transition: box-shadow $time $anim-cubic;
+    }
+  }
+  /* border and positioning projects text (name and category) */
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 0 20px 24px;
+    border-bottom: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
+  /* projects heading */
+  &__name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: $first-letter-spacing;
+  }
+  /* projects paragraph */
+  &__category {
+    color: $third-color;
+    font-size: $text-size;
+    line-height: $second-line-height;
+    letter-spacing: $second-letter-spacing;
+  }
+  /*
+       projects__box with relative position 
+       container has image with project and text which is animated
+       relative halps with positioning image__text
+      */
+  .image {
+    position: relative;
+    overflow: hidden;
+  
+    /* positioning image__text to image__box */
+    &__text {
+      position: absolute;
+      background: rgba(33, 150, 243, 0.9);
+      font-style: normal;
+      font-weight: $third-weight;
+      font-size: 18px;
+      line-height: 1.55;
+      letter-spacing: $second-letter-spacing;
+      color: $first-color;
+      height: 100%;
+      padding: 49px 24px;
+  
+      transform: translateY(100%);
+      transition: transform $time $anim-cubic;
+    }
+    /*
+    animation and styling image__text when user hover image__box
+  */
+    &:hover .image__text {
+      transform: translateY(0);
+    }
+  }
+}
+

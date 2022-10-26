@@ -1,0 +1,77 @@
+@mixin footer__contact__value {
+  letter-spacing: $second-letter-spacing;
+  font-weight: $third-weight;
+  line-height: $first-line-height;
+}
+
+/* LOGO PLACEHOLDER 
+============================================= */
+%logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: $second-weight;
+  letter-spacing: $second-letter-spacing;
+}
+
+/* LOGO MIXIN
+================================================*/
+@mixin logo__container($logo-color) {
+
+  .logo__link {
+    @extend %logo;
+    color: $logo-color;
+  }
+  /* span color */
+  .logo__web {
+    color: $second-color;
+  }
+}
+
+/* SOCIAL MIXIN
+================================================*/
+/*
+  socials icons:
+  * instagram
+  * tweeter 
+  * facebook
+  * linkedin 
+*/
+@mixin social__icons($first, $second) {
+  gap: 10px;
+
+  .social__item {
+    .first__svg {
+      fill: $first;
+      transition: fill $time $anim-cubic;
+    }
+    .second__svg {
+      fill: $second;
+      transition: fill $time $anim-cubic;
+    }
+
+    &:hover,
+    &:focus {
+      .first__svg {
+        fill: $second-color;
+        transition: fill $time $anim-cubic;
+      }
+      .second__svg {
+        fill: $first-color;
+        transition: fill $time $anim-cubic;
+      }
+    }
+  }
+}
+/* NAVIGATION MIXIN
+================================================*/
+@mixin nav__links($font-color) {
+  color: $font-color;
+  font-weight: $first-weight;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  &:hover,
+  &:focus {
+    color: $second-color;
+    transition: color $time $anim-cubic;
+  }
+}

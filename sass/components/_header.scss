@@ -1,0 +1,99 @@
+/* 
+
+*************************************
+
+          HEADER SECTION
+
+*************************************
+
+*/
+/* space between link__container and contact__container */
+.wrapper {
+  justify-content: space-between;
+}
+/* Header Container */
+.header {
+  background-color: $first-color;
+  border-bottom: 1px solid #ececec;
+  /* container with logo, navigation and contacts */
+
+  .container {
+    display: flex;
+    align-items: center; /* center all links */
+    padding: 20px 0; /* header padding space between top and bottom */
+  }
+  /* container with logo and navigation links */
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: calc(6vw + 2px);
+  }
+
+  /* Contact Container */
+  .contact {
+    &__list {
+      gap: 25px; /* overwritting gap from the list class */
+    }
+    /* contact link text */
+    &__link {
+      color: $fifth-color;
+      font-weight: $first-weight;
+      letter-spacing: 0.02em;
+      line-height: 1.14;
+      transition: color $time $anim-cubic;
+
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: $third-color;
+      &:hover,
+      &:focus {
+        color: $second-color;
+        transition: color $time $anim-cubic;
+      }
+    }
+  }
+}
+
+/*  Logo Container */
+
+.logo {
+  @include logo__container(#000000);
+}
+
+/*  Navigation Container*/
+.navigation {
+  /* navigation link text */
+  &__link {
+    color: $fifth-color;
+    font-weight: $first-weight;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    transition: color $time $anim-cubic;
+    &:hover,
+    &:focus {
+      color: $second-color;
+      transition: color $time $anim-cubic;
+    }
+  }
+}
+
+/* Active Link */
+.active__link {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  color: $second-color;
+  /* this is a underline when user is on the page */
+  &::after {
+    display: flex;
+    position: absolute;
+    bottom: -175%;
+    content: "";
+    background-color: $second-color;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+  }
+}

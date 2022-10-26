@@ -1,0 +1,243 @@
+/*
+
+*************************************
+
+        CONTAINER BACKDROP
+
+*************************************
+
+/*
+  hide backdrop class with button and modal
+*/
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/*
+  backdrop container
+*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+
+  /* main container with form */
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  /*
+    text from form
+  */
+  &__title {
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: &second-letter-spacing;
+    color: &fifth-color;
+  }
+  /*
+    sizeing form and positioning all elements 
+  */
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: $first-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: $radius;
+  /* close button from modal container */
+  &__button {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 8px;
+    right: 8px;
+    height: 30px;
+    width: 30px;
+    background-color: $first-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+/*
+  container with icon and input
+  positioning relative is for a icon__svg
+*/
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  /* labels from its into form class */
+  &__label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* text into form__label */
+  &__title {
+    font-weight: $third-weight;
+    font-size: $modal-text-size;
+    line-height: $third-line-height;
+    letter-spacing: $modal-letter-spacing;
+    color: $third-color;
+  }
+
+  /* size inputs from form */
+  &__input {
+    width: 448px;
+    height: 40px;
+    outline: none;
+    border: 1px solid $input-color;
+    border-radius: $radius;
+    transition: border $time $anim-cubic;
+
+    /* change color when user hovered or focused input */
+    &:hover,
+    &:focus {
+      border: 1px solid $second-color;
+      transition: border $time $anim-cubic;
+    }
+    /* fill icon form from input */
+    &:hover + .form__svg .form__icon,
+    &:hover + .form__svg .form__icon {
+      fill: $second-color;
+      transition: $time $anim-cubic;
+    }
+    /* padding start to write text from user into input */
+    &[type] {
+      padding-left: 42px;
+    }
+  }
+  /*
+    form__svg with form__svg
+    relocated icon to left and use margin to position 
+  */
+  &__svg {
+    position: absolute;
+    margin-left: 15px;
+  }
+  /* animation icon color */
+  &__icon {
+    transition: fill $time $anim-cubic;
+  }
+}
+/*
+  textarea__input size and border
+*/
+.textarea__input {
+  width: 448px;
+  height: 120px;
+  border: 1px solid $input-color;
+  border-radius: $radius;
+  padding: 12px;
+  resize: none;
+  /* textarea__input placeholder */
+  &::placeholder {
+    font-weight: $third-weight;
+    font-size: $modal-text-size;
+    line-height: $third-line-height;
+    letter-spacing: $modal-letter-spacing;
+    color: rgba(117, 117, 117, 0.5);
+    user-select: none;
+  }
+}
+/*
+  checkbox container with regulations 
+*/
+.checkbox {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  /*
+      checkbox input
+      overflow is hidden becouse we use svg icon from icons.svg 
+    */
+  &__input {
+    display: block;
+    visibility: hidden;
+  }
+  /*
+    use margin and cursor to icon to svg checkbox
+    */
+  &__svg {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  /*******************************
+    VISIBILITY CHECKBOX ICONS
+  *******************************/
+  /*
+  visible checkbox icon from class checkbox__before 
+  when user dosen't checked checkbox
+ */
+  &__before {
+    visibility: visible;
+  }
+  /*
+    hidden checkbox icon from class checkbox__before 
+    when user checked checkbox
+  */
+  &__input:checked + .label__checked &__svg &__before {
+    visibility: hidden;
+  }
+  /*
+    hidden checkbox icon from class checkbox__after 
+    when user dosen't checked checkbox
+  */
+  &__after {
+    visibility: hidden;
+  }
+  /*
+    visible checkbox icon from class checkbox__after 
+    when user checked checkbox
+  */
+  &__input:checked + .label__checked &__svg &__after {
+    visibility: visible;
+  }
+  /*
+    regulations from checkbox
+  */
+  &__regulations {
+    font-weight: var(--third-weight);
+    font-size: inherit;
+    line-height: var(--first-line-height);
+    letter-spacing: var(--second-letter-spacing);
+    color: var(--third-color);
+    user-select: none;
+    /* to emphasize "regulations" and "Privacy Policy" */
+    .regulations__span {
+      text-decoration: underline;
+      color: $second-color;
+      cursor: pointer;
+    }
+  }
+}

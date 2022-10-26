@@ -1,0 +1,23 @@
+/* IMPORT UTILTS 
+============================================= */
+@import "utils/variables";
+@import "utils/mixin";
+
+
+/* IMPORT GENERAL
+============================================= */
+@import "general";
+
+/* IMPORT COMPONENTS
+============================================= */
+@import "components/header";
+@import "components/heading";
+@import "components/feature";
+@import "components/about";
+@import "components/team";
+@import "components/customer";
+@import "components/footer";
+@import "components/backdrop";
+@import "components/icons";
+@import "components/filters";
+@import "components/projects";

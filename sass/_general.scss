@@ -1,0 +1,123 @@
+/**********
+* GENERAL *
+**********/
+h1,
+h2,
+h6,
+ul,
+li,
+a,
+p,
+span {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+body {
+  color: $fifth-color;
+  font-size: 14px;
+  font-family: "Roboto", "Raleway", sans-serif;
+}
+
+/********************
+* FOR ALL LIST ITEM *
+********************/
+.item {
+  list-style: none;
+}
+
+/***************
+* FOR ALL LINK *
+***************/
+.link {
+  text-decoration: none;
+}
+/*
+  remove font-size from ul
+*/
+.projects__item,
+.about__item,
+.team__item,
+.filters__list {
+  font-size: 0;
+}
+/* 
+=====================================
+=====================================
+
+      GENERAL POSITION STYLE
+      FOR INDEX AND PORTFOLIO
+
+=====================================
+=====================================
+*/
+/*
+  class to position main content into all html pages
+*/
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+    selector width top and bottom padding 
+    (use this to tags if you wanna the same space between them)
+  */
+.section {
+  padding: 94px 0;
+}
+/*
+    global class 
+    main container to all list with images
+  */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+/* 
+      button 
+    */
+.button {
+  /* color and border of button */
+  background: $second-color;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow $time $anim-cubic;
+  border-radius: $radius;
+  /* text into bottom */
+  color: $first-color;
+  font-weight: $second-weight;
+  font-size: 16px;
+  line-height: $second-line-height;
+  letter-spacing: $first-letter-spacing;
+  /* other */
+  width: 200px;
+  height: 50px;
+  user-select: none;
+}
+/* 
+  about and team heading text
+  have the same font styles  
+*/
+.title {
+    /* font style */
+    font-size: 36px;
+    font-weight: $second-weight;
+    line-height: $third-line-height;
+    letter-spacing: $second-letter-spacing;
+    /* center title */
+    text-align: center;
+    /* other */
+    padding-bottom: 50px;
+  }
+
+  .social__icon .social__svg,
+  .projects__item,
+  .button,
+  .filters__button {
+    cursor: pointer;
+  }
