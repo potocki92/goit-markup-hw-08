@@ -28,7 +28,7 @@
     background: rgba(47, 48, 58, 0.8);
     text-align: center;
 
-    @include text_value($second-text-size, 1.14, $second-letter-spacing);
+    @include text_value($second-text-size, 1.14, $second-letter-spacing, 700);
     text-transform: uppercase;
     color: $first-color;
     padding: 27px 0;

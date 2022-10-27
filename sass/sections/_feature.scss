@@ -32,7 +32,7 @@
 
   &__text {
     /* feature heading text (lorem ipsum) */
-    @include text_value(inherit, 1.14, $second-letter-spacing);
+    @include text_value(inherit, 1.14, $second-letter-spacing, 700);
     text-transform: uppercase;
     /* space beetwen heading and description text */
     padding-bottom: 10px;
@@ -41,6 +41,6 @@
   &__description {
     /* feature paragraph text (lorem ipsum...) */
     color: $third-color;
-    @include text_value(inherit, $first-line-height, $second-letter-spacing);
+    @include text_value(inherit, $first-line-height, $second-letter-spacing, 400);
   }
 }

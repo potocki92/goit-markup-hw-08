@@ -8,7 +8,6 @@
 =====================================
 */
 
-
 .footer {
   background: $footer-color;
 
@@ -33,9 +32,7 @@
 
   &__text {
     /* text into footer__social */
-    font-weight: $second-weight;
-    
-    @include text_value(inherit, 1.142, $second-letter-spacing);
+    @include text_value(inherit, 1.142, $second-letter-spacing, $second-weight);
     text-transform: uppercase;
     color: $first-color;
   }
@@ -100,10 +97,12 @@
 
     /* placeholder input */
     &::placeholder {
-      font-weight: $third-weight;
-
-      
-    @include text_value($text-size, 1.25, $second-letter-spacing);
+      @include text_value(
+        $text-size,
+        1.25,
+        $second-letter-spacing,
+        $third-weight
+      );
       display: flex;
       user-select: none;
     }

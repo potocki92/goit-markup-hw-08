@@ -1,4 +1,4 @@
-@mixin box_size($width ,$height) {
+@mixin box_size($width, $height) {
   width: $width;
   height: $height;
 }
@@ -57,24 +57,22 @@
     &:hover,
     &:focus {
       .first__svg {
-        
-      @include anim__transition(fill, $second-color);
+        @include anim__transition(fill, $second-color);
       }
       .second__svg {
-        
-      @include anim__transition(fill, $first-color);
+        @include anim__transition(fill, $first-color);
       }
     }
   }
 }
 
-
 /* TEXT VALUE
 ================================================*/
-@mixin text_value($font-value, $line-value, $letter-value) {
+@mixin text_value($font-value, $line-value, $letter-value, $weight-value) {
   font-size: $font-value;
   line-height: $line-value;
   letter-spacing: $letter-value;
+  font-weight: $weight-value;
 }
 
 /* TRANSITION ANIMATION

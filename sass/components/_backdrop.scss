@@ -37,7 +37,7 @@
   &__title {
     /* text from form */
     
-    @include text_value(20px, 1.15, $second-letter-spacing);
+    @include text_value(20px, 1.15, $second-letter-spacing, 700);
     color: &fifth-color;
   }
   &__form {
@@ -81,9 +81,9 @@
 
   &__title {
     /* text into form__label */
-    font-weight: $third-weight;
+    // font-weight: $third-weight;
 
-    @include text_value($modal-text-size, $third-line-height, $modal-letter-spacing);
+    @include text_value($modal-text-size, $third-line-height, $modal-letter-spacing, $third-weight);
     color: $third-color;
   }
 
@@ -133,9 +133,7 @@
   resize: none;
   &::placeholder {
     /* textarea__input placeholder */
-    font-weight: $third-weight;
-
-    @include text_value($modal-text-size, $third-line-height, $modal-letter-spacing);
+    @include text_value($modal-text-size, $third-line-height, $modal-letter-spacing, $third-weight);
 
     color: rgba(117, 117, 117, 0.5);
     user-select: none;
@@ -196,9 +194,7 @@
   &__regulations {
     /* REGULATIONS FROM CHECKBOX
     =============================================*/
-    font-weight: var(--third-weight);
-    
-    @include text_value(inherit, $first-line-height, $second-letter-spacing);
+    @include text_value(inherit, $first-line-height, $second-letter-spacing, $third-weight);
     color: $third-color;
     user-select: none;
     /* to emphasize "regulations" and "privacy policy" */

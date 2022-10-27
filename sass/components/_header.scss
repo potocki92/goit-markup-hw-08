@@ -37,11 +37,9 @@
     }
     &__link {
       /* contact link text */
-      font-weight: $first-weight;
-
-      @include text_value(inherit, 1.14, 0.02em);
+      @include text_value(inherit, 1.14, 0.02em, $first-weight);
       @include anim__transition(color, $third-color);
-      
+
       display: flex;
       gap: 10px;
       align-items: center;
@@ -62,9 +60,8 @@
   /*  Navigation Container*/
   &__link {
     /* navigation link text */
-    font-weight: $first-weight;
     @include anim__transition(color, $fifth-color);
-    @include text_value(inherit, 1.14, 0.02em);
+    @include text_value(inherit, 1.14, 0.02em, $first-weight);
     &:hover,
     &:focus {
       @include anim__transition(color, $second-color);

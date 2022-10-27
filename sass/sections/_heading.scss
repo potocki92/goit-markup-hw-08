@@ -29,9 +29,7 @@
     color: $first-color;
     text-transform: uppercase;
 
-    @include text_value(44px, 1.4, $first-letter-spacing);
-
-    font-weight: 900;
+    @include text_value(44px, 1.4, $first-letter-spacing, 900);
     padding: 0 0 30px 0;
   }
 }

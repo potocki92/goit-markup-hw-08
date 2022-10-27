@@ -191,10 +191,10 @@ body {
 }
 .header .contact__link {
   /* contact link text */
-  font-weight: 500;
   font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   color: #757575;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -228,13 +228,13 @@ body {
 }
 .navigation__link {
   /* navigation link text */
-  font-weight: 500;
   color: #212121;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 .navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
@@ -307,10 +307,10 @@ body {
 }
 .footer__text {
   /* text into footer__social */
-  font-weight: 700;
   font-size: inherit;
   line-height: 1.142;
   letter-spacing: 0.03em;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -422,49 +422,49 @@ body {
   /* placeholder input */
 }
 .newsletter .form__input::-webkit-input-placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  font-weight: 400;
   display: -webkit-box;
   display: flex;
   -webkit-user-select: none;
           user-select: none;
 }
 .newsletter .form__input::-moz-placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  font-weight: 400;
   display: flex;
   -moz-user-select: none;
        user-select: none;
 }
 .newsletter .form__input:-ms-input-placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  font-weight: 400;
   display: -ms-flexbox;
   display: flex;
   -ms-user-select: none;
       user-select: none;
 }
 .newsletter .form__input::-ms-input-placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  font-weight: 400;
   display: -ms-flexbox;
   display: flex;
   -ms-user-select: none;
       user-select: none;
 }
 .newsletter .form__input::placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,6 +525,7 @@ body {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
+  font-weight: 700;
   color: .backdrop__title fifth-color;
 }
 .backdrop__form {
@@ -587,10 +588,10 @@ body {
 }
 .form__title {
   /* text into form__label */
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-weight: 400;
   color: #757575;
 }
 .form__input {
@@ -646,50 +647,50 @@ body {
 }
 .textarea__input::-webkit-input-placeholder {
   /* textarea__input placeholder */
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-weight: 400;
   color: rgba(117, 117, 117, 0.5);
   -webkit-user-select: none;
           user-select: none;
 }
 .textarea__input::-moz-placeholder {
   /* textarea__input placeholder */
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-weight: 400;
   color: rgba(117, 117, 117, 0.5);
   -moz-user-select: none;
        user-select: none;
 }
 .textarea__input:-ms-input-placeholder {
   /* textarea__input placeholder */
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-weight: 400;
   color: rgba(117, 117, 117, 0.5);
   -ms-user-select: none;
       user-select: none;
 }
 .textarea__input::-ms-input-placeholder {
   /* textarea__input placeholder */
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-weight: 400;
   color: rgba(117, 117, 117, 0.5);
   -ms-user-select: none;
       user-select: none;
 }
 .textarea__input::placeholder {
   /* textarea__input placeholder */
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-weight: 400;
   color: rgba(117, 117, 117, 0.5);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -754,10 +755,10 @@ body {
 .checkbox__regulations {
   /* REGULATIONS FROM CHECKBOX
   =============================================*/
-  font-weight: var(--third-weight);
   font-size: inherit;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: #757575;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -824,10 +825,10 @@ body {
   border-radius: 4px;
   border-style: none;
   /* font style */
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  font-weight: 500;
   /* other */
   padding: 6px 22px;
 }
@@ -872,10 +873,10 @@ body {
   border-radius: 4px;
   /* text into bottom */
   color: #ffffff;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  font-weight: 700;
   /* other */
   width: 200px;
   height: 50px;
@@ -978,6 +979,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  font-weight: 700;
 }
 .projects__category {
   /* projects paragraph */
@@ -985,6 +987,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  font-weight: 400;
 }
 .projects .image {
   /*
@@ -1000,10 +1003,10 @@ body {
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: #ffffff;
   height: 100%;
   padding: 49px 24px;
@@ -1110,6 +1113,7 @@ body {
   font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  font-weight: 700;
   text-transform: uppercase;
   /* space beetwen heading and description text */
   padding-bottom: 10px;
@@ -1120,6 +1124,7 @@ body {
   font-size: inherit;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  font-weight: 400;
 }
 
 /* 
@@ -1152,6 +1157,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   padding: 27px 0;
@@ -1214,10 +1220,10 @@ body {
 .team__profession {
   /* team paragraph text */
   color: #757575;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  font-weight: 400;
   /* center text */
   text-align: center;
 }

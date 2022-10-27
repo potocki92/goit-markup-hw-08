@@ -36,9 +36,12 @@
   &__name {
     /* team heading text */
 
-    @include text_value($text-size, 1.187, $second-letter-spacing);
-
-    font-weight: $first-weight;
+    @include text_value(
+      $text-size,
+      1.187,
+      $second-letter-spacing,
+      $first-weight
+    );
     /* center text */
     text-align: center;
     padding-bottom: 10px;
@@ -47,9 +50,13 @@
   &__profession {
     /* team paragraph text */
     color: $third-color;
-    font-weight: $third-weight;
 
-    @include text_value($text-size, $first-line-height, $second-letter-spacing);
+    @include text_value(
+      $text-size,
+      $first-line-height,
+      $second-letter-spacing,
+      $third-weight
+    );
     /* center text */
     text-align: center;
   }

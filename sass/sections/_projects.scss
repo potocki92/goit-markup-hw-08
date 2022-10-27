@@ -36,7 +36,7 @@
   }
   &__name {
     /* projects heading */
-    @include text_value(18px, 2, $first-letter-spacing);
+    @include text_value(18px, 2, $first-letter-spacing, 700);
   }
   &__category {
     /* projects paragraph */
@@ -44,7 +44,8 @@
     @include text_value(
       $text-size,
       $second-line-height,
-      $second-letter-spacing
+      $second-letter-spacing,
+      400
     );
   }
   .image {
@@ -61,9 +62,7 @@
       position: absolute;
       background: rgba(33, 150, 243, 0.9);
       font-style: normal;
-      font-weight: $third-weight;
-
-      @include text_value(18px, 1.55, $second-letter-spacing);
+      @include text_value(18px, 1.55, $second-letter-spacing, $third-weight);
       color: $first-color;
       height: 100%;
       padding: 49px 24px;

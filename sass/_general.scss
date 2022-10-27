@@ -79,9 +79,13 @@ body {
 ============================================= */
 .title {
   /* font style */
-  
-  @include text_value(36px, $third-line-height, $second-letter-spacing);
-  font-weight: $second-weight;
+
+  @include text_value(
+    36px,
+    $third-line-height,
+    $second-letter-spacing,
+    $second-weight
+  );
   /* center title */
   text-align: center;
   /* other */

@@ -26,8 +26,7 @@
     border-radius: $radius;
     border-style: none;
     /* font style */
-    font-weight: $first-weight;
-    @include text_value($text-size, 1.6, $second-letter-spacing);
+    @include text_value($text-size, 1.6, $second-letter-spacing, $first-weight);
 
     /* other */
     padding: 6px 22px;
@@ -73,9 +72,7 @@
   border-radius: $radius;
   /* text into bottom */
   color: $first-color;
-  font-weight: $second-weight;
-
-  @include text_value(16px, $second-line-height, $first-letter-spacing);
+  @include text_value(16px, $second-line-height, $first-letter-spacing, $second-weight);
   /* other */
   @include box_size(200px, 50px);
   user-select: none;
