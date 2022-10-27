@@ -11,6 +11,8 @@
 ============================================= */
 /* VARIABLES  
 =============================================*/
+/* FOOTER CONTACT 
+============================================= */
 /* LOGO PLACEHOLDER 
 ============================================= */
 .footer__info .logo .logo__link, .logo .logo__link {
@@ -24,7 +26,9 @@
 ================================================*/
 /* SOCIAL MIXIN
 ================================================*/
-/* NAVIGATION MIXIN
+/* TEXT VALUE
+================================================*/
+/* TRANSITION ANIMATION
 ================================================*/
 /* IMPORT GENERAL
 ============================================= */
@@ -116,9 +120,9 @@ body {
 .title {
   /* font style */
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  font-weight: 700;
   /* center title */
   text-align: center;
   /* other */
@@ -187,10 +191,11 @@ body {
 }
 .header .contact__link {
   /* contact link text */
-  color: #212121;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  font-size: inherit;
   line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
@@ -200,7 +205,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #757575;
 }
 .header .contact__link:hover, .header .contact__link:focus {
   color: #2196f3;
@@ -224,12 +228,13 @@ body {
 }
 .navigation__link {
   /* navigation link text */
-  color: #212121;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.14;
+  color: #212121;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
@@ -257,8 +262,8 @@ body {
   content: "";
   background-color: #2196f3;
   border-radius: 2px;
-  height: 4px;
   width: 100%;
+  height: 4px;
 }
 
 /* 
@@ -303,6 +308,7 @@ body {
 .footer__text {
   /* text into footer__social */
   font-weight: 700;
+  font-size: inherit;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -491,8 +497,8 @@ body {
   position: fixed;
   top: 0;
   background: rgba(0, 0, 0, 0.2);
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 .backdrop__content {
   /* main container with form */
@@ -518,7 +524,7 @@ body {
   /* text from form */
   font-size: 20px;
   line-height: 1.15;
-  letter-spacing: .backdrop__title second-letter-spacing;
+  letter-spacing: 0.03em;
   color: .backdrop__title fifth-color;
 }
 .backdrop__form {
@@ -592,8 +598,8 @@ body {
   width: 448px;
   height: 40px;
   outline: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -606,12 +612,18 @@ body {
 .form__input:hover + .form__svg .form__icon, .form__input:hover + .form__svg .form__icon {
   /* fill icon form from input */
   fill: #2196f3;
-  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input[type] {
   /* padding start to write text from user into input */
   padding-left: 42px;
+}
+.form__icon {
+  /* animation icon color */
+  fill: #212121;
+  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__svg {
   /*
@@ -620,11 +632,6 @@ body {
   */
   position: absolute;
   margin-left: 15px;
-}
-.form__icon {
-  /* animation icon color */
-  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* TEXTAREA INPUT AND BUTTON
@@ -749,9 +756,9 @@ body {
   =============================================*/
   font-weight: var(--third-weight);
   font-size: inherit;
-  line-height: var(--first-line-height);
-  letter-spacing: var(--second-letter-spacing);
-  color: var(--third-color);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -806,19 +813,21 @@ body {
 .filters__button {
   /* buttons with category */
   /* button color and border */
-  background: #f5f4fa;
+  background-color: #f5f4fa;
+  color: #212121;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
   -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   border-style: none;
   /* font style */
-  color: #212121;
-  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.03em;
+  font-size: 16px;
   line-height: 1.6;
+  letter-spacing: 0.03em;
   /* other */
   padding: 6px 22px;
 }
@@ -827,14 +836,14 @@ body {
     change color and add shadow to buttons
     when user hover or focus them
   */
+  background-color: #2196f3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  background-color: #2196f3;
   -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters__list {
   /* button list */
@@ -911,8 +920,8 @@ body {
       flex-wrap: wrap;
   top: 8px;
   right: 8px;
-  height: 30px;
   width: 30px;
+  height: 30px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -1049,11 +1058,11 @@ body {
 .heading__title {
   /* main title */
   color: #ffffff;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: 44px;
-  font-weight: 900;
   line-height: 1.4;
+  letter-spacing: 0.06em;
+  font-weight: 900;
   padding: 0 0 30px 0;
 }
 
@@ -1108,6 +1117,7 @@ body {
 .feature__description {
   /* feature paragraph text (lorem ipsum...) */
   color: #757575;
+  font-size: inherit;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
@@ -1138,9 +1148,9 @@ body {
   bottom: 0;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -1194,9 +1204,9 @@ body {
 .team__name {
   /* team heading text */
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.187;
   letter-spacing: 0.03em;
+  font-weight: 500;
   /* center text */
   text-align: center;
   padding-bottom: 10px;
@@ -1204,8 +1214,8 @@ body {
 .team__profession {
   /* team paragraph text */
   color: #757575;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   /* center text */
@@ -1272,9 +1282,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 17.71px 32px 14.25px 32px;
-  border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
+  border: 1px solid #afb1b8;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1282,8 +1292,8 @@ body {
   /*
   change bored color when user hovering or focusing customer__item
   */
-  border: 1px solid #2196f3;
   color: #2196f3;
+  border: 1px solid #2196f3;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }

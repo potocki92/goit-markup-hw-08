@@ -8,14 +8,13 @@
 =====================================
 */
 
-
 /* 
   main team container
   it has all the tags with the team and heading
 */
 .team {
   background: $fourth-color;
-  
+
   &__item {
     /* team card with image, team name and team profession */
     display: flex;
@@ -27,21 +26,19 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
   }
   &__info {
     /* container with team__text and contact__icon */
     display: flex;
     flex-direction: column;
     gap: 16px;
-
   }
   &__name {
     /* team heading text */
-    font-size: $text-size;
+
+    @include text_value($text-size, 1.187, $second-letter-spacing);
+
     font-weight: $first-weight;
-    line-height: 1.187;
-    letter-spacing: $second-letter-spacing;
     /* center text */
     text-align: center;
     padding-bottom: 10px;
@@ -50,10 +47,9 @@
   &__profession {
     /* team paragraph text */
     color: $third-color;
-    font-size: $text-size;
     font-weight: $third-weight;
-    line-height: $first-line-height;
-    letter-spacing: $second-letter-spacing;
+
+    @include text_value($text-size, $first-line-height, $second-letter-spacing);
     /* center text */
     text-align: center;
   }

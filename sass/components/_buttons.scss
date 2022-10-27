@@ -8,24 +8,27 @@
 =====================================
 */
 
-
 /* BUTTONS FROM PORTFOLIO.HTML
 =============================================*/
 .filters {
   &__button {
     /* buttons with category */
     /* button color and border */
-    background: $fourth-color;
-    transition: background-color $time $anim-cubic, box-shadow $time $anim-cubic,
-      color $time $anim-cubic;
+    @include triple_anim_transition(
+      background-color,
+      $fourth-color,
+      color,
+      $fifth-color,
+      box-shadow,
+      0
+    );
+
     border-radius: $radius;
     border-style: none;
     /* font style */
-    color: $fifth-color;
-    font-size: $text-size;
     font-weight: $first-weight;
-    letter-spacing: $second-letter-spacing;
-    line-height: 1.6;
+    @include text_value($text-size, 1.6, $second-letter-spacing);
+
     /* other */
     padding: 6px 22px;
 
@@ -35,12 +38,18 @@
         change color and add shadow to buttons
         when user hover or focus them
       */
-      color: $first-color;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-      background-color: $second-color;
-      transition: background-color $time $anim-cubic,
-        box-shadow $time $anim-cubic, color $time $anim-cubic;
+      @include triple_anim_transition(
+        background-color,
+        $second-color,
+        color,
+        $first-color,
+        box-shadow,
+        (
+          0px 3px 1px rgba(0, 0, 0, 0.1),
+          0px 1px 2px rgba(0, 0, 0, 0.08),
+          0px 2px 2px rgba(0, 0, 0, 0.12)
+        )
+      );
     }
   }
   &__list {
@@ -60,18 +69,15 @@
   /* color and border of button */
   background: $second-color;
   border-style: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: box-shadow $time $anim-cubic;
+  @include anim__transition(box-shadow, 0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: $radius;
   /* text into bottom */
   color: $first-color;
   font-weight: $second-weight;
-  font-size: 16px;
-  line-height: $second-line-height;
-  letter-spacing: $first-letter-spacing;
+
+  @include text_value(16px, $second-line-height, $first-letter-spacing);
   /* other */
-  width: 200px;
-  height: 50px;
+  @include box_size(200px, 50px);
   user-select: none;
 }
 
@@ -97,8 +103,7 @@
   flex-wrap: wrap;
   top: 8px;
   right: 8px;
-  height: 30px;
-  width: 30px;
+  @include box_size(30px, 30px);
   background-color: $first-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;

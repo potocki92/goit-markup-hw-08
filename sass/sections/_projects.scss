@@ -36,16 +36,16 @@
   }
   &__name {
     /* projects heading */
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: $first-letter-spacing;
+    @include text_value(18px, 2, $first-letter-spacing);
   }
   &__category {
     /* projects paragraph */
     color: $third-color;
-    font-size: $text-size;
-    line-height: $second-line-height;
-    letter-spacing: $second-letter-spacing;
+    @include text_value(
+      $text-size,
+      $second-line-height,
+      $second-letter-spacing
+    );
   }
   .image {
     /*
@@ -55,20 +55,19 @@
     */
     position: relative;
     overflow: hidden;
-  
+
     &__text {
       /* positioning image__text to image__box */
       position: absolute;
       background: rgba(33, 150, 243, 0.9);
       font-style: normal;
       font-weight: $third-weight;
-      font-size: 18px;
-      line-height: 1.55;
-      letter-spacing: $second-letter-spacing;
+
+      @include text_value(18px, 1.55, $second-letter-spacing);
       color: $first-color;
       height: 100%;
       padding: 49px 24px;
-  
+
       transform: translateY(100%);
       transition: transform $time $anim-cubic;
     }
@@ -78,4 +77,3 @@
     }
   }
 }
-

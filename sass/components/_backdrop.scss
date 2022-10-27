@@ -22,8 +22,7 @@
   position: fixed;
   top: 0;
   background: rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
+  @include box_size(100%, 100%);
 
   &__content {
     /* main container with form */
@@ -37,9 +36,8 @@
   }
   &__title {
     /* text from form */
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: &second-letter-spacing;
+    
+    @include text_value(20px, 1.15, $second-letter-spacing);
     color: &fifth-color;
   }
   &__form {
@@ -84,37 +82,36 @@
   &__title {
     /* text into form__label */
     font-weight: $third-weight;
-    font-size: $modal-text-size;
-    line-height: $third-line-height;
-    letter-spacing: $modal-letter-spacing;
+
+    @include text_value($modal-text-size, $third-line-height, $modal-letter-spacing);
     color: $third-color;
   }
 
   &__input {
     /* size inputs from form */
-    width: 448px;
-    height: 40px;
+    @include box_size(448px, 40px);
     outline: none;
-    border: 1px solid $input-color;
     border-radius: $radius;
-    transition: border $time $anim-cubic;
-
+    @include anim__transition(border, 1px solid $input-color);
+    
     &:hover,
     &:focus {
       /* change color when user hovered or focused input */
-      border: 1px solid $second-color;
-      transition: border $time $anim-cubic;
+      @include anim__transition(border, 1px solid $second-color);
     }
     &:hover + .form__svg .form__icon,
     &:hover + .form__svg .form__icon {
       /* fill icon form from input */
-      fill: $second-color;
-      transition: $time $anim-cubic;
+      @include anim__transition(fill, $second-color);
     }
     &[type] {
       /* padding start to write text from user into input */
       padding-left: 42px;
     }
+  }
+  &__icon {
+    /* animation icon color */
+    @include anim__transition(fill, $fifth-color);
   }
   &__svg {
     /*
@@ -124,17 +121,12 @@
     position: absolute;
     margin-left: 15px;
   }
-  &__icon {
-    /* animation icon color */
-    transition: fill $time $anim-cubic;
-  }
 }
 
 /* TEXTAREA INPUT AND BUTTON
 =============================================*/
 .textarea__input {
-  width: 448px;
-  height: 120px;
+  @include box_size(448px, 120px);
   border: 1px solid $input-color;
   border-radius: $radius;
   padding: 12px;
@@ -142,9 +134,9 @@
   &::placeholder {
     /* textarea__input placeholder */
     font-weight: $third-weight;
-    font-size: $modal-text-size;
-    line-height: $third-line-height;
-    letter-spacing: $modal-letter-spacing;
+
+    @include text_value($modal-text-size, $third-line-height, $modal-letter-spacing);
+
     color: rgba(117, 117, 117, 0.5);
     user-select: none;
   }
@@ -205,10 +197,9 @@
     /* REGULATIONS FROM CHECKBOX
     =============================================*/
     font-weight: var(--third-weight);
-    font-size: inherit;
-    line-height: var(--first-line-height);
-    letter-spacing: var(--second-letter-spacing);
-    color: var(--third-color);
+    
+    @include text_value(inherit, $first-line-height, $second-letter-spacing);
+    color: $third-color;
     user-select: none;
     /* to emphasize "regulations" and "privacy policy" */
     .regulations__span {

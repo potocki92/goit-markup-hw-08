@@ -1,3 +1,10 @@
+@mixin box_size($width ,$height) {
+  width: $width;
+  height: $height;
+}
+
+/* FOOTER CONTACT 
+============================================= */
 @mixin footer__contact__value {
   letter-spacing: $second-letter-spacing;
   font-weight: $third-weight;
@@ -16,7 +23,6 @@
 /* LOGO MIXIN
 ================================================*/
 @mixin logo__container($logo-color) {
-
   .logo__link {
     @extend %logo;
     color: $logo-color;
@@ -42,38 +48,65 @@
 
   .social__item {
     .first__svg {
-      fill: $first;
-      transition: fill $time $anim-cubic;
+      @include anim__transition(fill, $first);
     }
     .second__svg {
-      fill: $second;
-      transition: fill $time $anim-cubic;
+      @include anim__transition(fill, $second);
     }
 
     &:hover,
     &:focus {
       .first__svg {
-        fill: $second-color;
-        transition: fill $time $anim-cubic;
+        
+      @include anim__transition(fill, $second-color);
       }
       .second__svg {
-        fill: $first-color;
-        transition: fill $time $anim-cubic;
+        
+      @include anim__transition(fill, $first-color);
       }
     }
   }
 }
 
-/* NAVIGATION MIXIN
+
+/* TEXT VALUE
 ================================================*/
-@mixin nav__links($font-color) {
-  color: $font-color;
-  font-weight: $first-weight;
-  letter-spacing: 0.02em;
-  line-height: 1.14;
-  &:hover,
-  &:focus {
-    color: $second-color;
-    transition: color $time $anim-cubic;
-  }
+@mixin text_value($font-value, $line-value, $letter-value) {
+  font-size: $font-value;
+  line-height: $line-value;
+  letter-spacing: $letter-value;
+}
+
+/* TRANSITION ANIMATION
+================================================*/
+@mixin anim__transition($first-property, $first-value) {
+  #{$first-property}: $first-value;
+  transition: #{$first-property} $time $anim-cubic;
+}
+
+@mixin second_anim_transition(
+  $first-property,
+  $first-value,
+  $second-property,
+  $second-value
+) {
+  #{$first-property}: $first-value;
+  #{$second-property}: $second-value;
+  transition: #{$first-property} $time $anim-cubic,
+    #{$second-property} $time $anim-cubic;
+}
+
+@mixin triple_anim_transition(
+  $first-property,
+  $first-value,
+  $second-property,
+  $second-value,
+  $third-property,
+  $third-value
+) {
+  #{$first-property}: $first-value;
+  #{$second-property}: $second-value;
+  #{$third-property}: $third-value;
+  transition: #{$first-property} $time $anim-cubic,
+    #{$second-property} $time $anim-cubic, #{$third-property} $time $anim-cubic;
 }

@@ -20,18 +20,19 @@
     */
     display: flex;
     padding: 17.71px 32px 14.25px 32px;
-    border: 1px solid #afb1b8;
     border-radius: $radius;
-    color: #afb1b8;
-    transition: color $time $anim-cubic, border $time $anim-cubic;
+    @include second_anim_transition(color, #afb1b8, border, 1px solid #afb1b8);
     &:hover,
     &:focus {
       /*
       change bored color when user hovering or focusing customer__item
       */
-      border: 1px solid $second-color;
-      color: $second-color;
-      transition: color $time $anim-cubic, border $time $anim-cubic;
+      @include second_anim_transition(
+        color,
+        $second-color,
+        border,
+        1px solid $second-color
+      );
     }
   }
 }

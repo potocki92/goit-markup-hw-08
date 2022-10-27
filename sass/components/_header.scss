@@ -37,25 +37,21 @@
     }
     &__link {
       /* contact link text */
-      color: $fifth-color;
       font-weight: $first-weight;
-      letter-spacing: 0.02em;
-      line-height: 1.14;
-      transition: color $time $anim-cubic;
 
+      @include text_value(inherit, 1.14, 0.02em);
+      @include anim__transition(color, $third-color);
+      
       display: flex;
       gap: 10px;
       align-items: center;
-      color: $third-color;
       &:hover,
       &:focus {
-        color: $second-color;
-        transition: color $time $anim-cubic;
+        @include anim__transition(color, $second-color);
       }
     }
   }
 }
-
 
 .logo {
   /*  Logo Container */
@@ -66,15 +62,12 @@
   /*  Navigation Container*/
   &__link {
     /* navigation link text */
-    color: $fifth-color;
     font-weight: $first-weight;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    transition: color $time $anim-cubic;
+    @include anim__transition(color, $fifth-color);
+    @include text_value(inherit, 1.14, 0.02em);
     &:hover,
     &:focus {
-      color: $second-color;
-      transition: color $time $anim-cubic;
+      @include anim__transition(color, $second-color);
     }
   }
 }
@@ -93,7 +86,6 @@
     content: "";
     background-color: $second-color;
     border-radius: 2px;
-    height: 4px;
-    width: 100%;
+    @include box_size(100%, 4px);
   }
 }
