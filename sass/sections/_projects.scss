@@ -1,9 +1,20 @@
+/* 
+=====================================
+=====================================
+
+       CONTAINER WITH PROJECTS
+      (FOR NOW HAS LOREM IPSUM)
+
+=====================================
+=====================================
+*/
+
 .projects {
-  /*
-  when user hovering or focusing box with project 
-  shadow will be showing around the boxes   
-  */
   &__item {
+    /*
+    when user hovering or focusing box with project 
+    shadow will be showing around the boxes   
+    */
     transition: box-shadow $time $anim-cubic;
 
     &:hover,
@@ -13,8 +24,8 @@
       transition: box-shadow $time $anim-cubic;
     }
   }
-  /* border and positioning projects text (name and category) */
   &__text {
+    /* border and positioning projects text (name and category) */
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -23,30 +34,30 @@
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
   }
-  /* projects heading */
   &__name {
+    /* projects heading */
     font-size: 18px;
     line-height: 2;
     letter-spacing: $first-letter-spacing;
   }
-  /* projects paragraph */
   &__category {
+    /* projects paragraph */
     color: $third-color;
     font-size: $text-size;
     line-height: $second-line-height;
     letter-spacing: $second-letter-spacing;
   }
-  /*
-       projects__box with relative position 
-       container has image with project and text which is animated
-       relative halps with positioning image__text
-      */
   .image {
+    /*
+      projects__box with relative position 
+      container has image with project and text which is animated
+      relative halps with positioning image__text
+    */
     position: relative;
     overflow: hidden;
   
-    /* positioning image__text to image__box */
     &__text {
+      /* positioning image__text to image__box */
       position: absolute;
       background: rgba(33, 150, 243, 0.9);
       font-style: normal;
@@ -61,10 +72,8 @@
       transform: translateY(100%);
       transition: transform $time $anim-cubic;
     }
-    /*
-    animation and styling image__text when user hover image__box
-  */
     &:hover .image__text {
+      /* animation and styling image__text when user hover image__box */
       transform: translateY(0);
     }
   }

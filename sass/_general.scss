@@ -1,6 +1,15 @@
-/**********
-* GENERAL *
-**********/
+/* 
+=====================================
+=====================================
+
+              GENERAL
+
+=====================================
+=====================================
+*/
+
+/* RESET
+============================================= */
 h1,
 h2,
 h6,
@@ -13,64 +22,52 @@ span {
   margin: 0;
   user-select: none;
 }
+
+/* BODY
+============================================= */
 body {
   color: $fifth-color;
   font-size: 14px;
   font-family: "Roboto", "Raleway", sans-serif;
 }
 
-/********************
-* FOR ALL LIST ITEM *
-********************/
+/* GENERAL ITEM CLASS TO ALL LI
+============================================= */
 .item {
   list-style: none;
 }
 
-/***************
-* FOR ALL LINK *
-***************/
+/* GENERAL LINK CLASS TO ALL HREF
+============================================= */
 .link {
   text-decoration: none;
 }
-/*
-  remove font-size from ul
-*/
+
+/* RESET FONT-SIZE
+============================================= */
 .projects__item,
 .about__item,
 .team__item,
 .filters__list {
   font-size: 0;
 }
-/* 
-=====================================
-=====================================
 
-      GENERAL POSITION STYLE
-      FOR INDEX AND PORTFOLIO
-
-=====================================
-=====================================
-*/
-/*
-  class to position main content into all html pages
-*/
+/* CONTAINER (CENTERING AND WIDTH)
+============================================= */
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/*
-    selector width top and bottom padding 
-    (use this to tags if you wanna the same space between them)
-  */
+/* SECTION (TOP AND BOTTOM PADDING)
+============================================= */
 .section {
   padding: 94px 0;
 }
-/*
-    global class 
-    main container to all list with images
-  */
+
+/* GENERAL LIST CLASS TO ALL UL
+============================================= */
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -78,26 +75,25 @@ body {
   justify-content: space-around;
 }
 
-
-/* 
-  about and team heading text
-  have the same font styles  
-*/
+/* GENERAL TITLE CLASS FROM ALL SECTIONS FROM INDEX
+============================================= */
 .title {
-    /* font style */
-    font-size: 36px;
-    font-weight: $second-weight;
-    line-height: $third-line-height;
-    letter-spacing: $second-letter-spacing;
-    /* center title */
-    text-align: center;
-    /* other */
-    padding-bottom: 50px;
-  }
+  /* font style */
+  font-size: 36px;
+  font-weight: $second-weight;
+  line-height: $third-line-height;
+  letter-spacing: $second-letter-spacing;
+  /* center title */
+  text-align: center;
+  /* other */
+  padding-bottom: 50px;
+}
 
-  .social__icon .social__svg,
-  .projects__item,
-  .button,
-  .filters__button {
-    cursor: pointer;
-  }
+/* GENERAL CURSOR POINTER
+============================================= */
+.social__icon .social__svg,
+.projects__item,
+.button,
+.filters__button {
+  cursor: pointer;
+}

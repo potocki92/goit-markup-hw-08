@@ -1,17 +1,22 @@
 /* 
-  container containing 
-  main title and button
- */
+=====================================
+=====================================
+
+       MAIN HEADING FROM INDEX
+
+=====================================
+=====================================
+*/
+
 .heading {
+  /* container containing main title and button */
   /* background of title container */
   background: $footer-color; /* if images doesn't work */
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/backgrounds/background.jpg") no-repeat center top;
   /* background-image: linear-gradient(rgba(47, 48, 58, 0.4)); */
   background-size: cover;
-  /*
-      to center the text and button when zoomed in
-    */
+  /* to center the text and button when zoomed in */
   display: flex;
   flex-flow: column;
   /* positioning text and button into title container*/
@@ -19,10 +24,8 @@
   justify-content: center;
   align-items: center;
   padding: 200px 0;
-  /*
-      main title 
-    */
   &__title {
+    /* main title */
     color: $first-color;
     letter-spacing: $first-letter-spacing;
     text-transform: uppercase;

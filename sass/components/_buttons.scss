@@ -1,11 +1,19 @@
-/*
-BUTTONS FROM PORTFOLIO.HTML
+/* 
+=====================================
+=====================================
+
+            BUTTONS
+
+=====================================
+=====================================
+*/
+
+
+/* BUTTONS FROM PORTFOLIO.HTML
 =============================================*/
 .filters {
-  /* 
-      buttons with category
-      */
   &__button {
+    /* buttons with category */
     /* button color and border */
     background: $fourth-color;
     transition: background-color $time $anim-cubic, box-shadow $time $anim-cubic,
@@ -20,12 +28,13 @@ BUTTONS FROM PORTFOLIO.HTML
     line-height: 1.6;
     /* other */
     padding: 6px 22px;
-    /* 
-      change color and add shadow to buttons
-      when user hover or focus them
-      */
+
     &:hover,
     &:focus {
+      /* 
+        change color and add shadow to buttons
+        when user hover or focus them
+      */
       color: $first-color;
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -34,23 +43,18 @@ BUTTONS FROM PORTFOLIO.HTML
         box-shadow $time $anim-cubic, color $time $anim-cubic;
     }
   }
-  /*
-    button list
-    */
   &__list {
+    /* button list */
     justify-content: center;
     gap: 4px;
   }
-  /*
-      buttons display 
-      */
   &__item {
+    /* buttons display */
     margin: 0 4px 50px;
   }
 }
 
-/*
-GENERAL BUTTONS FROM HEADING, FOOTER AND FORM
+/* GENERAL BUTTONS FROM HEADING, FOOTER AND FORM
 =============================================*/
 .button {
   /* color and border of button */
@@ -71,22 +75,20 @@ GENERAL BUTTONS FROM HEADING, FOOTER AND FORM
   user-select: none;
 }
 
-/*
-BUTTON FROM NEWSLETTER
+/* BUTTON FROM NEWSLETTER
 =============================================*/
-/* use flex to button for the arrangement of elements (text and svg) */
 .newsletter__button {
+  /* use flex to button for the arrangement of elements (text and svg) */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
 }
 
-/*
-BUTTON FROM MODAL CONTAINER
+/* BUTTON FROM MODAL CONTAINER
 =============================================*/
-/* close button from modal container */
 .modal__button {
+  /* close button from modal container */
   position: absolute;
   display: flex;
   text-align: center;

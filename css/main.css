@@ -1,8 +1,16 @@
+/* 
+=====================================
+=====================================
+
+            IMPORT SASS
+
+=====================================
+=====================================
+*/
 /* IMPORT UTILTS 
 ============================================= */
-/***************
-*   VARIABLES  *
-***************/
+/* VARIABLES  
+=============================================*/
 /* LOGO PLACEHOLDER 
 ============================================= */
 .footer__info .logo .logo__link, .logo .logo__link {
@@ -16,20 +24,21 @@
 ================================================*/
 /* SOCIAL MIXIN
 ================================================*/
-/*
-  socials icons:
-  * instagram
-  * tweeter 
-  * facebook
-  * linkedin 
-*/
 /* NAVIGATION MIXIN
 ================================================*/
 /* IMPORT GENERAL
 ============================================= */
-/**********
-* GENERAL *
-**********/
+/* 
+=====================================
+=====================================
+
+              GENERAL
+
+=====================================
+=====================================
+*/
+/* RESET
+============================================= */
 h1,
 h2,
 h6,
@@ -46,29 +55,28 @@ span {
           user-select: none;
 }
 
+/* BODY
+============================================= */
 body {
   color: #212121;
   font-size: 14px;
   font-family: "Roboto", "Raleway", sans-serif;
 }
 
-/********************
-* FOR ALL LIST ITEM *
-********************/
+/* GENERAL ITEM CLASS TO ALL LI
+============================================= */
 .item {
   list-style: none;
 }
 
-/***************
-* FOR ALL LINK *
-***************/
+/* GENERAL LINK CLASS TO ALL HREF
+============================================= */
 .link {
   text-decoration: none;
 }
 
-/*
-  remove font-size from ul
-*/
+/* RESET FONT-SIZE
+============================================= */
 .projects__item,
 .about__item,
 .team__item,
@@ -76,37 +84,22 @@ body {
   font-size: 0;
 }
 
-/* 
-=====================================
-=====================================
-
-      GENERAL POSITION STYLE
-      FOR INDEX AND PORTFOLIO
-
-=====================================
-=====================================
-*/
-/*
-  class to position main content into all html pages
-*/
+/* CONTAINER (CENTERING AND WIDTH)
+============================================= */
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/*
-    selector width top and bottom padding 
-    (use this to tags if you wanna the same space between them)
-  */
+/* SECTION (TOP AND BOTTOM PADDING)
+============================================= */
 .section {
   padding: 94px 0;
 }
 
-/*
-    global class 
-    main container to all list with images
-  */
+/* GENERAL LIST CLASS TO ALL UL
+============================================= */
 .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,10 +111,8 @@ body {
       justify-content: space-around;
 }
 
-/* 
-  about and team heading text
-  have the same font styles  
-*/
+/* GENERAL TITLE CLASS FROM ALL SECTIONS FROM INDEX
+============================================= */
 .title {
   /* font style */
   font-size: 36px;
@@ -134,6 +125,8 @@ body {
   padding-bottom: 50px;
 }
 
+/* GENERAL CURSOR POINTER
+============================================= */
 .social__icon .social__svg,
 .projects__item,
 .button,
@@ -144,28 +137,26 @@ body {
 /* IMPORT COMPONENTS
 ============================================= */
 /* 
+=====================================
+=====================================
 
-*************************************
+              HEADER
 
-          HEADER SECTION
-
-*************************************
-
+=====================================
+=====================================
 */
-/* space between link__container and contact__container */
 .wrapper {
+  /* space between link__container and contact__container */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-/* Header Container */
 .header {
+  /* Header Container */
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
   /* container with logo, navigation and contacts */
-  /* container with logo and navigation links */
-  /* Contact Container */
 }
 .header .container {
   display: -webkit-box;
@@ -177,6 +168,7 @@ body {
   padding: 20px 0; /* header padding space between top and bottom */
 }
 .header__links {
+  /* container with logo and navigation links */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,12 +180,13 @@ body {
   gap: calc(6vw + 2px);
 }
 .header .contact {
-  /* contact link text */
+  /* Contact Container */
 }
 .header .contact__list {
   gap: 25px; /* overwritting gap from the list class */
 }
 .header .contact__link {
+  /* contact link text */
   color: #212121;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -215,22 +208,22 @@ body {
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*  Logo Container */
 .logo {
-  /* span color */
+  /*  Logo Container */
 }
 .logo .logo__link {
   color: #000000;
 }
 .logo .logo__web {
+  /* span color */
   color: #2196f3;
 }
 
-/*  Navigation Container*/
 .navigation {
-  /* navigation link text */
+  /*  Navigation Container*/
 }
 .navigation__link {
+  /* navigation link text */
   color: #212121;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -244,8 +237,8 @@ body {
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Active Link */
 .active__link {
+  /* Active Link */
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,9 +246,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #2196f3;
-  /* this is a underline when user is on the page */
 }
 .active__link::after {
+  /* this is a underline when user is on the page */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,280 +262,6 @@ body {
 }
 
 /* 
-  container containing 
-  main title and button
- */
-.heading {
-  /* background of title container */
-  background: #2f303a; /* if images doesn't work */
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/backgrounds/background.jpg") no-repeat center top;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgrounds/background.jpg") no-repeat center top;
-  /* background-image: linear-gradient(rgba(47, 48, 58, 0.4)); */
-  background-size: cover;
-  /*
-      to center the text and button when zoomed in
-    */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  /* positioning text and button into title container*/
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 200px 0;
-  /*
-      main title 
-    */
-}
-.heading__title {
-  color: #ffffff;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.4;
-  padding: 0 0 30px 0;
-}
-
-/* 
-
-*************************************
-
-        CONTAINER WITH FEATURES
-       (FOR NOW HAS LOREM IPSUM)
-
-*************************************
-
-*/
-/*
-  positioning feature container and feature box
-*/
-.feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 94px;
-  /* flexing feature box with icon, text and description */
-  /* positioning svg icon with feature__container */
-  /* feature heading text (lorem ipsum) */
-  /* feature paragraph text (lorem ipsum...) */
-}
-.feature__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-.feature__icon {
-  background: #f5f4fa;
-  text-align: center;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-}
-.feature__text {
-  font-size: inherit;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  /* space beetwen heading and description text */
-  padding-bottom: 10px;
-}
-.feature__description {
-  color: #757575;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-/* 
-
-*************************************
-
-     CONTAINER WITH ABOUT SECTION
-          (EMPTY FOR NOW)
-
-*************************************
-
-*/
-.about {
-  /*
-  relative postion contanier with about us
-  for about__text and positioning this to bottom into about__box
-  */
-  /*
-    text into about__box 
-    under the about__image 
-    */
-}
-.about__item {
-  position: relative;
-}
-.about__text {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(47, 48, 58, 0.8);
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 27px 0;
-}
-
-/* 
-
-*************************************
-
-        CONTAINER WITH TEAM
-
-*************************************
-
-*/
-/* 
-  main team container
-  it has all the tags with the team and heading
-*/
-.team {
-  background: #f5f4fa;
-  /* team card with image, team name and team profession */
-  /* container with team__text and contact__icon */
-  /* team heading text */
-  /* team paragraph text */
-  /* icons into team boxes */
-}
-.team__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-  background: #ffffff;
-  /* shadow under the containers with a photo, 
-  name and profession of the team */
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.team__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 16px;
-}
-.team__name {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.187;
-  letter-spacing: 0.03em;
-  /* center text */
-  text-align: center;
-  padding-bottom: 10px;
-}
-.team__profession {
-  color: #757575;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  /* center text */
-  text-align: center;
-}
-.team .social__list {
-  /* mixin */
-  gap: 10px;
-}
-.team .social__list .social__item .first__svg {
-  fill: #ffffff;
-  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team .social__list .social__item .second__svg {
-  fill: #afb1b8;
-  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team .social__list .social__item:hover .first__svg, .team .social__list .social__item:focus .first__svg {
-  fill: #2196f3;
-  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team .social__list .social__item:hover .second__svg, .team .social__list .social__item:focus .second__svg {
-  fill: #ffffff;
-  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* 
-
-*************************************
-
-        CONTAINER WITH CUSTOMERS
-
-*************************************
-
-*/
-/*
-  tags with customers boxes
-*/
-.customer {
-  /*
-  item with customer icons
-  */
-}
-.customer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.customer__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 17.71px 32px 14.25px 32px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  color: #afb1b8;
-  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  /*
-    change bored color when user hovering or focusing customer__item
-    */
-}
-.customer__item:hover, .customer__item:focus {
-  border: 1px solid #2196f3;
-  color: #2196f3;
-  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* 
 =====================================
 =====================================
 
@@ -551,32 +270,14 @@ body {
 =====================================
 =====================================
 */
-/* 
-  Footer Container 
-*/
 .footer {
   background: #2f303a;
+}
+.footer__box {
   /*
     footer padding and gap to flex list class and logo__container
     space bettween top and bottom 
   */
-  /* LOGO 
-  **************************************/
-  /* container with logo and contact into footer container */
-  /* TEXT INTO SOCIAL AND NEWSLETTERS
-  **************************************/
-  /* text into footer__social */
-  /* CONTACT (EMAIL, PHONE, STREET) 
-  **************************************/
-  /*
-  position contact list in footer container
-  and overwritting gap from the list class
-  */
-  /* SOCIAL ICONS 
-  **************************************/
-  /* container with social__text and icons */
-}
-.footer__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,25 +286,33 @@ body {
           justify-content: space-between;
 }
 .footer__info {
+  /* container with logo and contact into footer container */
   padding: 60px 0;
-  /* footer logo color and padding */
 }
 .footer__info .logo {
+  /* footer logo color and padding */
   padding-bottom: 20px;
-  /* span color */
 }
 .footer__info .logo .logo__link {
   color: #ffffff;
 }
 .footer__info .logo .logo__web {
+  /* span color */
   color: #2196f3;
 }
 .footer__text {
+  /* text into footer__social */
   font-weight: 700;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+.footer .contact {
+  /*
+  position contact list in footer container
+  and overwritting gap from the list class
+  */
 }
 .footer .contact__list {
   -webkit-box-orient: vertical;
@@ -626,6 +335,7 @@ body {
   line-height: 1.7;
 }
 .footer__social {
+  /* container with social__text and icons */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,6 +351,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  /*
+    socials icons:
+    * instagram
+    * tweeter 
+    * facebook
+    * linkedin 
+  */
   gap: 10px;
 }
 .footer__social .social__icon .social__item .first__svg {
@@ -665,7 +382,7 @@ body {
 }
 
 /* NEWSLETTER 
-**************************************/
+=============================================*/
 .newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -688,7 +405,8 @@ body {
 }
 .newsletter .form__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   width: 358px;
   height: 50px;
@@ -750,41 +468,34 @@ body {
           user-select: none;
 }
 
-/*
+/* 
+=====================================
+=====================================
 
-*************************************
+        BACKDROP CONTAINER
 
-        CONTAINER BACKDROP
-
-*************************************
-
-/*
-  hide backdrop class with button and modal
+=====================================
+=====================================
 */
+/* HIDE BACKDROP CONTAINER 
+=============================================*/
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-/*
-  backdrop container
-*/
+/* BACKDROP CONTAINER 
+=============================================*/
 .backdrop {
   position: fixed;
   top: 0;
   background: rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
-  /* main container with form */
-  /*
-    text from form
-  */
-  /*
-    sizeing form and positioning all elements 
-  */
 }
 .backdrop__content {
+  /* main container with form */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,12 +515,14 @@ body {
   gap: 30px;
 }
 .backdrop__title {
+  /* text from form */
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: .backdrop__title second-letter-spacing;
   color: .backdrop__title fifth-color;
 }
 .backdrop__form {
+  /* sizeing form and positioning all elements */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,6 +537,8 @@ body {
           align-items: center;
 }
 
+/* CONTAINER WITH BUTTON AND FORM
+=============================================*/
 .modal {
   position: absolute;
   top: 50%;
@@ -838,10 +553,8 @@ body {
   border-radius: 4px;
 }
 
-/*
-  container with icon and input
-  positioning relative is for a icon__svg
-*/
+/* FORM
+=============================================*/
 .form {
   position: relative;
   display: -webkit-box;
@@ -852,16 +565,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4px;
-  /* labels from its into form class */
-  /* text into form__label */
-  /* size inputs from form */
-  /*
-    form__svg with form__svg
-    relocated icon to left and use margin to position 
-  */
-  /* animation icon color */
 }
 .form__label {
+  /* labels from its into form class */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,6 +580,7 @@ body {
           justify-content: center;
 }
 .form__title {
+  /* text into form__label */
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -881,6 +588,7 @@ body {
   color: #757575;
 }
 .form__input {
+  /* size inputs from form */
   width: 448px;
   height: 40px;
   outline: none;
@@ -888,35 +596,39 @@ body {
   border-radius: 4px;
   -webkit-transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  /* change color when user hovered or focused input */
-  /* fill icon form from input */
-  /* padding start to write text from user into input */
 }
 .form__input:hover, .form__input:focus {
+  /* change color when user hovered or focused input */
   border: 1px solid #2196f3;
   -webkit-transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:hover + .form__svg .form__icon, .form__input:hover + .form__svg .form__icon {
+  /* fill icon form from input */
   fill: #2196f3;
   -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input[type] {
+  /* padding start to write text from user into input */
   padding-left: 42px;
 }
 .form__svg {
+  /*
+    form__svg with form__svg
+    relocated icon to left and use margin to position 
+  */
   position: absolute;
   margin-left: 15px;
 }
 .form__icon {
+  /* animation icon color */
   -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*
-  textarea__input size and border
-*/
+/* TEXTAREA INPUT AND BUTTON
+=============================================*/
 .textarea__input {
   width: 448px;
   height: 120px;
@@ -924,9 +636,9 @@ body {
   border-radius: 4px;
   padding: 12px;
   resize: none;
-  /* textarea__input placeholder */
 }
 .textarea__input::-webkit-input-placeholder {
+  /* textarea__input placeholder */
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -936,6 +648,7 @@ body {
           user-select: none;
 }
 .textarea__input::-moz-placeholder {
+  /* textarea__input placeholder */
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -945,6 +658,7 @@ body {
        user-select: none;
 }
 .textarea__input:-ms-input-placeholder {
+  /* textarea__input placeholder */
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -954,6 +668,7 @@ body {
       user-select: none;
 }
 .textarea__input::-ms-input-placeholder {
+  /* textarea__input placeholder */
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -963,6 +678,7 @@ body {
       user-select: none;
 }
 .textarea__input::placeholder {
+  /* textarea__input placeholder */
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -974,9 +690,8 @@ body {
           user-select: none;
 }
 
-/*
-  checkbox container with regulations 
-*/
+/* CHECKBOX FROM REGULATIONS
+=============================================*/
 .checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -985,57 +700,53 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*
-      checkbox input
-      overflow is hidden becouse we use svg icon from icons.svg 
-    */
-  /*
-    use margin and cursor to icon to svg checkbox
-    */
-  /*******************************
-    VISIBILITY CHECKBOX ICONS
-  *******************************/
-  /*
-   visible checkbox icon from class checkbox__before 
-   when user dosen't checked checkbox
-  */
-  /*
-    hidden checkbox icon from class checkbox__before 
-    when user checked checkbox
-  */
-  /*
-    hidden checkbox icon from class checkbox__after 
-    when user dosen't checked checkbox
-  */
-  /*
-    visible checkbox icon from class checkbox__after 
-    when user checked checkbox
-  */
-  /*
-    regulations from checkbox
-  */
 }
 .checkbox__input {
+  /*
+    checkbox input
+    overflow is hidden becouse we use svg icon from icons.svg 
+  */
   display: block;
   visibility: hidden;
 }
 .checkbox__svg {
+  /* use margin and cursor to icon to svg checkbox */
   margin-right: 8px;
   cursor: pointer;
 }
 .checkbox__before {
+  /* VISIBILITY CHECKBOX ICONS
+  =============================================*/
+  /*
+   visible checkbox icon from class checkbox__before 
+   when user dosen't checked checkbox
+  */
   visibility: visible;
 }
 .checkbox__input:checked + .label__checked .checkbox__svg .checkbox__before {
+  /*
+    hidden checkbox icon from class checkbox__before 
+    when user checked checkbox
+  */
   visibility: hidden;
 }
 .checkbox__after {
+  /*
+    hidden checkbox icon from class checkbox__after 
+    when user dosen't checked checkbox
+  */
   visibility: hidden;
 }
 .checkbox__input:checked + .label__checked .checkbox__svg .checkbox__after {
+  /*
+    visible checkbox icon from class checkbox__after 
+    when user checked checkbox
+  */
   visibility: visible;
 }
 .checkbox__regulations {
+  /* REGULATIONS FROM CHECKBOX
+  =============================================*/
   font-weight: var(--third-weight);
   font-size: inherit;
   line-height: var(--first-line-height);
@@ -1045,7 +756,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  /* to emphasize "regulations" and "Privacy Policy" */
+  /* to emphasize "regulations" and "privacy policy" */
 }
 .checkbox__regulations .regulations__span {
   text-decoration: underline;
@@ -1053,6 +764,16 @@ body {
   cursor: pointer;
 }
 
+/* 
+=====================================
+=====================================
+
+                ICONS
+
+=====================================
+=====================================
+*/
+/* container with icons */
 .icons__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1066,28 +787,24 @@ body {
   padding: 0 0 30px 0;
 }
 
-/*
-  ul with social icons
-*/
+/* ul with social icons */
 .social__list {
   gap: 10px;
 }
 
-/*
-BUTTONS FROM PORTFOLIO.HTML
+/* 
+=====================================
+=====================================
+
+            BUTTONS
+
+=====================================
+=====================================
+*/
+/* BUTTONS FROM PORTFOLIO.HTML
 =============================================*/
-.filters {
-  /* 
-      buttons with category
-      */
-  /*
-    button list
-    */
-  /*
-      buttons display 
-      */
-}
 .filters__button {
+  /* buttons with category */
   /* button color and border */
   background: #f5f4fa;
   -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1104,12 +821,12 @@ BUTTONS FROM PORTFOLIO.HTML
   line-height: 1.6;
   /* other */
   padding: 6px 22px;
+}
+.filters__button:hover, .filters__button:focus {
   /* 
     change color and add shadow to buttons
     when user hover or focus them
-    */
-}
-.filters__button:hover, .filters__button:focus {
+  */
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1120,17 +837,18 @@ BUTTONS FROM PORTFOLIO.HTML
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters__list {
+  /* button list */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 4px;
 }
 .filters__item {
+  /* buttons display */
   margin: 0 4px 50px;
 }
 
-/*
-GENERAL BUTTONS FROM HEADING, FOOTER AND FORM
+/* GENERAL BUTTONS FROM HEADING, FOOTER AND FORM
 =============================================*/
 .button {
   /* color and border of button */
@@ -1158,11 +876,10 @@ GENERAL BUTTONS FROM HEADING, FOOTER AND FORM
           user-select: none;
 }
 
-/*
-BUTTON FROM NEWSLETTER
+/* BUTTON FROM NEWSLETTER
 =============================================*/
-/* use flex to button for the arrangement of elements (text and svg) */
 .newsletter__button {
+  /* use flex to button for the arrangement of elements (text and svg) */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1175,11 +892,10 @@ BUTTON FROM NEWSLETTER
   gap: 24px;
 }
 
-/*
-BUTTON FROM MODAL CONTAINER
+/* BUTTON FROM MODAL CONTAINER
 =============================================*/
-/* close button from modal container */
 .modal__button {
+  /* close button from modal container */
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1203,21 +919,23 @@ BUTTON FROM MODAL CONTAINER
   cursor: pointer;
 }
 
-.projects {
+/* IMPORT SECTIONS
+============================================= */
+/* 
+=====================================
+=====================================
+
+       CONTAINER WITH PROJECTS
+      (FOR NOW HAS LOREM IPSUM)
+
+=====================================
+=====================================
+*/
+.projects__item {
   /*
   when user hovering or focusing box with project 
   shadow will be showing around the boxes   
   */
-  /* border and positioning projects text (name and category) */
-  /* projects heading */
-  /* projects paragraph */
-  /*
-       projects__box with relative position 
-       container has image with project and text which is animated
-       relative halps with positioning image__text
-      */
-}
-.projects__item {
   -webkit-transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1232,6 +950,7 @@ BUTTON FROM MODAL CONTAINER
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__text {
+  /* border and positioning projects text (name and category) */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1246,25 +965,29 @@ BUTTON FROM MODAL CONTAINER
   border-right: 1px solid #eeeeee;
 }
 .projects__name {
+  /* projects heading */
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .projects__category {
+  /* projects paragraph */
   color: #757575;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
 .projects .image {
+  /*
+    projects__box with relative position 
+    container has image with project and text which is animated
+    relative halps with positioning image__text
+  */
   position: relative;
   overflow: hidden;
-  /* positioning image__text to image__box */
-  /*
-    animation and styling image__text when user hover image__box
-  */
 }
 .projects .image__text {
+  /* positioning image__text to image__box */
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
   font-style: normal;
@@ -1283,6 +1006,284 @@ BUTTON FROM MODAL CONTAINER
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects .image:hover .image__text {
+  /* animation and styling image__text when user hover image__box */
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+/* 
+=====================================
+=====================================
+
+       MAIN HEADING FROM INDEX
+
+=====================================
+=====================================
+*/
+.heading {
+  /* container containing main title and button */
+  /* background of title container */
+  background: #2f303a; /* if images doesn't work */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/backgrounds/background.jpg") no-repeat center top;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgrounds/background.jpg") no-repeat center top;
+  /* background-image: linear-gradient(rgba(47, 48, 58, 0.4)); */
+  background-size: cover;
+  /* to center the text and button when zoomed in */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  /* positioning text and button into title container*/
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 200px 0;
+}
+.heading__title {
+  /* main title */
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+  padding: 0 0 30px 0;
+}
+
+/* 
+=====================================
+=====================================
+
+        CONTAINER WITH FEATURES
+       (FOR NOW HAS LOREM IPSUM)
+
+=====================================
+=====================================
+*/
+.feature {
+  /* positioning feature container and feature box */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+.feature__item {
+  /* flexing feature box with icon, text and description */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.feature__icon {
+  /* positioning svg icon with feature__container */
+  background: #f5f4fa;
+  text-align: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+.feature__text {
+  /* feature heading text (lorem ipsum) */
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* space beetwen heading and description text */
+  padding-bottom: 10px;
+}
+.feature__description {
+  /* feature paragraph text (lorem ipsum...) */
+  color: #757575;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* 
+=====================================
+=====================================
+
+     CONTAINER WITH ABOUT SECTION
+          (EMPTY FOR NOW)
+
+=====================================
+=====================================
+*/
+.about__item {
+  /*
+  relative postion contanier with about us
+  for about__text and positioning this to bottom into about__box
+  */
+  position: relative;
+}
+.about__text {
+  /*
+  text into about__box 
+  under the about__image 
+  */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 27px 0;
+}
+
+/* 
+=====================================
+=====================================
+
+        CONTAINER WITH TEAM
+
+=====================================
+=====================================
+*/
+/* 
+  main team container
+  it has all the tags with the team and heading
+*/
+.team {
+  background: #f5f4fa;
+}
+.team__item {
+  /* team card with image, team name and team profession */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  background: #ffffff;
+  /* shadow under the containers with a photo, 
+  name and profession of the team */
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__info {
+  /* container with team__text and contact__icon */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.team__name {
+  /* team heading text */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  /* center text */
+  text-align: center;
+  padding-bottom: 10px;
+}
+.team__profession {
+  /* team paragraph text */
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  /* center text */
+  text-align: center;
+}
+.team .social__list {
+  /* icons into team boxes */
+  /* mixin */
+  /*
+    socials icons:
+    * instagram
+    * tweeter 
+    * facebook
+    * linkedin 
+  */
+  gap: 10px;
+}
+.team .social__list .social__item .first__svg {
+  fill: #ffffff;
+  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team .social__list .social__item .second__svg {
+  fill: #afb1b8;
+  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team .social__list .social__item:hover .first__svg, .team .social__list .social__item:focus .first__svg {
+  fill: #2196f3;
+  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team .social__list .social__item:hover .second__svg, .team .social__list .social__item:focus .second__svg {
+  fill: #ffffff;
+  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 
+=====================================
+=====================================
+
+        CONTAINER WITH CUSTOMERS
+
+=====================================
+=====================================
+*/
+.customer {
+  /* tags with customers boxes */
+}
+.customer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.customer__item {
+  /*
+  item with customer icons
+  */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 17.71px 32px 14.25px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer__item:hover, .customer__item:focus {
+  /*
+  change bored color when user hovering or focusing customer__item
+  */
+  border: 1px solid #2196f3;
+  color: #2196f3;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }

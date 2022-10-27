@@ -1,26 +1,27 @@
 /* 
-
-*************************************
+=====================================
+=====================================
 
      CONTAINER WITH ABOUT SECTION
           (EMPTY FOR NOW)
 
-*************************************
-
+=====================================
+=====================================
 */
+
 .about {
-  /*
-  relative postion contanier with about us
-  for about__text and positioning this to bottom into about__box
-  */
   &__item {
+    /*
+    relative postion contanier with about us
+    for about__text and positioning this to bottom into about__box
+    */
     position: relative;
   }
-  /*
+  &__text {
+    /*
     text into about__box 
     under the about__image 
     */
-  &__text {
     position: absolute;
     bottom: 0;
     width: 100%;

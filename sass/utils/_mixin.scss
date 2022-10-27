@@ -21,22 +21,23 @@
     @extend %logo;
     color: $logo-color;
   }
-  /* span color */
   .logo__web {
+    /* span color */
     color: $second-color;
   }
 }
 
 /* SOCIAL MIXIN
 ================================================*/
-/*
-  socials icons:
-  * instagram
-  * tweeter 
-  * facebook
-  * linkedin 
-*/
+
 @mixin social__icons($first, $second) {
+  /*
+    socials icons:
+    * instagram
+    * tweeter 
+    * facebook
+    * linkedin 
+  */
   gap: 10px;
 
   .social__item {
@@ -62,6 +63,7 @@
     }
   }
 }
+
 /* NAVIGATION MIXIN
 ================================================*/
 @mixin nav__links($font-color) {

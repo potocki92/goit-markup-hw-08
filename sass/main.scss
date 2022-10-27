@@ -1,3 +1,14 @@
+/* 
+=====================================
+=====================================
+
+            IMPORT SASS
+
+=====================================
+=====================================
+*/
+
+
 /* IMPORT UTILTS 
 ============================================= */
 @import "utils/variables";
@@ -11,13 +22,16 @@
 /* IMPORT COMPONENTS
 ============================================= */
 @import "components/header";
-@import "components/heading";
-@import "components/feature";
-@import "components/about";
-@import "components/team";
-@import "components/customer";
 @import "components/footer";
 @import "components/backdrop";
 @import "components/icons";
 @import "components/buttons";
-@import "components/projects";
+
+/* IMPORT SECTIONS
+============================================= */
+@import "sections/projects";
+@import "sections/heading";
+@import "sections/feature";
+@import "sections/about";
+@import "sections/team";
+@import "sections/customer";

@@ -1,38 +1,37 @@
 /* 
-
-*************************************
+=====================================
+=====================================
 
         CONTAINER WITH FEATURES
        (FOR NOW HAS LOREM IPSUM)
 
-*************************************
+=====================================
+=====================================
+*/
 
-*/
-/*
-  positioning feature container and feature box
-*/
 .feature {
+  /* positioning feature container and feature box */
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 94px;
 
-  /* flexing feature box with icon, text and description */
   &__item {
+    /* flexing feature box with icon, text and description */
     display: flex;
     flex-direction: column;
     flex: 1;
 
   }
-  /* positioning svg icon with feature__container */
   &__icon {
+    /* positioning svg icon with feature__container */
     background: #f5f4fa;
     text-align: center;
     padding: 25px 100px;
     margin-bottom: 30px;
   }
 
-  /* feature heading text (lorem ipsum) */
   &__text {
+    /* feature heading text (lorem ipsum) */
     font-size: inherit;
     line-height: 1.14;
     letter-spacing: $second-letter-spacing;
@@ -41,8 +40,8 @@
     padding-bottom: 10px;
   }
 
-  /* feature paragraph text (lorem ipsum...) */
   &__description {
+    /* feature paragraph text (lorem ipsum...) */
     color: $third-color;
     line-height: $first-line-height;
     letter-spacing: $second-letter-spacing;

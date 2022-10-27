@@ -8,36 +8,31 @@
 =====================================
 */
 
-/* 
-  Footer Container 
-*/
+
 .footer {
   background: $footer-color;
-  /*
-    footer padding and gap to flex list class and logo__container
-    space bettween top and bottom 
-  */
+
   &__box {
+    /*
+      footer padding and gap to flex list class and logo__container
+      space bettween top and bottom 
+    */
     display: flex;
     justify-content: space-between;
   }
 
-  /* LOGO 
-  **************************************/
-  /* container with logo and contact into footer container */
   &__info {
+    /* container with logo and contact into footer container */
     padding: 60px 0;
-    /* footer logo color and padding */
     .logo {
+      /* footer logo color and padding */
       padding-bottom: 20px;
       @include logo__container($first-color);
     }
   }
 
-  /* TEXT INTO SOCIAL AND NEWSLETTERS
-  **************************************/
-  /* text into footer__social */
   &__text {
+    /* text into footer__social */
     font-weight: $second-weight;
     line-height: 1.142;
     letter-spacing: $second-letter-spacing;
@@ -45,13 +40,11 @@
     color: $first-color;
   }
 
-  /* CONTACT (EMAIL, PHONE, STREET) 
-  **************************************/
-  /*
-  position contact list in footer container
-  and overwritting gap from the list class
-  */
   .contact {
+    /*
+    position contact list in footer container
+    and overwritting gap from the list class
+    */
     &__list {
       flex-flow: column;
       gap: 9px;
@@ -67,10 +60,8 @@
     }
   }
 
-  /* SOCIAL ICONS 
-  **************************************/
-  /* container with social__text and icons */
   &__social {
+    /* container with social__text and icons */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -85,7 +76,7 @@
 }
 
 /* NEWSLETTER 
-**************************************/
+=============================================*/
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -96,11 +87,11 @@
     flex-wrap: wrap;
     gap: 12px;
   }
-  
+
   /* input form */
   .form__input {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: $radius;
     width: 358px;
     height: 50px;
