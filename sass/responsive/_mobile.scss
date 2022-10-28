@@ -1,0 +1,24 @@
+@media screen and (max-width: 480px) {
+  .heading {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/backgrounds/background-480.jpg") no-repeat center top;
+      padding: 118px 0;
+    
+      &__title {
+        @include text_value(26px, 1.6, $first-letter-spacing, 900);
+      }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .heading {
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url("../images/backgrounds/background-768.jpg") no-repeat center top;
+          padding: 118px 0;
+        
+          &__title {
+            @include text_value(26px, 1.6, $first-letter-spacing, 900);
+          }
+      }
+}
