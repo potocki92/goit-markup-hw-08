@@ -17,6 +17,7 @@
   /* background-image: linear-gradient(rgba(47, 48, 58, 0.4)); */
   background-size: cover;
   /* to center the text and button when zoomed in */
+  position: relative;
   display: flex;
   flex-flow: column;
   /* positioning text and button into title container*/
