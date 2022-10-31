@@ -9,7 +9,7 @@
 */
 .wrapper {
   /* space between link__container and contact__container */
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 .header {
   /* Header Container */
@@ -26,8 +26,9 @@
     /* container with logo and navigation links */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: calc(6vw + 2px);
+    // gap: calc(6vw + 2px);
   }
 
   .contact {

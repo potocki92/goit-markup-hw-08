@@ -23,42 +23,40 @@
     <!-- start header -->
     <header class="header">
       <!-- start container with position -->
-      <div class="container wrapper">
-        <div class="header__links">
-          <!-- start logo -->
-          <div class="logo">
-            <a href="./index.html" class="logo__link link"
-              ><span class="logo__web">Web</span>Studio</a
-            >
-          </div>
-          <!-- end logo -->
-          <!-- start navigation -->
-          <nav class="navigation">
-            <ul class="navigation__list list">
-              <li class="navigation__item item">
-                <a
-                  class="navigation__link link active__link"
-                  href="./index.html"
-                  id="agency"
-                  >Agencja</a
-                >
-              </li>
-              <li class="navigation__item item">
-                <a
-                  class="navigation__link link"
-                  href="./portfolio.html"
-                  id="portfolio"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="navigation__item item">
-                <a class="navigation__link link" href="#" id="contact"
-                  >Kontakt</a
-                >
-              </li>
-            </ul>
-          </nav>
+      <div class="header__links container">
+        <!-- start logo -->
+        <div class="logo">
+          <a href="./index.html" class="logo__link link"
+            ><span class="logo__web">Web</span>Studio</a
+          >
         </div>
+        <!-- end logo -->
+        <!-- start navigation -->
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item item">
+              <a
+                class="navigation__link link active__link"
+                href="./index.html"
+                id="agency"
+                >Agencja</a
+              >
+            </li>
+            <li class="navigation__item item">
+              <a
+                class="navigation__link link"
+                href="./portfolio.html"
+                id="portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation__item item">
+              <a class="navigation__link link" href="#" id="contact"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
         <!-- end navigation -->
         <!-- start contact container: telephone and email  -->
         <div class="contact">
@@ -81,6 +79,7 @@
         </div>
         <!-- end contact container -->
       </div>
+    <!-- </div class="container wrapper"></div> -->
       <!-- end container with position -->
     </header>
     <!-- end header -->
@@ -508,93 +507,95 @@
     <!-- end main -->
     <!-- start footer -->
     <footer class="footer">
-      <div class="footer__box container">
-        <!-- container with logo + contact -->
-        <div class="footer__info">
-          <!-- logo -->
-          <div class="logo">
-            <a href="./index.html" class="logo__link link"
-              ><span class="logo__web">Web</span>Studio</a
-            >
+      <div class="container">
+        <div class="footer__box">
+          <!-- container with logo + contact -->
+          <div class="footer__info">
+            <!-- logo -->
+            <div class="logo">
+              <a href="./index.html" class="logo__link link"
+                ><span class="logo__web">Web</span>Studio</a
+              >
+            </div>
+            <!-- address to coresponde -->
+            <address class="contact">
+              <ul class="contact__list list">
+                <li class="contact__item item">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </li>
+                <li class="contact__item item">
+                  <a class="contact__link link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="contact__item item">
+                  <a class="contact__link link" href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <!-- end address to coresponde -->
           </div>
-          <!-- address to coresponde -->
-          <address class="contact">
-            <ul class="contact__list list">
-              <li class="contact__item item">
-                m. Warszawa, Aleje Jerozolimskie 21
-              </li>
-              <li class="contact__item item">
-                <a class="contact__link link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="contact__item item">
-                <a class="contact__link link" href="tel:+48111111111"
-                  >+48 111 111 111</a
-                >
-              </li>
-            </ul>
-          </address>
-          <!-- end address to coresponde -->
-        </div>
-        <!-- end container with logo + contact -->
-        <!-- start social container -->
-        <div class="footer__social">
-          <span class="footer__text">Dołącz do nas</span>
-          <div class="social__icon">
-            <ul class="social__list list">
-              <li class="social__item item">
-                <svg class="social__svg" height="44px" width="44px">
-                  <use
-                    class="first__svg"
-                    href="./images/svg/icons.svg#instagram-first"
-                  ></use>
-                  <use
-                    class="second__svg"
-                    href="./images/svg/icons.svg#instagram-second"
-                  ></use>
-                </svg>
-              </li>
-              <li class="social__item item">
-                <svg class="social__svg" height="44px" width="44px">
-                  <use
-                    class="first__svg"
-                    href="./images/svg/icons.svg#tweeter-first"
-                  ></use>
-                  <use
-                    class="second__svg"
-                    href="./images/svg/icons.svg#tweeter-second"
-                  ></use>
-                </svg>
-              </li>
-              <li class="social__item item">
-                <svg class="social__svg" height="44px" width="44px">
-                  <use
-                    class="first__svg"
-                    href="./images/svg/icons.svg#facebook-first"
-                  ></use>
-                  <use
-                    class="second__svg"
-                    href="./images/svg/icons.svg#facebook-second"
-                  ></use>
-                </svg>
-              </li>
-              <li class="social__item item">
-                <svg class="social__svg" height="44px" width="44px">
-                  <use
-                    class="first__svg"
-                    href="./images/svg/icons.svg#linkedin-first"
-                  ></use>
-                  <use
-                    class="second__svg"
-                    href="./images/svg/icons.svg#linkedin-second"
-                  ></use>
-                </svg>
-              </li>
-            </ul>
+          <!-- end container with logo + contact -->
+          <!-- start social container -->
+          <div class="footer__social">
+            <span class="footer__text">Dołącz do nas</span>
+            <div class="social__icon">
+              <ul class="social__list list">
+                <li class="social__item item">
+                  <svg class="social__svg" height="44px" width="44px">
+                    <use
+                      class="first__svg"
+                      href="./images/svg/icons.svg#instagram-first"
+                    ></use>
+                    <use
+                      class="second__svg"
+                      href="./images/svg/icons.svg#instagram-second"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__svg" height="44px" width="44px">
+                    <use
+                      class="first__svg"
+                      href="./images/svg/icons.svg#tweeter-first"
+                    ></use>
+                    <use
+                      class="second__svg"
+                      href="./images/svg/icons.svg#tweeter-second"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__svg" height="44px" width="44px">
+                    <use
+                      class="first__svg"
+                      href="./images/svg/icons.svg#facebook-first"
+                    ></use>
+                    <use
+                      class="second__svg"
+                      href="./images/svg/icons.svg#facebook-second"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__svg" height="44px" width="44px">
+                    <use
+                      class="first__svg"
+                      href="./images/svg/icons.svg#linkedin-first"
+                    ></use>
+                    <use
+                      class="second__svg"
+                      href="./images/svg/icons.svg#linkedin-second"
+                    ></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </div>
+          <!-- end social container -->
         </div>
-        <!-- end social container -->
         <!-- start newsletter -->
         <div class="newsletter">
           <span class="footer__text">Zapisz się do newslettera</span>
@@ -625,8 +626,8 @@
             </button>
           </div>
         </div>
-        <!-- end newsletter -->
       </div>
+      <!-- end newsletter -->
     </footer>
     <!-- end footer -->
 

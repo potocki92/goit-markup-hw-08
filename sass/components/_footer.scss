@@ -10,22 +10,27 @@
 
 .footer {
   background: $footer-color;
-
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
   &__box {
     /*
       footer padding and gap to flex list class and logo__container
       space bettween top and bottom 
     */
     display: flex;
-    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     /* container with logo and contact into footer container */
-    padding: 60px 0;
     .logo {
       /* footer logo color and padding */
-      padding-bottom: 20px;
       @include logo__container($first-color);
     }
   }
