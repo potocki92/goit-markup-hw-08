@@ -2,7 +2,9 @@
   .heading {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../images/backgrounds/background-480.jpg") no-repeat center top;
-    
+    background-size: cover;
+    display: flex;
+    height: 100%;
     padding: 118px 0;
 
     &__title {
@@ -10,9 +12,11 @@
     }
   }
 
+  .title {
+    padding-bottom: 30px;
+  }
   .header {
     position: relative;
-    width: 100%;
     .container {
       padding: 16px 15px;
     }
@@ -26,11 +30,13 @@
       }
     }
     .navigation {
+      position: absolute;
       visibility: hidden;
       height: 0;
     }
 
-    .contact__list {
+    .contact {
+      position: absolute;
       visibility: hidden;
       height: 0;
     }
@@ -82,13 +88,17 @@
     .form__input {
       // @include box_size(450px, 50px);
       width: calc(100vw - 30px);
+      &[type] {
+        /* padding start to write text from user into input */
+        padding-left: 16px;
+      }
     }
     &__icon {
       gap: 20px;
     }
   }
   .icons__container {
-    padding: 0;
+    padding: 0 0 24px 0;
   }
   .section {
     padding: 60px 15px;
@@ -102,8 +112,13 @@
 
   .feature {
     align-items: center;
+    margin-bottom: 0;
     &__item {
       width: 100vw;
+    }
+
+    &__text {
+      text-align: center;
     }
   }
   .about {
