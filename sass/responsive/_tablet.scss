@@ -1,4 +1,7 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .title {
+    padding-bottom: 30px;
+  }
   .header {
     .container {
       padding: 26px 15px;
@@ -44,6 +47,7 @@
       flex-direction: column;
     }
     &__box {
+      align-items: flex-start;
       justify-content: space-around;
     }
 
@@ -66,29 +70,41 @@
     align-items: center;
     .form__input {
       @include box_size(450px, 50px);
+      &[type] {
+        /* padding start to write text from user into input */
+        padding-left: 16px;
+      }
     }
+    
     &__icon {
       gap: 20px;
+      flex-direction: column;
     }
   }
   .icons__container {
-    padding: 0;
+    padding: 0 0 24px 0;
+
   }
   .section {
-    padding: 60px 0;
+    padding: 60px 15px;
   }
   .customer {
     &__list {
       justify-content: center;
+      display: flex;
     }
     &__item {
-      padding: 16px 60px;
+      width: 226px;
+      justify-content: center;
     }
   }
 
   .feature {
-    padding: 0 15px;
     align-items: center;
+    margin-bottom: 0;
+    &__item {
+      width: 100vw;
+    }
   }
   .about {
     visibility: hidden;

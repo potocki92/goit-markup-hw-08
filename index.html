@@ -76,11 +76,11 @@
           </ul>
         </div>
         <!-- end contact container -->
-        <div class="burger">
+        <button class="burger mobile-open">
           <svg class="burger__svg" width="40px" height="40px">
             <use href="./images/svg/icons.svg#burger"></use>
           </svg>
-        </div>
+        </button>
       </div>
 
       <!-- </div class="container wrapper"></div> -->
@@ -201,12 +201,16 @@
             <li class="team__item item">
               <picture class="team__image">
                 <source
-                  srcset="./images/main_page/team/image_product_designer-480.jpg"
+                  srcset="
+                    ./images/main_page/team/image_product_designer-480.jpg
+                  "
                   media="(max-width: 480px)"
                   width="100%"
                 />
                 <source
-                  srcset="./images/main_page/team/image_product_designer-768.jpg"
+                  srcset="
+                    ./images/main_page/team/image_product_designer-768.jpg
+                  "
                   media="(max-width: 768px)"
                   width="354"
                   height="374"
@@ -281,12 +285,16 @@
             <li class="team__item item">
               <picture class="team__image">
                 <source
-                  srcset="./images/main_page/team/image_frontend_developer-480.jpg"
+                  srcset="
+                    ./images/main_page/team/image_frontend_developer-480.jpg
+                  "
                   media="(max-width: 480px)"
                   width="100%"
                 />
                 <source
-                  srcset="./images/main_page/team/image_frontend_developer-768.jpg"
+                  srcset="
+                    ./images/main_page/team/image_frontend_developer-768.jpg
+                  "
                   media="(max-width: 768px)"
                   width="354"
                   height="374"
@@ -791,8 +799,77 @@
       </div>
     </div>
 
+    <!-- start mobile navigation menu -->
+    <div class="mobile mobile-container is-hidden" id="mobie__menu">
+      <!-- start navigation -->
+      <nav class="navigation">
+        <ul class="navigation__list list">
+          <li class="navigation__item item">
+            <a class="navigation__link link" href="./index.html" id="agency"
+              >Agencja</a
+            >
+          </li>
+          <li class="navigation__item item">
+            <a
+              class="navigation__link link"
+              href="./portfolio.html"
+              id="portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="navigation__item item">
+            <a class="navigation__link link" href="#" id="contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end navigation -->
+      <div class="mobile__contacts">
+        <!-- start contact container: telephone and email  -->
+        <div class="contact">
+          <ul class="contact__list list">
+            <li class="contact__item item">
+              <a class="contact__link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__item item">
+              <a class="contact__link link" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- end contact container -->
+        <!-- start social links -->
+        <div class="social">
+          <ul class="social__list list">
+            <li class="social__item item">
+              <a class="social__link link" href="#">Instagram</a>
+            </li>
+            <li class="social__item item">
+              <a class="social__link link" href="#">Twitter</a>
+            </li>
+            <li class="social__item item">
+              <a class="social__link link" href="#">Facebook</a>
+            </li>
+            <li class="social__item item">
+              <a class="social__link link" href="#">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end social links -->
+      </div>
+
+      <button class="mobile__burger mobile-close">
+        <svg class="burger__svg" width="40px" height="40px">
+          <use href="./images/svg/icons.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- end mobile navigation menu -->
     <!-- scripts -->
     <!-- modal scripts -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
