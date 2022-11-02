@@ -2,6 +2,7 @@
   .heading {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../images/backgrounds/background-480.jpg") no-repeat center top;
+    
     padding: 118px 0;
 
     &__title {
@@ -9,6 +10,46 @@
     }
   }
 
+  .header {
+    position: relative;
+    width: 100%;
+    .container {
+      padding: 16px 15px;
+    }
+    &__links {
+      flex-wrap: nowrap;
+    }
+    .logo {
+      &__link {
+        font-size: 24px;
+        line-height: 1.16;
+      }
+    }
+    .navigation {
+      visibility: hidden;
+      height: 0;
+    }
+
+    .contact__list {
+      visibility: hidden;
+      height: 0;
+    }
+
+    .burger {
+      visibility: visible;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      height: 40px;
+      @include anim__transition(fill, inherit);
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        @include anim__transition(fill, $second-color);
+      }
+    }
+  }
   .footer {
     padding: 60px 0;
     .container {
@@ -39,7 +80,8 @@
   .newsletter {
     align-items: center;
     .form__input {
-      @include box_size(450px, 50px);
+      // @include box_size(450px, 50px);
+      width: calc(100vw - 30px);
     }
     &__icon {
       gap: 20px;
@@ -49,19 +91,26 @@
     padding: 0;
   }
   .section {
-    padding: 60px 0;
+    padding: 60px 15px;
   }
   .customer {
     &__item {
-      padding: 16px 52px;
+      width: 210px;
+      justify-content: center;
     }
   }
 
   .feature {
-    margin: 0;
+    align-items: center;
+    &__item {
+      width: 100vw;
+    }
   }
   .about {
     visibility: hidden;
     height: 0;
+  }
+  .team__item {
+    width: 100%;
   }
 }

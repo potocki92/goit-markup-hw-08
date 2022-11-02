@@ -87,3 +87,10 @@
     @include box_size(100%, 4px);
   }
 }
+
+
+.burger {
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+}

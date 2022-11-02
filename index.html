@@ -51,9 +51,7 @@
               >
             </li>
             <li class="navigation__item item">
-              <a class="navigation__link link" href="#" id="contact"
-                >Kontakt</a
-              >
+              <a class="navigation__link link" href="#" id="contact">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -78,8 +76,14 @@
           </ul>
         </div>
         <!-- end contact container -->
+        <div class="burger">
+          <svg class="burger__svg" width="40px" height="40px">
+            <use href="./images/svg/icons.svg#burger"></use>
+          </svg>
+        </div>
       </div>
-    <!-- </div class="container wrapper"></div> -->
+
+      <!-- </div class="container wrapper"></div> -->
       <!-- end container with position -->
     </header>
     <!-- end header -->
@@ -195,13 +199,26 @@
           <h2 class="team__title title">Nasz zespół</h2>
           <ul class="team__list list">
             <li class="team__item item">
-              <img
-                class="team__image"
-                src="./images/main_page/team/image_product_designer.jpg"
-                alt="image of Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="./images/main_page/team/image_product_designer-480.jpg"
+                  media="(max-width: 480px)"
+                  width="100%"
+                />
+                <source
+                  srcset="./images/main_page/team/image_product_designer-768.jpg"
+                  media="(max-width: 768px)"
+                  width="354"
+                  height="374"
+                />
+                <img
+                  src="./images/main_page/team/image_product_designer.jpg"
+                  alt="Baby Sleeping"
+                  alt="image of Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__info">
                 <div class="team__text">
                   <h6 class="team__name">John Doe</h6>
@@ -262,13 +279,26 @@
               </div>
             </li>
             <li class="team__item item">
-              <img
-                class="team__image"
-                src="./images/main_page/team/image_frontend_developer.jpg"
-                alt="image of Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="./images/main_page/team/image_frontend_developer-480.jpg"
+                  media="(max-width: 480px)"
+                  width="100%"
+                />
+                <source
+                  srcset="./images/main_page/team/image_frontend_developer-768.jpg"
+                  media="(max-width: 768px)"
+                  width="354"
+                  height="374"
+                />
+                <img
+                  src="./images/main_page/team/image_frontend_developer.jpg"
+                  alt="Baby Sleeping"
+                  alt="image of Frontend Developer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__info">
                 <div class="team__text">
                   <h6 class="team__name">John Doe</h6>
@@ -329,13 +359,26 @@
               </div>
             </li>
             <li class="team__item item">
-              <img
-                class="team__image"
-                src="./images/main_page/team/image_marketing.jpg"
-                alt="image of Marketing"
-                width="270"
-                height="260"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="./images/main_page/team/image_marketing-480.jpg"
+                  media="(max-width: 480px)"
+                  width="100%"
+                />
+                <source
+                  srcset="./images/main_page/team/image_marketing-768.jpg"
+                  media="(max-width: 768px)"
+                  width="354"
+                  height="374"
+                />
+                <img
+                  src="./images/main_page/team/image_marketing.jpg"
+                  alt="Baby Sleeping"
+                  alt="image of Marketing"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__info">
                 <div class="team__text">
                   <h6 class="team__name">John Doe</h6>
@@ -396,13 +439,26 @@
               </div>
             </li>
             <li class="team__item item">
-              <img
-                class="team__image"
-                src="./images/main_page/team/image_ui_designer.jpg"
-                alt="image of UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="./images/main_page/team/image_ui_designer-480.jpg"
+                  media="(max-width: 480px)"
+                  width="100%"
+                />
+                <source
+                  srcset="./images/main_page/team/image_ui_designer-768.jpg"
+                  media="(max-width: 768px)"
+                  width="354"
+                  height="374"
+                />
+                <img
+                  src="./images/main_page/team/image_ui_designer.jpg"
+                  alt="Baby Sleeping"
+                  alt="image of UI Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__info">
                 <div class="team__text">
                   <h6 class="team__name">John Doe</h6>
@@ -506,7 +562,7 @@
     </main>
     <!-- end main -->
     <!-- start footer -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <div class="footer__box">
           <!-- container with logo + contact -->
