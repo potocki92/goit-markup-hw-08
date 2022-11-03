@@ -10,11 +10,14 @@
 */
 
 .about {
+  visibility: hidden;
+  height: 0;
   &__item {
     /*
     relative postion contanier with about us
     for about__text and positioning this to bottom into about__box
     */
+    
     position: relative;
   }
   &__text {

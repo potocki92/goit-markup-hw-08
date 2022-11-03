@@ -12,7 +12,8 @@
   background: $footer-color;
   .container {
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
+    flex-direction: column;
   }
   &__box {
     /*
@@ -20,13 +21,15 @@
       space bettween top and bottom 
     */
     display: flex;
-    gap: 70px;
+    gap: 60px;
     align-items: center;
+    flex-direction: column;
   }
 
   &__info {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     /* container with logo and contact into footer container */
     .logo {
@@ -49,7 +52,8 @@
     */
     &__list {
       flex-flow: column;
-      gap: 9px;
+      align-items: center;
+      gap: 8px;
     }
     &__item {
       color: $first-color;
@@ -67,8 +71,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 72px 0 100px 0;
-
+    align-items: center;
     .social__icon {
       display: flex;
       padding: 0;
@@ -84,18 +87,20 @@
   flex-direction: column;
   gap: 20px;
   justify-content: center;
+  align-items: center;
   /* container with form and button */
   &__icon {
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 20px;
   }
 
   /* input form */
   .form__input {
+    width: calc(100vw - 30px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: $radius;
-    @include box_size(358px, 50px);
+
     background: $footer-color;
     padding: 15px;
     color: $first-color;

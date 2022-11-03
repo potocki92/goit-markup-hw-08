@@ -7,42 +7,35 @@
 =====================================
 =====================================
 */
-.wrapper {
-  /* space between link__container and contact__container */
-  // justify-content: space-between;
-}
+
 .header {
   /* Header Container */
+  position: relative;
   background-color: $first-color;
+  height: 60px;
+  align-items: center;
   border-bottom: 1px solid #ececec;
   /* container with logo, navigation and contacts */
-
   .container {
-    display: flex;
-    align-items: center; /* center all links */
-    padding: 20px 0; /* header padding space between top and bottom */
+    padding: 0 15px;
   }
   &__links {
     /* container with logo and navigation links */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    // gap: calc(6vw + 2px);
+    height: 100%;
   }
 
   .contact {
     /* Contact Container */
-    &__list {
-      gap: 25px; /* overwritting gap from the list class */
-    }
     &__link {
       /* contact link text */
       @include text_value(inherit, 1.14, 0.02em, $first-weight);
       @include anim__transition(color, $third-color);
 
       display: flex;
-      gap: 10px;
       align-items: center;
       &:hover,
       &:focus {

@@ -19,7 +19,10 @@
     item with customer icons
     */
     display: flex;
-    padding: 17.71px 32px 14.25px 32px;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 92px;
     border-radius: $radius;
     @include second_anim_transition(color, #afb1b8, border, 1px solid #afb1b8);
     &:hover,

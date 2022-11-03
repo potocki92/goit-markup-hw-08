@@ -13,7 +13,7 @@
   /* positioning feature container and feature box */
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
+  margin-bottom: 0;
 
   &__item {
     /* flexing feature box with icon, text and description */
@@ -37,6 +37,7 @@
     text-transform: uppercase;
     /* space beetwen heading and description text */
     padding-bottom: 10px;
+    text-align: center;
   }
 
   &__description {
