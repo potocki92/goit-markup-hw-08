@@ -32,19 +32,19 @@
     padding: 40px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 12px;
   }
   &__title {
     /* text from form */
-    
     @include text_value(20px, 1.15, $second-letter-spacing, 700);
     color: &fifth-color;
+    text-align: center;
   }
   &__form {
     /* sizeing form and positioning all elements */
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 10px;
     width: 100%;
     align-items: center;
   }
@@ -56,8 +56,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: $first-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -83,17 +83,22 @@
     /* text into form__label */
     // font-weight: $third-weight;
 
-    @include text_value($modal-text-size, $third-line-height, $modal-letter-spacing, $third-weight);
+    @include text_value(
+      $modal-text-size,
+      $third-line-height,
+      $modal-letter-spacing,
+      $third-weight
+    );
     color: $third-color;
   }
 
   &__input {
     /* size inputs from form */
-    @include box_size(448px, 40px);
+    @include box_size(370px, 40px);
     outline: none;
     border-radius: $radius;
     @include anim__transition(border, 1px solid $input-color);
-    
+
     &:hover,
     &:focus {
       /* change color when user hovered or focused input */
@@ -126,14 +131,19 @@
 /* TEXTAREA INPUT AND BUTTON
 =============================================*/
 .textarea__input {
-  @include box_size(448px, 120px);
+  @include box_size(370px, 120px);
   border: 1px solid $input-color;
   border-radius: $radius;
   padding: 12px;
   resize: none;
   &::placeholder {
     /* textarea__input placeholder */
-    @include text_value($modal-text-size, $third-line-height, $modal-letter-spacing, $third-weight);
+    @include text_value(
+      $modal-text-size,
+      $third-line-height,
+      $modal-letter-spacing,
+      $third-weight
+    );
 
     color: rgba(117, 117, 117, 0.5);
     user-select: none;
@@ -146,6 +156,9 @@
   display: flex;
   text-align: center;
   align-items: center;
+  width: 100%;
+  gap: 8px;
+  padding: 20px 0 31px 0;
   &__input {
     /*
       checkbox input
@@ -154,9 +167,11 @@
     display: block;
     visibility: hidden;
   }
+  &__label {
+    position: absolute;
+  }
   &__svg {
     /* use margin and cursor to icon to svg checkbox */
-    margin-right: 8px;
     cursor: pointer;
   }
 
@@ -194,7 +209,13 @@
   &__regulations {
     /* REGULATIONS FROM CHECKBOX
     =============================================*/
-    @include text_value(inherit, $first-line-height, $second-letter-spacing, $third-weight);
+    @include text_value(
+      $modal-text-size,
+      $third-line-height,
+      $second-letter-spacing,
+      $third-weight
+    );
+    /* identical to box height */
     color: $third-color;
     user-select: none;
     /* to emphasize "regulations" and "privacy policy" */

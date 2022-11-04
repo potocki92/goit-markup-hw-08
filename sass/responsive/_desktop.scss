@@ -16,11 +16,37 @@
   .header {
     /* Header Container */
     height: 80px;
+    &__links {
+      position: relative;
+      gap: 93px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
     .logo {
       &__link {
         font-size: 26px;
         line-height: 1.19;
       }
+    }
+    .contact {
+      visibility: visible;
+      position: absolute;
+      right: 15px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      &__list {
+        flex-direction: row;
+      }
+    }
+
+    .navigation {
+      visibility: visible;
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -29,8 +55,9 @@
     /* background of title container */
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../images/backgrounds/background.jpg") no-repeat center top;
+    background-size: cover;
     padding: 200px 0;
-
+    top: 0;
     &__title {
       @include text_value(44px, 1.4, $first-letter-spacing, 900);
     }
@@ -45,6 +72,9 @@
   .feature {
     /* positioning feature container and feature box */
     margin-bottom: 94px;
+    &__text {
+      text-align: start;
+    }
   }
 
   .about {
@@ -61,7 +91,6 @@
   .footer {
     .container {
       flex-direction: row;
-      justify-content: space-between;
     }
     .contact {
       &__list {
@@ -95,7 +124,36 @@
     }
     /* container with form and button */
     &__icon {
+      flex-direction: row;
       gap: 12px;
     }
+  }
+  /* CONTAINER (CENTERING AND WIDTH)
+============================================= */
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* CONTAINER WITH MAX-WIDTH IMAGE FROM MAIN PAGE (CENTERING AND WIDTH)
+============================================= */
+  .container__image {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .burger {
+    visibility: hidden;
+  }
+
+  .checkbox__regulations {
+    /* REGULATIONS FROM CHECKBOX
+    =============================================*/
+    @include text_value(
+      inherit,
+      $first-line-height,
+      $second-letter-spacing,
+      $third-weight
+    );
   }
 }

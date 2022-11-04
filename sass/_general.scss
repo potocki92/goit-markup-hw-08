@@ -31,6 +31,9 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
 /* GENERAL ITEM CLASS TO ALL LI
 ============================================= */
 .item {
@@ -55,7 +58,7 @@ body {
 /* CONTAINER (CENTERING AND WIDTH)
 ============================================= */
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,7 +66,7 @@ body {
 /* CONTAINER WITH MAX-WIDTH IMAGE FROM MAIN PAGE (CENTERING AND WIDTH)
 ============================================= */
 .container__image {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 }

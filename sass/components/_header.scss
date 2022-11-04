@@ -21,6 +21,7 @@
   }
   &__links {
     /* container with logo and navigation links */
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -30,6 +31,9 @@
 
   .contact {
     /* Contact Container */
+    position: absolute;
+    visibility: hidden;
+    height: 0;
     &__link {
       /* contact link text */
       @include text_value(inherit, 1.14, 0.02em, $first-weight);
@@ -52,6 +56,9 @@
 
 .navigation {
   /*  Navigation Container*/
+  position: absolute;
+  visibility: hidden;
+  height: 0;
   &__link {
     /* navigation link text */
     @include anim__transition(color, $fifth-color);
@@ -73,14 +80,13 @@
     /* this is a underline when user is on the page */
     display: flex;
     position: absolute;
-    bottom: -175%;
+    bottom: -33px;
     content: "";
     background-color: $second-color;
     border-radius: 2px;
     @include box_size(100%, 4px);
   }
 }
-
 
 .burger {
   position: absolute;

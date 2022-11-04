@@ -15,7 +15,6 @@
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../images/backgrounds/background-480.jpg") no-repeat center top;
   /* background-image: linear-gradient(rgba(47, 48, 58, 0.4)); */
-  background-size: cover;
   /* to center the text and button when zoomed in */
   position: relative;
   display: flex;
@@ -24,7 +23,6 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 100%;
   padding: 118px 0;
   &__title {
     /* main title */

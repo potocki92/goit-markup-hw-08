@@ -1,3 +1,22 @@
+.burger {
+  visibility: visible;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  @include anim__transition(fill, inherit);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    @include anim__transition(fill, $second-color);
+  }
+}
 .mobile {
   position: fixed;
   top: 0;
@@ -18,7 +37,7 @@
     right: 10px;
     top: 10px;
     height: 40px;
-
+    padding: 0;
     border: none;
     background-color: transparent;
     outline: none;
@@ -33,6 +52,9 @@
 
   .navigation {
     display: flex;
+    position: relative;
+    visibility: visible;
+    flex-direction: column;
     &__list {
       flex-direction: column;
       justify-content: flex-start;
@@ -90,10 +112,13 @@
       font-size: 18px;
       line-height: 22px;
       /* identical to box height, or 122% */
-
       letter-spacing: 0.02em;
-
       color: #2196f3;
+      padding-right: 10px;
+    }
+
+    &__item:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
   }
 }
