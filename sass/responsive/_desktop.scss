@@ -37,6 +37,7 @@
       align-items: center;
       justify-content: flex-end;
       &__list {
+        gap: 30px;
         flex-direction: row;
       }
     }
@@ -64,6 +65,7 @@
   }
   .contact {
     /* Contact Container */
+
     &__link {
       /* contact link text */
       gap: 10px;
@@ -188,10 +190,10 @@
     }
   }
 
-  .projects{
+  .projects {
     &__list {
       display: flex;
-      justify-content:baseline;
+      justify-content: baseline;
     }
   }
 }
