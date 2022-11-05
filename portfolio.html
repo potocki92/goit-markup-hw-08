@@ -22,39 +22,36 @@
   <body>
     <!-- start header -->
     <header class="header">
-      <div class="container wrapper">
-        <div class="header__links">
-          <!-- start logo -->
-          <div class="logo list">
-            <a href="./index.html" class="logo__link link"
-              ><span class="logo__web">Web</span>Studio</a
-            >
-          </div>
-          <!-- end logo -->
-          <!-- start navigation -->
-          <nav class="navigation">
-            <ul class="navigation__list list">
-              <li class="navigation__item item">
-                <a class="navigation__link link" href="./index.html" id="agency"
-                  >Agencja</a
-                >
-              </li>
-              <li class="navigation__item item">
-                <a
-                  class="navigation__link link active__link"
-                  href="./portfolio.html"
-                  id="portfolio"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="navigation__item item">
-                <a class="navigation__link link" href="#" id="contact"
-                  >Kontakt</a
-                >
-              </li>
-            </ul>
-          </nav>
+      <!-- start container with position -->
+      <div class="header__links container">
+        <!-- start logo -->
+        <div class="logo list">
+          <a href="./index.html" class="logo__link link"
+            ><span class="logo__web">Web</span>Studio</a
+          >
         </div>
+        <!-- end logo -->
+        <!-- start navigation -->
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item item">
+              <a class="navigation__link link" href="./index.html" id="agency"
+                >Agencja</a
+              >
+            </li>
+            <li class="navigation__item item">
+              <a
+                class="navigation__link link active__link"
+                href="./portfolio.html"
+                id="portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation__item item">
+              <a class="navigation__link link" href="#" id="contact">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
         <!-- end navigation -->
         <!-- start contact container: telephone and email  -->
         <div class="contact">
@@ -76,6 +73,13 @@
           </ul>
         </div>
         <!-- end contact container -->
+        <!-- start burger icon -->
+        <button class="burger mobile-open">
+          <svg class="burger__svg" width="40px" height="40px">
+            <use href="./images/svg/icons.svg#burger__before"></use>
+          </svg>
+        </button>
+        <!-- end burger icon -->
       </div>
       <!-- end container with position -->
     </header>
@@ -117,13 +121,26 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </h6>
-                <img
-                  class="projects__image"
-                  src="./images/portfolio/technocrack.jpg"
-                  alt="Image of Technocrack from WebPage Category"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects__image">
+                  <source
+                    srcset="./images/portfolio/technocrack.jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="294"
+                  />
+                  <source
+                    srcset="./images/portfolio/technocrack-768.jpg"
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/technocrack-480.jpg"
+                    width="450"
+                    height="294"
+                    alt="Image of Technocrack from WebPage Category"
+                  />
+                </picture>
               </div>
               <div class="projects__text">
                 <h6 class="projects__name">Technocrack</h6>
@@ -139,12 +156,28 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </h6>
-                <img
-                  class="projects__image"
-                  src="./images/portfolio/new_orlean_vs_golden_star.jpg"
-                  alt="Image of New Orlean vs Golden Star from Design Category"
-                  width="370"
-                  height="294"
+                <picture class="projects__image">
+                  <source
+                    srcset="./images/portfolio/new_orlean_vs_golden_star.jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="294"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/new_orlean_vs_golden_star-768.jpg
+                    "
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/new_orlean_vs_golden_star-480.jpg"
+                    width="450"
+                    height="294"
+                    alt="Image of New Orlean vs Golden Star from Design Category"
+                  />
+                </picture>
                 />
               </div>
               <div class="projects__text">
@@ -163,13 +196,26 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </h6>
-                <img
-                  class="projects__image"
-                  src="./images/portfolio/seafood-restaurant.jpg"
-                  alt="Image of Seafood Restaurant from Application Category"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects__image">
+                  <source
+                    srcset="./images/portfolio/seafood-restaurant.jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="294"
+                  />
+                  <source
+                    srcset="./images/portfolio/seafood-restaurant-768.jpg"
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/seafood-restaurant-480.jpg"
+                    width="450"
+                    height="294"
+                    alt="Image of Seafood Restaurant from Application Category"
+                  />
+                </picture>
               </div>
               <div class="projects__text">
                 <h6 class="projects__name">Restauracja Seafood</h6>
@@ -185,13 +231,26 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </h6>
-                <img
-                  class="projects__image"
-                  src="./images/portfolio/project-prime.jpg"
-                  alt="Image of Project Prime from Marketing Category"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects__image">
+                  <source
+                    srcset="./images/portfolio/project-prime.jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="294"
+                  />
+                  <source
+                    srcset="./images/portfolio/project-prime-768.jpg"
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/project-prime-480.jpg"
+                    width="450"
+                    height="294"
+                    alt="Image of Project Prime from Marketing Category"
+                  />
+                </picture>
               </div>
               <div class="projects__text">
                 <h6 class="projects__name">Projekt Prime</h6>
@@ -207,13 +266,26 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </h6>
-                <img
-                  class="projects__image"
-                  src="./images/portfolio/project-boxes.jpg"
-                  alt="Image of Project Boxes from Application Category"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects__image">
+                  <source
+                    srcset="./images/portfolio/project-boxes.jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="294"
+                  />
+                  <source
+                    srcset="./images/portfolio/project-boxes-768.jpg"
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/project-boxes-480.jpg"
+                    width="450"
+                    height="294"
+                    alt="Image of Project Boxes from Application Category"
+                  />
+                </picture>
               </div>
               <div class="projects__text">
                 <h6 class="projects__name">Projekt Boxes</h6>
@@ -229,13 +301,26 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </h6>
-                <img
-                  class="projects__image"
-                  src="./images/portfolio/borders.jpg"
-                  alt="Image of Inspiration has no Borders from WebPage Category"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects__image">
+                  <source
+                    srcset="./images/portfolio/borders.jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="294"
+                  />
+                  <source
+                    srcset="./images/portfolio/borders-768.jpg"
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/borders-480.jpg"
+                    width="450"
+                    height="294"
+                    alt="Image of Inspiration has no Borders from WebPage Category"
+                  />
+                </picture>
               </div>
               <div class="projects__text">
                 <h6 class="projects__name">Inspiration has no Borders</h6>
@@ -251,13 +336,26 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </h6>
-                <img
-                  class="projects__image"
-                  src="./images/portfolio/magazine.jpg"
-                  alt="Images of Limited Edition Magazine from Design Category"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects__image">
+                  <source
+                    srcset="./images/portfolio/magazine.jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="294"
+                  />
+                  <source
+                    srcset="./images/portfolio/magazine-768.jpg"
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/magazine-480.jpg"
+                    width="450"
+                    height="294"
+                    alt="Images of Limited Edition Magazine from Design Category"
+                  />
+                </picture>
               </div>
               <div class="projects__text">
                 <h6 class="projects__name">Magazyn Limited Edition</h6>
@@ -273,13 +371,26 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </h6>
-                <img
-                  class="projects__image"
-                  src="./images/portfolio/lab.jpg"
-                  alt="Image of Project LAB from Marketing Category"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects__image">
+                  <source
+                    srcset="./images/portfolio/lab.jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="294"
+                  />
+                  <source
+                    srcset="./images/portfolio/lab-768.jpg"
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/lab-480.jpg"
+                    width="450"
+                    height="294"
+                    alt="Image of Project LAB from Marketing Category"
+                  />
+                </picture>
               </div>
               <div class="projects__text">
                 <h6 class="projects__name">Projekt LAB</h6>
@@ -295,13 +406,26 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </h6>
-                <img
-                  class="projects__image"
-                  src="./images/portfolio/growing-business.jpg"
-                  alt="Image of Growing Business from Application Category"
-                  width="370"
-                  height="294"
-                />
+                <picture class="projects__image">
+                  <source
+                    srcset="./images/portfolio/growing-business.jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="294"
+                  />
+                  <source
+                    srcset="./images/portfolio/growing-business-768.jpg"
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/growing-business-480.jpg"
+                    alt="Image of Growing Business from Application Category"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
               </div>
               <div class="projects__text">
                 <h6 class="projects__name">Growing Business</h6>
@@ -316,94 +440,96 @@
     </main>
     <!-- end main -->
     <!-- start footer -->
-    <footer class="footer">
-      <div class="footer__box container">
-        <!-- container with logo + contact -->
-        <div class="footer__info">
-          <!-- logo -->
-          <div class="logo">
-            <a href="./index.html" class="logo__link link"
-              ><span class="logo__web">Web</span>Studio</a
-            >
+    <footer class="footer section">
+      <div class="container">
+        <div class="footer__box">
+          <!-- container with logo + contact -->
+          <div class="footer__info">
+            <!-- logo -->
+            <div class="logo">
+              <a href="./index.html" class="logo__link link"
+                ><span class="logo__web">Web</span>Studio</a
+              >
+            </div>
+            <!-- address to coresponde -->
+            <address class="contact">
+              <ul class="contact__list list">
+                <li class="contact__item item">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </li>
+                <li class="contact__item item">
+                  <a class="contact__link link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="contact__item item">
+                  <a class="contact__link link" href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <!-- end address to coresponde -->
           </div>
-          <!-- address to coresponde -->
-          <address class="contact__footer">
-            <ul class="contact__list list">
-              <li class="contact__item item">
-                m. Warszawa, Aleje Jerozolimskie 21
-              </li>
-              <li class="contact__item item">
-                <a class="contact__link link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="contact__item item">
-                <a class="contact__link link" href="tel:+48111111111"
-                  >+48 111 111 111</a
-                >
-              </li>
-            </ul>
-          </address>
-          <!-- end address to coresponde -->
-        </div>
-        <!-- end container with logo + contact -->
-        <!-- start social container -->
-        <div class="footer__social">
-          <span class="footer__text">Dołącz do nas</span>
-          <div class="social__icon">
-            <ul class="social__list list">
-              <li class="social__item item">
-                <svg class="social__svg" height="44px" width="44px">
-                  <use
-                    class="first__svg"
-                    href="./images/svg/icons.svg#instagram-first"
-                  ></use>
-                  <use
-                    class="second__svg"
-                    href="./images/svg/icons.svg#instagram-second"
-                  ></use>
-                </svg>
-              </li>
-              <li class="social__item item">
-                <svg class="social__svg" height="44px" width="44px">
-                  <use
-                    class="first__svg"
-                    href="./images/svg/icons.svg#tweeter-first"
-                  ></use>
-                  <use
-                    class="second__svg"
-                    href="./images/svg/icons.svg#tweeter-second"
-                  ></use>
-                </svg>
-              </li>
-              <li class="social__item item">
-                <svg class="social__svg" height="44px" width="44px">
-                  <use
-                    class="first__svg"
-                    href="./images/svg/icons.svg#facebook-first"
-                  ></use>
-                  <use
-                    class="second__svg"
-                    href="./images/svg/icons.svg#facebook-second"
-                  ></use>
-                </svg>
-              </li>
-              <li class="social__item item">
-                <svg class="social__svg" height="44px" width="44px">
-                  <use
-                    class="first__svg"
-                    href="./images/svg/icons.svg#linkedin-first"
-                  ></use>
-                  <use
-                    class="second__svg"
-                    href="./images/svg/icons.svg#linkedin-second"
-                  ></use>
-                </svg>
-              </li>
-            </ul>
+          <!-- end container with logo + contact -->
+          <!-- start social container -->
+          <div class="footer__social">
+            <span class="footer__text">Dołącz do nas</span>
+            <div class="social__icon">
+              <ul class="social__list list">
+                <li class="social__item item">
+                  <svg class="social__svg" height="44px" width="44px">
+                    <use
+                      class="first__svg"
+                      href="./images/svg/icons.svg#instagram-first"
+                    ></use>
+                    <use
+                      class="second__svg"
+                      href="./images/svg/icons.svg#instagram-second"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__svg" height="44px" width="44px">
+                    <use
+                      class="first__svg"
+                      href="./images/svg/icons.svg#tweeter-first"
+                    ></use>
+                    <use
+                      class="second__svg"
+                      href="./images/svg/icons.svg#tweeter-second"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__svg" height="44px" width="44px">
+                    <use
+                      class="first__svg"
+                      href="./images/svg/icons.svg#facebook-first"
+                    ></use>
+                    <use
+                      class="second__svg"
+                      href="./images/svg/icons.svg#facebook-second"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__svg" height="44px" width="44px">
+                    <use
+                      class="first__svg"
+                      href="./images/svg/icons.svg#linkedin-first"
+                    ></use>
+                    <use
+                      class="second__svg"
+                      href="./images/svg/icons.svg#linkedin-second"
+                    ></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </div>
+          <!-- end social container -->
         </div>
-        <!-- end social container -->
         <!-- start newsletter -->
         <div class="newsletter">
           <span class="footer__text">Zapisz się do newslettera</span>
@@ -438,5 +564,77 @@
       </div>
     </footer>
     <!-- end footer -->
+
+    <!-- start mobile navigation menu -->
+    <div class="mobile is-hidden" id="mobie__menu">
+      <!-- start navigation -->
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item item">
+              <a class="navigation__link link" href="./index.html" id="agency"
+                >Agencja</a
+              >
+            </li>
+            <li class="navigation__item item">
+              <a
+                class="navigation__link link"
+                href="./portfolio.html"
+                id="portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation__item item">
+              <a class="navigation__link link" href="#" id="contact">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end navigation -->
+        <div class="mobile__contacts">
+          <!-- start contact container: telephone and email  -->
+          <div class="contact">
+            <ul class="contact__list list">
+              <li class="contact__item item">
+                <a class="contact__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact__item item">
+                <a class="contact__link link" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- end contact container -->
+          <!-- start social links -->
+          <div class="social">
+            <ul class="social__list list">
+              <li class="social__item item">
+                <a class="social__link link" href="#">Instagram</a>
+              </li>
+              <li class="social__item item">
+                <a class="social__link link" href="#">Twitter</a>
+              </li>
+              <li class="social__item item">
+                <a class="social__link link" href="#">Facebook</a>
+              </li>
+              <li class="social__item item">
+                <a class="social__link link" href="#">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end social links -->
+        </div>
+        <button class="mobile__burger mobile-close">
+          <svg class="burger__svg" width="40px" height="40px">
+            <use href="./images/svg/icons.svg#burger__after"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- scripts -->
+    <!-- mobile menu scripts -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -70,8 +70,9 @@
     }
   }
   .feature {
-    /* positioning feature container and feature box */
-    margin-bottom: 94px;
+    &.section {
+      padding-bottom: 94px;
+    }
     &__text {
       text-align: start;
     }
@@ -91,6 +92,7 @@
   .footer {
     .container {
       flex-direction: row;
+      align-items: flex-start;
     }
     .contact {
       &__list {
@@ -146,14 +148,50 @@
     visibility: hidden;
   }
 
-  .checkbox__regulations {
-    /* REGULATIONS FROM CHECKBOX
+  /* BACKDROP CONTAINER 
+=============================================*/
+  .backdrop {
+    &__content {
+      height: 581px;
+    }
+  }
+  /* CONTAINER WITH BUTTON AND FORM
+=============================================*/
+  .modal {
+    width: 528px;
+    min-height: 581px;
+    .form__input {
+      /* size inputs from form */
+      @include box_size(448px, 40px);
+    }
+    .checkbox {
+      padding: 10px 0 12px 0;
+
+      &__regulations {
+        /* REGULATIONS FROM CHECKBOX
     =============================================*/
-    @include text_value(
-      inherit,
-      $first-line-height,
-      $second-letter-spacing,
-      $third-weight
-    );
+
+        font-size: inherit;
+        line-height: $first-line-height;
+      }
+    }
+    /* TEXTAREA INPUT AND BUTTON
+  =============================================*/
+    .textarea__input {
+      @include box_size(448px, 120px);
+    }
+  }
+
+  .filters {
+    &__list {
+      margin-bottom: 50px;
+    }
+  }
+
+  .projects{
+    &__list {
+      display: flex;
+      justify-content:baseline;
+    }
   }
 }

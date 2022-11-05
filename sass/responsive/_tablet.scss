@@ -16,7 +16,8 @@
     .navigation {
       .active__link {
         &::after {
-          bottom: -2.9em;
+          z-index: 1;
+          bottom: -33px;
         }
       }
     }
@@ -28,6 +29,9 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      &__link {
+        gap: 8px;
+      }
     }
 
     .navigation {
@@ -49,6 +53,11 @@
       visibility: hidden;
       height: 0;
     }
+  }
+
+  .mobile {
+    visibility: hidden;
+    display: none;
   }
   .heading {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -111,7 +120,9 @@
 
   .feature {
     align-items: center;
-    margin-bottom: 0;
+    &.section {
+      padding-bottom: 45px;
+    }
     &__text {
       text-align: start;
     }
@@ -139,5 +150,16 @@
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .projects__list {
+    &.list {
+      justify-content: space-between;
+    }
+  }
+  .filters {
+    &__list {
+      margin-bottom: 30px;
+    }
   }
 }

@@ -1,7 +1,7 @@
 (() => {
   const openMenu = document.querySelector(".mobile-open");
   const closeMenu = document.querySelector(".mobile-close");
-  const mobileMenu = document.querySelector(".mobile-container");
+  const mobileMenu = document.querySelector(".mobile");
 
   openMenu.addEventListener("click", toggleModal);
   closeMenu.addEventListener("click", toggleModal);

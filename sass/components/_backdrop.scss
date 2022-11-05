@@ -156,19 +156,18 @@
   display: flex;
   text-align: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   gap: 8px;
-  padding: 20px 0 31px 0;
+  padding: 10px 0 19px 0;
   &__input {
     /*
       checkbox input
       overflow is hidden becouse we use svg icon from icons.svg 
     */
+    position: absolute;
     display: block;
     visibility: hidden;
-  }
-  &__label {
-    position: absolute;
   }
   &__svg {
     /* use margin and cursor to icon to svg checkbox */

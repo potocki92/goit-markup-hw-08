@@ -10,6 +10,9 @@
 */
 
 .projects {
+  &__list {
+    display: flex;
+  }
   &__item {
     /*
     when user hovering or focusing box with project 

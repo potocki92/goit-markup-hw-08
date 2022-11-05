@@ -53,12 +53,9 @@
   }
   &__list {
     /* button list */
-    justify-content: center;
-    gap: 4px;
-  }
-  &__item {
-    /* buttons display */
-    margin: 0 4px 50px;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 40px;
   }
 }
 
@@ -72,7 +69,12 @@
   border-radius: $radius;
   /* text into bottom */
   color: $first-color;
-  @include text_value(16px, $second-line-height, $first-letter-spacing, $second-weight);
+  @include text_value(
+    16px,
+    $second-line-height,
+    $first-letter-spacing,
+    $second-weight
+  );
   /* other */
   @include box_size(200px, 50px);
   user-select: none;
