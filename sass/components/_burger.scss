@@ -65,12 +65,14 @@
       font-weight: 500;
       font-size: 40px;
       line-height: 47px;
-      letter-spacing: 0.02em;
-
-      color: #212121;
       &:hover,
       &:focus {
         @include anim__transition(color, $second-color);
+      }
+      &.active__link {
+        &::after {
+          @include box_size(0, 0);
+        }
       }
     }
   }

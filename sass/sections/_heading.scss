@@ -11,6 +11,7 @@
 .heading {
   /* container containing main title and button */
   /* background of title container */
+  min-height: 400px;
   background: $footer-color; /* if images doesn't work */
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../images/backgrounds/background-480.jpg") no-repeat center top;
@@ -23,7 +24,6 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 118px 0;
   &__title {
     /* main title */
     color: $first-color;

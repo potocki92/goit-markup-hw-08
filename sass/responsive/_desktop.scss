@@ -128,6 +128,7 @@
     }
     /* container with form and button */
     &__icon {
+      display: flex;
       flex-direction: row;
       gap: 12px;
     }

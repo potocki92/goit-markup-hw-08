@@ -222,8 +222,7 @@
                   src="./images/main_page/team/mobile/image_product_designer-480.jpg"
                   alt="Baby Sleeping"
                   alt="image of Product Designer"
-                  width="450"
-                  height="460"
+                  width="100%"
                 />
               </picture>
               <div class="team__info">
@@ -306,8 +305,7 @@
                 <img
                   src="./images/main_page/team/mobile/image_frontend_developer-480.jpg"
                   alt="image of Frontend Developer"
-                  width="450"
-                  height="460"
+                  width="100%"
                 />
               </picture>
               <div class="team__info">
@@ -389,8 +387,7 @@
                   src="./images/main_page/team/mobile/image_marketing-480.jpg"
                   alt="Baby Sleeping"
                   alt="image of Marketing"
-                  width="450"
-                  height="460"
+                  width="100%"
                 />
               </picture>
               <div class="team__info">
@@ -454,12 +451,14 @@
             </li>
             <li class="team__item item">
               <picture class="team__image">
+                <!-- 1200px -->
                 <source
                   srcset="./images/main_page/team/desktop/image_ui_designer.jpg"
                   media="(min-width: 1200px)"
                   width="270"
                   height="260"
                 />
+                <!-- 768px -->
                 <source
                   srcset="
                     ./images/main_page/team/tablet/image_ui_designer-768.jpg
@@ -468,12 +467,12 @@
                   width="354"
                   height="374"
                 />
+                <!-- 480px -->
                 <img
                   src="./images/main_page/team/mobile/image_ui_designer-480.jpg"
                   alt="Baby Sleeping"
                   alt="image of UI Designer"
-                  width="450"
-                  height="460"
+                  width="100%"
                 />
               </picture>
               <div class="team__info">
@@ -815,7 +814,10 @@
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item item">
-              <a class="navigation__link link" href="./index.html" id="agency"
+              <a
+                class="navigation__link link active__link"
+                href="./index.html"
+                id="agency"
                 >Agencja</a
               >
             </li>
