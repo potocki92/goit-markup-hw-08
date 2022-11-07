@@ -63,6 +63,18 @@
       @include text_value(44px, 1.4, $first-letter-spacing, 900);
     }
   }
+
+  /* 2x screens, retina, 640x480 image */
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .heading {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/backgrounds/retina/background@2.jpg") no-repeat center
+          top;
+      background-size: cover;
+    }
+  }
   .contact {
     /* Contact Container */
 
@@ -73,7 +85,7 @@
   }
   .feature {
     &.section {
-      padding-bottom: 94px;
+      padding-bottom: 0;
     }
     &__text {
       text-align: start;
@@ -83,6 +95,9 @@
   .about {
     visibility: visible;
     height: 100%;
+    &.section {
+      padding: 94px 0;
+    }
   }
 
   .customer {

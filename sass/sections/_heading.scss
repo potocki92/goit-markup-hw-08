@@ -14,7 +14,7 @@
   min-height: 400px;
   background: $footer-color; /* if images doesn't work */
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/backgrounds/background-480.jpg") no-repeat center top;
+    url("../images/backgrounds/background-480.jpg") no-repeat center top;
   /* background-image: linear-gradient(rgba(47, 48, 58, 0.4)); */
   /* to center the text and button when zoomed in */
   position: relative;
@@ -32,4 +32,15 @@
     @include text_value(26px, 1.6, $first-letter-spacing, 900);
     padding: 0 0 30px 0;
   }
+}
+
+/* 2x screens, retina, 640x480 image */
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+.heading {
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/backgrounds/retina/background-480@2.jpg") no-repeat center top;
+  background-size: cover;
+}
 }

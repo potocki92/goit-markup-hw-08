@@ -12,6 +12,9 @@
 .about {
   visibility: hidden;
   height: 0;
+  &.section {
+    padding: 0;
+  }
   &__item {
     /*
     relative postion contanier with about us
