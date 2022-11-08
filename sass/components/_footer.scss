@@ -12,14 +12,11 @@
   background: $footer-color;
   .container {
     display: flex;
-    gap: 60px;
     flex-direction: column;
+    gap: 60px;
   }
   &__box {
-    /*
-      footer padding and gap to flex list class and logo__container
-      space bettween top and bottom 
-    */
+    /* footer padding and gap to flex list class and logo__container */
     display: flex;
     gap: 60px;
     align-items: center;
@@ -95,7 +92,7 @@
   }
   /* input form */
   .form__input {
-    width: 450px;
+    @include box_size(450px, 50px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: $radius;
@@ -118,7 +115,6 @@
   }
   @media screen and (max-width: 480px) {
     .form__input {
-      
       width: calc(100vw - 30px);
     }
   }

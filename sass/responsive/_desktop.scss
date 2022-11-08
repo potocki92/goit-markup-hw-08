@@ -1,10 +1,27 @@
+/* 
+=====================================
+=====================================
+
+          DESKTOP MEDIA
+        MINIMUM WIDTH 1200px
+
+=====================================
+=====================================
+*/
+
 @media screen and (min-width: 1200px) {
   /* SECTION (TOP AND BOTTOM PADDING)
 ============================================= */
   .section {
     padding: 94px 15px;
   }
-
+  /* GENERAL LIST CLASS TO ALL UL
+============================================= */
+  .list {
+    justify-content: center;
+  }
+  /* GENERAL TITLE CLASS FROM ALL SECTIONS FROM INDEX
+============================================= */
   .title {
     /* other */
     padding-bottom: 50px;
@@ -23,18 +40,14 @@
     }
     .logo {
       &__link {
+        /* new logo size (1200px) */
         font-size: 26px;
         line-height: 1.19;
       }
     }
     .contact {
-      visibility: visible;
+      /* Contact Container */
       position: absolute;
-      right: 15px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
       &__list {
         gap: 30px;
         flex-direction: row;
@@ -42,17 +55,13 @@
     }
 
     .navigation {
-      visibility: visible;
+      /*  Navigation Container*/
       position: relative;
-      height: 100%;
-      display: flex;
-      align-items: center;
     }
   }
 
   .heading {
     /* container containing main title and button */
-    /* background of title container */
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../images/backgrounds/background.jpg") no-repeat center top;
     background-size: cover;
@@ -63,7 +72,7 @@
     }
   }
 
-  /* 2x screens, retina, 640x480 image */
+  /* 2x screens, retina */
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -76,22 +85,20 @@
   }
   .contact {
     /* Contact Container */
-
     &__link {
       /* contact link text */
       gap: 10px;
     }
   }
   .feature {
+    /* positioning feature container and feature box */
     &.section {
       padding-bottom: 0;
-    }
-    &__text {
-      text-align: start;
     }
   }
 
   .about {
+    /* show only when resolution is minimum 1200px width */
     visibility: visible;
     height: 100%;
     &.section {
@@ -100,7 +107,9 @@
   }
 
   .customer {
+    /* tags with customers boxes */
     &__item {
+      /* item with customer icons */
       width: 170px;
     }
   }
@@ -118,6 +127,7 @@
       }
     }
     &__box {
+      /* footer padding and gap to flex list class and logo__container */
       flex-direction: row;
       gap: 70px;
     }
@@ -146,7 +156,6 @@
       display: flex;
       flex-direction: row;
       gap: 12px;
-      
     }
   }
   /* CONTAINER (CENTERING AND WIDTH)
@@ -196,16 +205,17 @@
       @include box_size(448px, 120px);
     }
   }
-
+  /* BUTTONS FROM PORTFOLIO.HTML
+=============================================*/
   .filters {
     &__list {
+      /* button list */
       margin-bottom: 50px;
     }
   }
 
   .projects {
     &__list {
-      display: flex;
       justify-content: baseline;
     }
   }

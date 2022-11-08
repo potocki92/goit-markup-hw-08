@@ -32,6 +32,8 @@
   .contact {
     /* Contact Container */
     position: absolute;
+    /* we won't to see contact when we use mobile */
+    /* then we use visibility with hidden and height with 0px */
     visibility: hidden;
     height: 0;
     &__link {
@@ -57,6 +59,8 @@
 .navigation {
   /*  Navigation Container*/
   position: absolute;
+  /* we won't to see navigation when we use mobile */
+  /* then we use visibility with hidden and height with 0px */
   visibility: hidden;
   height: 0;
   &__link {

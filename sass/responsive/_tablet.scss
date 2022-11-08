@@ -1,28 +1,54 @@
+/* 
+=====================================
+=====================================
+
+          TABLET MEDIA
+        MINIMUM WIDTH 768px
+
+=====================================
+=====================================
+*/
+
 @media screen and (min-width: 768px) {
+  /* CONTAINER (CENTERING AND WIDTH)
+============================================= */
+  .container {
+    max-width: 768px;
+  }
+  /* CONTAINER WITH MAX-WIDTH IMAGE FROM MAIN PAGE (CENTERING AND WIDTH)
+============================================= */
+  .container__image {
+    max-width: 768px;
+  }
+  .filters {
+    &__list {
+      margin-bottom: 30px;
+    }
+  }
   .header {
     /* Header Container */
     height: 80px;
-    &__links {
-      position: relative;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
     .logo {
       &__link {
+        /* new logo size (768px) */
         font-size: 24px;
         line-height: 1.16;
       }
     }
     .navigation {
+      /*  Navigation Container*/
       .active__link {
+        /* Active Link */
         &::after {
+          /* this is a underline when user is on the page */
           z-index: 1;
-          bottom: -33px;
         }
       }
     }
     .contact {
+      /* Contact Container */
       position: relative;
+      /* contant is shown when the media has a minimum 768px resolution */
       visibility: visible;
       right: 15px;
       height: 100%;
@@ -30,14 +56,17 @@
       align-items: center;
       justify-content: flex-end;
       &__link {
+        /* contact link text */
         gap: 8px;
       }
     }
 
     .navigation {
+      /*  Navigation Container*/
+      /* nav is shown when the media has a minimum 768px resolution */
       visibility: visible;
-      position: relative;
       height: 100%;
+      position: relative;
       display: flex;
       align-items: center;
     }
@@ -60,12 +89,9 @@
     display: none;
   }
   .heading {
+    /* container containing main title and button */
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../images/backgrounds/background-768.jpg") no-repeat center top;
-
-    &__title {
-      @include text_value(26px, 1.6, $first-letter-spacing, 900);
-    }
   }
 
   /* 2x screens, retina */
@@ -74,92 +100,49 @@
     screen and (min-resolution: 2dppx) {
     .heading {
       background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/backgrounds/retina/background-768@2.jpg") no-repeat center top;
-        background-size: cover;
+        url("../images/backgrounds/retina/background-768@2.jpg") no-repeat
+          center top;
+      background-size: cover;
     }
   }
+
   .footer {
     &__box {
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-around;
     }
-
-    &__info {
-      align-items: center;
-    }
-
-    .contact {
-      &__list {
-        align-items: center;
-        gap: 8px;
-      }
-    }
-    &__social {
-      margin: 0;
-      align-items: center;
-    }
   }
-  .newsletter {
-    align-items: center;
-    .form__input {
-      @include box_size(450px, 50px);
-      &[type] {
-        /* padding start to write text from user into input */
-        padding-left: 16px;
-      }
-    }
 
+  .newsletter {
+    /* container with form and button */
     &__icon {
-      gap: 20px;
       padding: 0;
       flex-direction: column;
     }
   }
 
   .customer {
-    &__list {
-      justify-content: center;
-      display: flex;
-    }
+    /* tags with customers boxes */
     &__item {
+      /* item with customer icons */
       width: 226px;
-      justify-content: center;
     }
   }
 
   .feature {
+    /* positioning feature container and feature box */
     align-items: center;
     &.section {
       padding-bottom: 45px;
     }
     &__text {
+      /* feature heading text (lorem ipsum) */
       text-align: start;
     }
     &__item {
+      /* flexing feature box with icon, text and description */
       width: 100vw;
-    }
-  }
-  .about {
-    visibility: hidden;
-    height: 0;
-  }
-  .list {
-    justify-content: center;
-  }
-  /* CONTAINER (CENTERING AND WIDTH)
-============================================= */
-  .container {
-    max-width: 768px;
-  }
-  /* CONTAINER WITH MAX-WIDTH IMAGE FROM MAIN PAGE (CENTERING AND WIDTH)
-============================================= */
-  .container__image {
-    max-width: 768px;
-  }
-  .filters {
-    &__list {
-      margin-bottom: 30px;
     }
   }
 }
