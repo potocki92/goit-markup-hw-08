@@ -113,9 +113,14 @@
       user-select: none;
     }
   }
+}
 
-  /* if media resolution has 480px or smaller then form__input has a calc */
-  @media screen and (max-width: 480px) {
+/* if media resolution has 480px or smaller then form__input has a calc */
+@media screen and (max-width: 480px) {
+  .footer {
+    height: 100vh;;
+  }
+  .newsletter {
     .form__input {
       width: calc(100vw - 30px);
     }
