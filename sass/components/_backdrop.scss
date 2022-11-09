@@ -67,6 +67,7 @@
 /* FORM
 =============================================*/
 .form {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -222,6 +223,22 @@
       text-decoration: underline;
       color: $second-color;
       cursor: pointer;
+    }
+  }
+}
+
+/* if media resolution has 480px or smaller then modal, form and form__input has a calc */
+@media screen and (max-width: 480px) {
+  /* new width of modal*/
+  .modal {
+    width: calc(100vw - 30px);
+    /* new width of form input */
+    .form__input {
+      width: calc(100%);
+    }
+    /* new font-size from regulations */
+    .checkbox__regulations {
+      font-size: 10px;
     }
   }
 }
