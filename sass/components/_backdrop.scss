@@ -112,7 +112,7 @@
     }
     &[type] {
       /* padding start to write text from user into input */
-      padding-left: 16px;
+      padding-left: 42px;
     }
   }
   &__icon {
@@ -156,7 +156,7 @@
 .checkbox {
   display: flex;
   text-align: center;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 100%;
   gap: 8px;

@@ -107,4 +107,16 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+
+  /* animation fill color */
+  & .modal__icon {
+    @include anim__transition(fill, inherit);
+  }
+
+  /* animation fill color */
+  &:hover .modal__icon,
+  &:focus .modal__icon {
+    fill: $second-color;
+    @include anim__transition(fill, $second-color);
+  }
 }
