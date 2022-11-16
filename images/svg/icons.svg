@@ -1,5 +1,5 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
+
 <symbol id="linkedin-first" viewBox="0 0 33 33">
 <path d="M32 16c0 4.418-1.791 8.418-4.686 11.314s-6.895 4.686-11.314 4.686-8.418-1.791-11.314-4.686c-2.895-2.895-4.686-6.895-4.686-11.314s1.791-8.418 4.686-11.314 6.895-4.686 11.314-4.686c4.418 0 8.418 1.791 11.314 4.686s4.686 6.895 4.686 11.314z"></path>
 </symbol>
@@ -111,6 +111,4 @@
 <symbol id="burger__after" width="40" height="40" viewBox="0 0 40 40">
 <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z"/>
 </symbol>
-</svg>
-</defs>
 </svg>
