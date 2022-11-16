@@ -11,15 +11,19 @@
 /* HIDE BACKDROP CONTAINER 
 =============================================*/
 .is-hidden {
-  opacity: 0;
-  visibility: hidden;
   pointer-events: none;
+  /* show container from top to bottom */
+  transform: translateY(-100%);
 }
 
 /* BACKDROP CONTAINER 
 =============================================*/
 .backdrop {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   top: 0;
   background: rgba(0, 0, 0, 0.2);
   @include box_size(100%, 100%);
@@ -52,18 +56,25 @@
 /* CONTAINER WITH BUTTON AND FORM
 =============================================*/
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  position: inherit;
   width: 450px;
   min-height: 609px;
   background-color: $first-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: $radius;
+  transform: scale(1);
+  @include anim__transition(transform, 0.5s);
 }
-
+/* scale 0 when is-hidden is active */
+.is-hidden .modal {
+  transform: scale(0);
+  // animation: animate-back 1s;
+}
 /* FORM
 =============================================*/
 .form {
