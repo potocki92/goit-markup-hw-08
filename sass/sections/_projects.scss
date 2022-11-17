@@ -14,6 +14,7 @@
     display: flex;
   }
   &__item {
+    display: none;
     /*
     when user hovering or focusing box with project 
     shadow will be showing around the boxes   
@@ -25,6 +26,10 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
       transition: box-shadow $time $anim-cubic;
+    }
+    &.show {
+      /* show all projects from category (when class show is on the container)*/
+      display: block;
     }
   }
   &__text {

@@ -90,21 +90,51 @@
       <div class="container section">
         <!-- start filters container: container with buttons -->
         <section class="filters">
-          <ul class="filters__list list">
+          <ul class="filters__list list" id="button__container">
             <li class="filters__item item">
-              <button class="filters__button" type="button">Wszystkie</button>
+              <button
+                class="filters__button active"
+                onclick="filterSelection('all')"
+                type="button"
+              >
+                Wszystkie
+              </button>
             </li>
             <li class="filters__item item">
-              <button class="filters__button" type="button">Strony</button>
+              <button
+                class="filters__button"
+                onclick="filterSelection('pages')"
+                type="button"
+              >
+                Strony
+              </button>
             </li>
             <li class="filters__item item">
-              <button class="filters__button" type="button">Aplikacje</button>
+              <button
+                class="filters__button"
+                onclick="filterSelection('application')"
+                type="button"
+              >
+                Aplikacje
+              </button>
             </li>
             <li class="filters__item item">
-              <button class="filters__button" type="button">Dizajn</button>
+              <button
+                class="filters__button"
+                onclick="filterSelection('dizajn')"
+                type="button"
+              >
+                Dizajn
+              </button>
             </li>
             <li class="filters__item item">
-              <button class="filters__button" type="button">Marketing</button>
+              <button
+                class="filters__button"
+                onclick="filterSelection('marketing')"
+                type="button"
+              >
+                Marketing
+              </button>
             </li>
           </ul>
         </section>
@@ -113,7 +143,7 @@
         <section class="projects">
           <ul class="projects__list list">
             <!-- Technocrack -->
-            <li class="projects__item item">
+            <li class="projects__item item pages">
               <div class="image">
                 <h6 class="image__text">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -142,7 +172,7 @@
                   />
                   <img
                     srcset="
-                      ./images/portfolio/mobile/technocrack-480.jpg 1x,
+                      ./images/portfolio/mobile/technocrack-480.jpg           1x,
                       ./images/portfolio/mobile/retina/technocrack-480@2x.jpg 2x
                     "
                     alt="Image of Technocrack from WebPage Category"
@@ -156,7 +186,7 @@
               </div>
             </li>
             <!-- New Orlean vs Golden Star -->
-            <li class="projects__item item">
+            <li class="projects__item item dizajn">
               <div class="image">
                 <h6 class="image__text">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -184,8 +214,10 @@
                     height="294"
                   />
                   <img
-                    srcset="./images/portfolio/mobile/new_orlean_vs_golden_star-480.jpg 1x,
-                    ./images/portfolio/mobile/retina/new_orlean_vs_golden_star-480@2x.jpg 2x,"
+                    srcset="
+                      ./images/portfolio/mobile/new_orlean_vs_golden_star-480.jpg           1x,
+                      ./images/portfolio/mobile/retina/new_orlean_vs_golden_star-480@2x.jpg 2x
+                    "
                     alt="Image of New Orlean vs Golden Star from Design Category"
                     width="100%"
                   />
@@ -200,7 +232,7 @@
               </div>
             </li>
             <!-- Seafood Restaurant -->
-            <li class="projects__item item">
+            <li class="projects__item item application">
               <div class="image">
                 <h6 class="image__text">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -228,8 +260,10 @@
                     height="294"
                   />
                   <img
-                    srcset="./images/portfolio/mobile/seafood-restaurant-480.jpg 1x,
-                    ./images/portfolio/mobile/retina/seafood-restaurant-480@2x.jpg 2x,"
+                    srcset="
+                      ./images/portfolio/mobile/seafood-restaurant-480.jpg           1x,
+                      ./images/portfolio/mobile/retina/seafood-restaurant-480@2x.jpg 2x
+                    "
                     alt="Image of Seafood Restaurant from Application Category"
                     width="100%"
                   />
@@ -241,7 +275,7 @@
               </div>
             </li>
             <!-- Projekt Prime -->
-            <li class="projects__item item">
+            <li class="projects__item item marketing">
               <div class="image">
                 <h6 class="image__text">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -269,8 +303,10 @@
                     height="294"
                   />
                   <img
-                    srcset="./images/portfolio/mobile/project-prime-480.jpg 1x,
-                    ./images/portfolio/mobile/retina/project-prime-480@2x.jpg 2x,"
+                    srcset="
+                      ./images/portfolio/mobile/project-prime-480.jpg           1x,
+                      ./images/portfolio/mobile/retina/project-prime-480@2x.jpg 2x
+                    "
                     alt="Image of Project Prime from Marketing Category"
                     width="100%"
                   />
@@ -282,7 +318,7 @@
               </div>
             </li>
             <!-- Project Boxes -->
-            <li class="projects__item item">
+            <li class="projects__item item application">
               <div class="image">
                 <h6 class="image__text">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -310,8 +346,10 @@
                     height="294"
                   />
                   <img
-                    srcset="./images/portfolio/mobile/project-boxes-480.jpg 1x,
-                    ./images/portfolio/mobile/retina/project-boxes-480@2x.jpg 2x,"
+                    srcset="
+                      ./images/portfolio/mobile/project-boxes-480.jpg           1x,
+                      ./images/portfolio/mobile/retina/project-boxes-480@2x.jpg 2x
+                    "
                     alt="Image of Project Boxes from Application Category"
                     width="100%"
                   />
@@ -323,7 +361,7 @@
               </div>
             </li>
             <!-- Inspiration has no Borders -->
-            <li class="projects__item item">
+            <li class="projects__item item pages">
               <div class="image">
                 <h6 class="image__text">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -351,8 +389,10 @@
                     height="294"
                   />
                   <img
-                    srcset="./images/portfolio/mobile/borders-480.jpg 1x,
-                    ./images/portfolio/mobile/retina/borders-480@2x.jpg 2x,"
+                    srcset="
+                      ./images/portfolio/mobile/borders-480.jpg           1x,
+                      ./images/portfolio/mobile/retina/borders-480@2x.jpg 2x
+                    "
                     alt="Image of Inspiration has no Borders from WebPage Category"
                     width="100%"
                   />
@@ -364,7 +404,7 @@
               </div>
             </li>
             <!-- limited edition magazine -->
-            <li class="projects__item item">
+            <li class="projects__item item dizajn">
               <div class="image">
                 <h6 class="image__text">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -392,8 +432,10 @@
                     height="294"
                   />
                   <img
-                    srcset="./images/portfolio/mobile/magazine-480.jpg 1x,
-                    ./images/portfolio/mobile/retina/magazine-480@2x.jpg 2x,"
+                    srcset="
+                      ./images/portfolio/mobile/magazine-480.jpg           1x,
+                      ./images/portfolio/mobile/retina/magazine-480@2x.jpg 2x
+                    "
                     alt="Images of Limited Edition Magazine from Design Category"
                     width="100%"
                   />
@@ -405,7 +447,7 @@
               </div>
             </li>
             <!-- Projekt LAB -->
-            <li class="projects__item item">
+            <li class="projects__item item marketing">
               <div class="image">
                 <h6 class="image__text">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -433,8 +475,10 @@
                     height="294"
                   />
                   <img
-                    srcset="./images/portfolio/mobile/lab-480.jpg 1x,
-                    ./images/portfolio/mobile/retina/lab-480@2x.jpg 2x,"
+                    srcset="
+                      ./images/portfolio/mobile/lab-480.jpg           1x,
+                      ./images/portfolio/mobile/retina/lab-480@2x.jpg 2x
+                    "
                     alt="Image of Project LAB from Marketing Category"
                     width="100%"
                   />
@@ -446,7 +490,7 @@
               </div>
             </li>
             <!-- Growing Business -->
-            <li class="projects__item item">
+            <li class="projects__item item application">
               <div class="image">
                 <h6 class="image__text">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -474,8 +518,10 @@
                     height="294"
                   />
                   <img
-                    srcset="./images/portfolio/mobile/growing-business-480.jpg 1x,
-                    ./images/portfolio/mobile/retina/growing-business-480@2x.jpg 2x,"
+                    srcset="
+                      ./images/portfolio/mobile/growing-business-480.jpg           1x,
+                      ./images/portfolio/mobile/retina/growing-business-480@2x.jpg 2x
+                    "
                     alt="Image of Growing Business from Application Category"
                     width="100%"
                   />
@@ -690,5 +736,7 @@
     <!-- scripts -->
     <!-- mobile menu scripts -->
     <script src="./js/mobile-menu.js"></script>
+    <!-- projects sort -->
+    <script src="./js/projects.js"></script>
   </body>
 </html>
